@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/basic.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header compact">
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg"></a></h1>
+				<ul class="lnb-menu">
+					<li onclick="location.href='main.html'">로그인</li>
+					<li onclick="location.href='join_product_intro.html'">회원가입</li>
+					<li>고객센터</li>
+					<li>즐겨찾기 추가</li>
+					<li>원격지원 요청</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="certify">
+				<h2 class="font-lg">딜러 인증하기</h2>
+				<span class="font-xsm txt-gray">계정생성을 위해 본인인증 및 추가 정보를 입력하신 후 카매니저 서비스를 이용 할 수 있습니다.</span>
+				<ul class="progress-bar step-3 m-t-10">
+		            <li class="active">1. 휴대번호 본인인증</li>
+		            <li class="active">2. 약관동의 및 추가정보 입력</li>
+		            <li>3. 딜러 인증 완료</li>
+				</ul>
+				<div class="clear"></div>
+				<div class="info-wrap br-t-n p-l-0 p-r-0 bg-white">
+					<table class="list-table txt-left col-5 fl p-r-10">
+						<tr>
+							<td>
+								<input type="checkbox" id="agree_all" />
+								<label for="agree_all">전체 약관에 동의 합니다.</label>
+							</td>
+						</tr>
+						<tr class="tit">
+							<th>
+								카매니저 이용 약관에 관한 동의(필수)
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<div class="scrollbar-sm">
+									제 1조 (목적)
+									이 약관은, 주식회사 비즈인포그룹(이하, “회사”라곡 합니다.)이 개발한 정보공유시스템을 기반으로 인터넷 사이트(http://www.carmanager.co.kr : 이하,. “카매니저” 또는 “카매니
+									제 1조 (목적)
+									이 약관은, 주식회사 비즈인포그룹(이하, “회사”라곡 합니다.)이 개발한 정보공유시스템을 기반으로 인터넷 사이트(http://www.carmanager.co.kr : 이하,. “카매니저” 또는 “카매니
+									제 1조 (목적)
+									이 약관은, 주식회사 비즈인포그룹(이하, “회사”라곡 합니다.)이 개발한 정보공유시스템을 기반으로 인터넷 사이트(http://www.carmanager.co.kr : 이하,. “카매니저” 또는 “카매니
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" name="agree1" id="agree1" />
+								<label for="agree1" class="m-r-10">동의합니다.</label>
+								<input type="radio" name="agree1" id="disagree1" />
+								<label for="disagree1">동의하지 않습니다.</label>
+							</td>
+						</tr>
+						<tr class="tit">
+							<th>
+								개인정보 수집 및 이용에 관한 동의(필수)
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<div class="scrollbar-sm">
+									주식회사 빌즈인포그룹(이하 회사)는 개인정보보호법 제 30조에 따라 정보주체의 개인정보를 보호하고 이와 관련된 고충을 신속하고 원활하게 처리할 수 있도록 하기 위해 다음과 같이 개인정보보호
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" name="agree2" id="agree2" />
+								<label for="agree2" class="m-r-10">동의합니다.</label>
+								<input type="radio" name="agree2" id="disagree2" />
+								<label for="disagree2">동의하지 않습니다.</label>
+							</td>
+						</tr>
+						<tr class="tit">
+							<th>
+								카매니저 제 3자 정보제공동의(필수)
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<div class="scrollbar-sm">
+									카매니저와의 거래 관련하여 카매니저가 본인으로부터 취득한 개인정보는 [개인정보보호법]에 따라 제 3자에게 제공할 경우에는 본인의 사전 동의를 얻어야 하는 정보입니다. 이에 본인은 카매니저가
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" name="agree3" id="agree3" />
+								<label for="agree3" class="m-r-10">동의합니다.</label>
+								<input type="radio" name="agree3" id="disagree3" />
+								<label for="disagree3">동의하지 않습니다.</label>
+							</td>
+						</tr>
+						<tr class="tit">
+							<th>
+								카매니저 제 3자 매물정보제공동의(선택)
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<div class="scrollbar-sm">
+									카매니저와의 거래 관련하여 카매니저가 본인으로부터 취득한 개인정보는 [개인정보보호법]에 따라 제 3자에게 제공할 경우에는 본인의 사전 동의를 얻어야 하는 정보입니다. 이에 본인은 카매니저가
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" name="agree4" id="agree4" />
+								<label for="agree4" class="m-r-10">동의합니다.</label>
+								<input type="radio" name="agree4" id="disagree4" />
+								<label for="disagree4">동의하지 않습니다.</label>
+							</td>
+						</tr>
+					</table>
+					<!-- 딜러 타입별 출력 텍스트 다름 -->
+					<table class="list-table txt-left col-5 fl p-l-10 br-b-n">
+						<tr>
+							<td class="font-sm font-bold" colspan="2">조합정보 / 상사정보</td>
+						</tr>
+						<tr class="tit">
+							<th width="90px">조합정보</th>
+							<td>
+								조합명 - 디카유료조합<br>
+								전화번호 - 02-1234-1234
+							</td>
+						</tr>
+						<tr class="tit">
+							<th>상사정보</th>
+							<td>
+								단지명 - 한성매매단지<br>
+								상사명 - JB테스트 상사<br>
+								주소 - 서울서초구 강남대로 47길 11<br>
+								전화번호 - 02-111-1111
+							</td>
+						</tr>
+						<tr class="tit">
+							<th><font class="txt-danger">*</font>아이디</th>
+							<td>
+								<input type="text" />
+								<button class="btn btn-xsm btn-lightblue m-l-10">중복확인</button>
+							</td>
+						</tr>
+						<tr class="tit">
+							<th><font class="txt-danger">*</font>비밀번호</th>
+							<td>
+								<input type="password" />
+							</td>
+						</tr>
+						<tr class="tit">
+							<th><font class="txt-danger">*</font>비밀번호 확인</th>
+							<td>
+								<input type="password" />
+							</td>
+						</tr>
+						<tr class="tit">
+							<th>이메일</th>
+							<td class="br-b-gray">
+								<input type="text" class="col-3" /> @ <input type="text" class="col-3" />
+								<select class="custom-select sm col-3">
+									<option>직접입력</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+					<div class="clear"></div>
+				</div>
+
+				<table class="btn-group">
+					<tr>
+						<td class="center">
+							<button type="button" class="btn-round btn-medium btn-gray m-r-10 m-b-10" onclick="location.href='index.html'">취소</button>
+							<button type="button" class="btn-round btn-medium btn-primary m-b-10" onclick="location.href='main_certify_result.html'">다음단계</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li>이용약관</li>
+					<li>개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>

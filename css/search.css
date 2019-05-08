@@ -1,0 +1,483 @@
+@charset "utf-8";
+
+/********** sale search option **********/
+.search-area-option{background:#fff;border-top:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;padding:10px 20px;height:30px;margin:10px 0;}
+.search-area-option > li{display:inline-block;margin-right:40px;position:relative;}
+.search-area-option > li:last-child{margin-right:0px;}
+.search-area-option > li > label{margin-right:20px;}
+.search-area-option > li > label[for="danji"]{vertical-align:baseline;}
+.search-area-option > li .custom-select{width:100px;}
+
+.search-area-option .select-combo{width:300px;padding:2px 5px;border:1px solid #c5c5c5;display:inline-block;position:relative;font-size:13px;color:#777;}
+.search-area-option .select-combo img{width:11px;position:absolute;right:5px;top:11px;}
+.search-area-option .combo-box{width:500px;position:absolute;right:0;top:31px;z-index:1;display:none;}
+.search-area-option .select-combo.on + .combo-box{display:block;}
+
+.search-area-option .latest-search {cursor:pointer;position:relative;float:right;top:2px;}
+.search-area-option .latest-search img{width:11px;margin-left:5px;position:relative;top:-1px;}
+.search-area-option .latest-search .on img{transform:rotate(180deg);}
+
+.search-area-option .latest-search-list {position:absolute;right:-21px;top:38px;width:950px;z-index: 1;background:#fff;padding:15px;border:1px solid #ccc;display:none;cursor:default;}
+.search-area-option .latest-search .on ~ .latest-search-list {display:block;}
+.search-area-option .latest-search-list .latest-search-title{position:relative;margin-bottom:10px;width:100%;}
+.search-area-option .latest-search-list .latest-search-title h4 {font-size:16px;font-family:'NanumBarunGothicLight';font-weight:bold;}
+.search-area-option .latest-search-list .latest-search-title button{position:absolute;right:0;top:-3px;width:15px;height:15px;}
+.search-area-option .latest-search-list .latest-search-title button img{right:5px;top:-6px;}
+.search-area-option .latest-search-list .latest-search-guide{border-bottom:1px solid #ccc;margin-bottom:10px;width:100%;}
+.search-area-option .latest-search-list .list{margin-left:15px;position:relative;margin-bottom:3px;font-size:13px;}
+.search-area-option .latest-search-list .list:after{content:"";display:block;width:2px;height:2px;background:#999;border-radius:3px;position:absolute;left:-11px;top:12px;}
+.search-area-option .latest-search-list .list button{border:1px solid #999;border-radius:3px;display:inline-block;padding:2px 5px;font-size:11px;margin-left:3px;line-height:11px;}
+.search-area-option .latest-search-list .list .condition{width:864px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;position:relative;top:4px;line-height:18px;}
+.search-area-option .latest-search-list .all-delete button{height:25px;line-height:9px;margin:10px auto 0;display:block;}
+.search-area-option.maker > li .custom-select + .ui-selectmenu-button{width:150px;}
+.search-area-option.maker > li:nth-child(3) .custom-select + .ui-selectmenu-button{width:200px;}
+
+.option-table.search-car-option .tit th button{position:absolute;right:5px;top:7px;width:50px;height:21px;line-height:18px;}
+.option-table.search-car-option .tit th{border-right:1px solid #e9e9e9;}
+.option-table.search-car-option .tit th:last-child{border-right:none;}
+.option-table.search-car-option td p{padding:5px 10px;text-align:center;}
+.option-table.search-car-option td ul{height:130px;overflow-y:scroll;}
+.option-table.search-car-option td ul li{padding:3px 5px;}
+.option-table.search-car-option td ul li.on{background:#e8efff;color:#222;}
+
+.option-table.search-select-option td{padding:10px 0;}
+.option-table.search-select-option label:not(.checkbox){font-size:12px;color:#555;margin:2px 0px 2px 10px;display:inline-block;width:50px;}
+.option-table.search-select-option input[type="text"]{width:79px;}
+.option-table.search-select-option select + .ui-selectmenu-button{padding:2px 5px;width:161px;}
+.option-table.search-select-option select.half + .ui-selectmenu-button{width:79px;}
+
+.option-table .combo-box{padding:0 10px;height:170px;overflow-y:scroll;}
+.option-table .combo-box li{width:auto;margin-right:5px;}
+
+.search-option .option-tab-con.search-etc-option{display:block;}
+.search-etc-option{background:#fff;border-bottom:1px solid #e9e9e9;}
+.search-etc-option:not(.option-tab-con) li:not(.clear){float:left;box-sizing:border-box;padding:10px 0;font-size:13px;line-height:32px;}
+.search-etc-option .col-10{border-top:1px solid #e9e9e9;}
+.search-etc-option .col-10 > *{display:inline-block;vertical-align:middle;}
+.search-etc-option .col-10 label{color:#a0a0a0;}
+.search-etc-option .show{position:relative;border:1px solid #d4d2d2;background:#e0e0e0;color:#fff;padding:0 3px 0 5px;line-height:18px;height:18px;margin-right:3px;}
+.search-etc-option .ms-box{display:none;position:absolute;width: max-content;background:#fff;border:1px solid #222;padding:10px;color:#222;z-index:10;text-align:left;line-height:20px;font-size:13px;min-width:250px;}
+.search-etc-option .ms-box b{display:block;margin-bottom:5px;}
+.search-etc-option .show:hover .ms-box{display:block;}
+.search-etc-option input[type="text"]{width:74px;padding:4px 5px;margin-right:5px;border:1px solid #ccc;}
+.search-etc-option .option-label{width:65px;text-align:center;display:inline-block;font-size:14px;}
+.search-etc-option .unit{width:40px;display:inline-block;}
+.search-etc-option .custom-select{width:100px;}
+
+/********** sale search list **********/
+.search-list-count{display:block;padding-top:20px;}
+
+.search-list-top{height:26px;font-size:13px;margin-top:10px;}
+.search-list-top li{display:block;float:left;position:relative;}
+.search-list-top .right{float:right;}
+.search-list-top .right button:hover + .guide-box{display:block;}
+.search-list-top .search-top-btn img{width:10px;vertical-align:baseline;}
+.search-list-top .custom-select + .ui-selectmenu-button{width:100px;}
+.search-list-top .custom-select.sm + .ui-selectmenu-button{width:70px;}
+.search-list-top .m-r-10{line-height:22px;}
+
+.search-list td:nth-child(3) img{width:auto;display:block;margin:0 auto;margin-bottom:2px;}
+.search-list .car-img-wrap{width:90px;}
+.search-list .like-check + label{position:absolute;right:6px;top:16px;}
+.search-list .car-option, .search-list .car-name{max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;}
+.search-list .car-name{max-width:230px;}
+.search-list .car-hotmark img{width:auto;margin-bottom:1px;}
+.search-list .option-hover{position:relative;}
+.search-list .option-box{width:420px;position:absolute;right:0;top:0px;background:#fff;border:1px solid #222;padding:15px;display:none;z-index:10;}
+.search-list .option-box.left{left:0;}
+.search-list .option-hover:hover .option-box{display:block;}
+
+.search-list.no-photo tr td:nth-child(2) img, .search-list.no-photo .car-option{display:none;}
+.search-list.no-photo .car-name .txt-danger{display:inline-block;margin:0 5px;font-family:'NanumBarunGothicLight';font-weight:bold;}
+.search-list:not(.no-photo) .car-name .txt-danger{display:none;}
+.search-list.no-photo .like-check + label{position:absolute;right:12px;top:26px;}
+.search-list.no-photo .car-img-wrap{width:0;}
+
+.search-left-menu{width:45px;background:#fff;position:absolute;left:-80px;text-align:center;padding:10px;border:1px solid #e9e9e9;z-index:10;cursor:pointer;}
+.search-left-menu img{width:auto;}
+.search-left-menu span{display:block;font-size:11px;line-height:15px;padding:5px 0 10px;margin-bottom:10px;border-bottom:1px solid #e9e9e9;}
+.search-left-menu li:last-child span{border:none;padding-bottom:0;margin-bottom:0;}
+
+.search-result-list .tit > *{border-bottom:1px solid #e9e9e9;border-right:1px solid #e9e9e9;}
+.search-result-list .tit td:last-child{border-right:none;}
+.search-result-list .tit:last-child th:first-child{border-bottom:none;}
+.search-result-list .price{background:#dae3f3;padding:5px;}
+
+.standard-search-result .tit th{border-right:1px solid #e9e9e9;}
+.standard-search-result .tit th:last-of-type{border-right:none;}
+.standard-search-result tr td{padding:5px;text-align:center;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;font-size:12px;color:#6f6f6f;line-height:18px;}
+.standard-search-result tr td:last-of-type{border-right:none;}
+.standard-search-result tr:last-of-type td{border-bottom:none;}
+
+.print-image{width:100%;height:auto;padding:20px;background:#fff;margin-top:20px;border:1px solid #e9e9e9;text-align:center;}
+.print-image img{width:calc(50% - 30px);margin:0 10px;}
+
+/********** 화물차 매물조회 **********/
+.search-cargo-option .col-10:first-of-type{padding-bottom:0;border-top:none;}
+.search-cargo-option .col-10:first-of-type .option-label{color:#222}
+.search-cargo-option .col-10:first-of-type label:nth-of-type(3),
+.search-cargo-option .col-10:first-of-type label:nth-of-type(4){width:110px;}
+.search-cargo-option .col-4, .search-cargo-option .col-2{padding-top:0;}
+
+/********** 화물차 시세조회 **********/
+.search-cargo-price .col-3, .search-cargo-price .col-1{padding-top:0;}
+.search-cargo-price .blank{margin-left:53px;}
+
+/********** 매물 현황 조회 테이블 **********/
+.car-state-list{width:100%;background-color:#fff;border:1px solid #e0e0e0;border-top:1px solid #404040;font-size:13px;}
+.car-state-list tr th{background-color:#f5f5f5;border-bottom:1px solid #e9e9e9;padding:5px;font-size:14px;font-weight:normal;} 
+.car-state-list tr td ul li{margin:6px 10px;}
+.car-state-list tr td ul li span,
+.car-state-list .car-modelList td li span{color:#a0a0a0;margin-right:3px;}
+.car-state-list tr th{background-color:#f5f5f5;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;padding:5px;font-size:14px;font-weight:normal;}
+.car-state-list tr th:last-of-type{border-right:none;}
+.car-state-list .car-modelList > td:first-of-type{border-right:1px solid #e9e9e9;text-align:center;}
+.car-state-list .car-modelList > td:nth-of-type(2) td{vertical-align:top;}
+
+/********** 수출차량조회 **********/
+.search-export-option{height:53px;}
+.search-export-count{font-size:15px;}
+.search-list .year-box{width:200px;position:absolute;left:0;top:0;background:#fff;border:1px solid #222;padding:15px;display:none;z-index:10;}
+.search-list .year-hover:hover .year-box{display:block;}
+
+/********** 수출딜러조회 **********/
+.search-area-option.dealer > li input{width:145px;}
+
+/********** 차량 비교 팝업 **********/
+.car-compare{width:1000px;}
+.car-compare .title{padding:3px 10px;background:#a0a0a0;color:#fff;}
+.car-compare .compare-table{width:100%;font-size:13px;}
+.car-compare .compare-table th{background:#f5f5f5;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;padding:3px 5px;width:90px;}
+.car-compare .compare-table td{position:relative;padding:5px 10px;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;}
+.car-compare .compare-table tr:last-child th{border-bottom:none;}
+.car-compare .compare-table td.txt-center{padding:10px;width:100px;}
+.car-compare .compare-table td img{width:100px;display:block;margin:0 auto;}
+.car-compare .compare-table td span{display:block;line-height:12px;margin:5px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.car-compare .compare-table td .esc{width:20px;height:20px;background:url('../images/icon/esc.png')no-repeat center center;position:absolute;right:5px;top:5px;}
+.car-compare .compare-table .price td{color:#ff893a;}
+.car-compare .compare-table .option .option-more-btn{width:auto;display:inline-block;}
+.car-compare .compare-table .option .option-more{display:none;position:absolute;padding:10px;background:#fff;z-index:10;border:1px solid #e9e9e9;width:300px;right:0;bottom:30px;}
+.car-compare .compare-table .option .option-more-btn:hover + .option-more{display:block;}
+
+.car-compare .compare-table .full-name-wrap{position:relative;margin:5px auto 0;line-height:15px;}
+.car-compare .compare-table .full-name-wrap > span{max-width: 135px;display:inline-block;margin:0;}
+.car-compare .compare-table .full-name-wrap .full-name{position:absolute;background:#fff;border:1px solid #e9e9e9;z-index:1;padding:10px;width:300px;left:calc(50% - 150px);bottom:20px;display:none;}
+.car-compare .compare-table .full-name-wrap:hover .full-name{display:block;}
+
+/********** 차량 상세 페이지 **********/
+.detail-page{width:1000px;height:530px;background:#fff;position:relative;margin:0 auto;}
+
+.detail-page .car-info{position:absolute;right:0;top:36px;font-size:13px;width:180px;background:#f1f1f1;height:calc(100% - 36px);display:block;overflow-y:scroll;}
+.detail-page .car-info tr > *{padding:0px 5px;border-bottom:1px solid #e9e9e9;}
+.detail-page .car-info th{text-align:left;}
+.detail-page .car-info .row2{line-height:17px;padding:5px;}
+.detail-page .car-info tr:last-child td{border-bottom:none;}
+
+.detail-page .top-info{height:36px;}
+.detail-page .top-info .pop-tab li{background:#fff;border:none;padding:6px 8px;}
+.detail-page .top-info .pop-tab .active, .detail-page .top-info .pop-tab li:hover{background:#4959ec;color:#fff;}
+.detail-page .top-info h2{display:inline-block;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:20px;}
+.detail-page .top-info .modi-date{font-size:12px;color:#aaa;margin-left:5px;}
+.detail-page .top-info .p-t-5 > *{vertical-align:middle;}
+.detail-page .top-info .tab-menu{overflow:visible;}
+
+.detail-page .car-detail{height:calc(100% - 36px);}
+.detail-page .car-detail > *:not(.car-point){width:calc(100% - 180px);}
+.detail-page .car-detail .img-view{width:658px;float:left;position:relative;}
+.detail-page .car-detail .img-view .pagenation{position:absolute;top:calc(50% - 27px);width:34px;height:54px;}
+.detail-page .car-detail .img-view .pagenation.prev{background:url('../images/icon/prev.png')no-repeat;left:10px;}
+.detail-page .car-detail .img-view .pagenation.next{background:url('../images/icon/next.png')no-repeat;right:10px;}
+.detail-page .car-detail .img-view img:last-child{position:absolute;right:0;bottom:10px;width:229px;}
+.detail-page .car-detail .img-list{width:138px;float:left;margin-top:2px;margin-left:13px;}
+.detail-page .car-detail .img-list li{float:left;width:48%;height:45px;background:url('../images/common/no_photo2.png')no-repeat center center;background-size:100% 100%;overflow:hidden;position:relative;}
+.detail-page .car-detail .img-list img{transform:translate(-50%,-50%);position:absolute;left:50%;top:50%;cursor:pointer;}
+
+.detail-page .car-detail .img-view .slick-arrow{position:absolute;z-index:1;top:45%;height:52px;width:50px;text-indent:-9999px;cursor:pointer;}
+.detail-page .car-detail .img-view .slick-next{right:0;}
+.detail-page .car-detail .img-list .slick-slide{float:left;width:48% !important;height:47px;background:url('../images/common/no_photo2.png')no-repeat center center;background-size:100% 100%;overflow:hidden;margin:0.82%;position:relative;}
+.detail-page .car-detail .img-list img{transform:translate(-50%,-50%);position:absolute;left:50%;top:50%;cursor:pointer;opacity:.5;}
+.detail-page .car-detail .img-list .slick-slide.slick-current img{opacity:1;}
+.detail-page .car-detail .slick-track, .detail-page .car-detail .slick-list.draggable{height:auto !important;}
+
+.detail-page .car-detail .option-info{height:100%;overflow-y:scroll;}
+.detail-page .car-detail .option-info .option-check{width:100%;font-size:13px;text-align:left;border-top:1px solid #e9e9e9;margin-bottom:10px;}
+.detail-page .car-detail .option-info .option-check tr > *{border-bottom:1px solid #e9e9e9;}
+.detail-page .car-detail .option-info .option-check .tit th{background:#e4f2fb;padding:0 10px;}
+.detail-page .car-detail .option-info .option-check td{padding:5px 10px;text-align:left;}
+.detail-page .car-detail .option-info .option-check ul li{display:inline-block;width:calc(20% - 3px);}
+.detail-page .car-detail .option-info .tab-option-list{width:100%;font-size:13px;text-align:left;}
+.detail-page .car-detail .option-info .tab-option-list tr > *{padding:5px 10px;border-bottom:1px solid #e9e9e9;}
+.detail-page .car-detail .option-info .tab-option-list tr:last-child td{border-bottom:none;}
+.detail-page .car-detail .option-info .tab-option-list textarea{width:100%;resize:none;height:200px;}
+
+.detail-page .car-detail .performance-check{height:100%;overflow-y:scroll;}
+
+.detail-page .car-detail .relocation-costs{height:100%;overflow-y:scroll;}
+.detail-page .car-detail .relocation-costs table{width:100%;font-size:13px;}
+.detail-page .car-detail .relocation-costs table tr > *{border-bottom:1px solid #e9e9e9;padding:3px 10px 5px;}
+.detail-page .car-detail .relocation-costs table tr th{background:#ddd;}
+.detail-page .car-detail .relocation-costs table tr td{width:33%;}
+.detail-page .car-detail .relocation-costs table tr td label{margin-right:10px;}
+.detail-page .car-detail .relocation-costs table tr .tit{width:125px;display:inline-block;margin-right:0;font-family:'NanumBarunGothicLight';font-weight:bold;padding-left:15px;background:url('../images/icon/list_style.png')no-repeat left 54%;}
+.detail-page .car-detail .relocation-costs table tr .price{vertical-align:middle;display:inline-block;width:200px;text-align:right;}
+.detail-page .car-detail .relocation-costs .total-price{width:300px;display:block;margin:20px auto 10px;text-align:center;border-bottom:2px solid #4959ec;padding-bottom:5px;color:#4959ec;font-size:13px;}
+.detail-page .car-detail .inquiry-history{height:100%;overflow-y:scroll;}
+
+.detail-page .car-detail .car-point{z-index:10;position:relative;background:#fff;}
+
+/********** 보드판 **********/
+.search-list .car-num:hover, .search-list .manager:hover{cursor:pointer;color:#ff893a;}
+.search-list .car-num.active, .search-list .manager.active{color:#4959ec;}
+
+.car-num-accordion, .manager-accordion{display:none;} 
+.car-num-accordion input, .manager-accordion input{width:100px;} 
+.car-num-accordion.on, .manager-accordion.on{display:table-row;} 
+
+.layer-pop.key-rental{width:1000px;padding:20px;}
+
+/********** 사원/상사 검색 **********/
+.shop-search-top{border:2px solid #4959ec;padding:10px;width:100%;margin:15px 0;}
+.shop-search-top td{text-align:center;}
+.shop-search-top .tit{font-family:'NanumBarunGothicLight';font-weight:bold;padding:0 10px;}
+.shop-search-top input[type="radio"] + label{margin-right:10px;}
+.shop-search-top input[type="text"]{height:30px;position:relative;right:-4px;border-radius:5px 0 0 5px}
+.shop-search-top button{height:30px;border-radius:0 5px 5px 0;}
+
+.shop-search-list{color:#555;margin:15px 0;}
+.shop-search-list img{width:auto;margin-right:3px;}
+.shop-search-list button img{position:relative;top:-1px;}
+.shop-search-list span{display:inline-block;}
+
+.shop-position .map-wrap{width:100%;height:500px;background:#eee;}
+
+/********** 신규검색 **********/
+.search-bar{padding:10px;background:#eee;width:100%;margin-top:40px;position:relative;font-size:14px;display:none;}
+.search-bar.on{position:fixed;left:0;top:20px;z-index:98;display:block;}
+.search-bar-wrap{width:980px;margin:0 auto;position:relative;}
+.search-bar-wrap .number + .ui-selectmenu-button{width:90px;position:absolute;right:0;top:-2px;}
+.search-bar-list{float:right;width:80%;}
+.search-bar-list li{float:left;width:25%;font-family:'NanumBarunGothicLight';font-weight:bold;cursor:pointer;}
+.search-bar-list li.active{color:#4f87e6;}
+.search-bar-list li.active img{transform:rotate(180deg);}
+.search-bar-list li.clear{float:none;width:0;}
+.search-bar-list img{width:auto;margin-left:10px;position:relative;top:-2px;}
+
+.search-bar .search-bar-con{background:#fff;border:1px solid #4f87e6;padding:15px 20px;position:absolute;width:980px;top:34px;z-index:100;display:none;}
+.search-bar.on .search-bar-con{top:34px;}
+.search-bar .search-bar-con.active{display:block;}
+.search-bar .search-bar-con.recent-search ul li{line-height:30px;}
+.search-bar .search-bar-con.sort{padding:5px 15px;width:auto;right:90px;}
+.search-bar .search-bar-con.sort button{display:block;color:#777;margin:5px 0;}
+.search-bar .search-bar-con.sort button:hover{color:#4f87e6;}
+
+.search-option{font-size:14px;margin-top:15px;}
+.search-option .search-option-tab{width:100%;height:36px;border-top:1px solid #969696;display:table;}
+.search-option .search-option-tab li:not(.clear){display:table-cell;min-width:240px;text-align:center;background-color:#f7f7f9;padding:5px 0 7px;cursor:pointer;background-image:url('../images/icon/arrow_down.png');background-repeat:no-repeat;background-position:95% center;border-right:1px solid #e8e8e8;}
+.search-option .search-option-tab li:nth-last-child(2){border-right:none;}
+.search-option .search-option-tab li.active{background-color:#202a89;color:#fff;background-image:url('../images/icon/arrow_up_wh.png')}
+
+.search-option .option-tab-con{border:1px solid #222;display:none;}
+.search-option .option-tab-con.active{display:block;}
+.search-option .option-tab-con .search{width:300px;position:relative;padding:5px 15px 10px;display:inline-block;}
+.search-option .option-tab-con .search > img{width:auto;position:absolute;left:15px;top:15px;}
+.search-option .option-tab-con .search > input[type="text"]{border:none;border-bottom:2px solid #4959ec;width:100%;padding:10px 20px;outline:none;}
+.search-option .option-tab-con .search > button{position:absolute;right:20px;width:10px;top:12px;}
+.search-option .option-tab-con .search .auto-search-list{border:1px solid #4959ec;background:#fff;z-index:10;position:absolute;top:34px;width:700px;display:none;}
+.search-option .option-tab-con .search .auto-search-list ul{padding:15px 20px;}
+.search-option .option-tab-con .search .auto-search-list ul .custom-check-label{margin-left:10px;color:#888;}
+.search-option .option-tab-con .search .auto-search-list .btn-cancel{background:#f7f7f7;color:#888;width:20%;float:left;padding:5px;}
+.search-option .option-tab-con .search .auto-search-list .btn-search{background:#4959ec;color:#fff;width:80%;float:right;padding:5px;}
+
+.search-option .option-tab-con .search-option-select{overflow:hidden;width:99.9%;position:relative;right:-1px;}
+.search-option .option-tab-con .search-option-select .option-tit{background:#f7f7f9;text-align:center;padding:5px 0;border-bottom:1px solid #e8e8e8;position:relative;}
+.search-option .option-tab-con .search-option-select .option-tit .btn.more{position:relative;width:20px;height:19px;position:absolute;right:10px;top:7px;}
+.search-option .option-tab-con .search-option-select .option-tit .btn.more:after{content:"";display:block;position:absolute;width:11px;height:1px;background:#999;left:4px;top:.65em;}
+.search-option .option-tab-con .search-option-select .option-tit .btn.more:before{content:"";display:block;position:absolute;width:1.1px;height:11px;background:#999;left:8.7px;top:.25em;}
+.search-option .option-tab-con .search-option-select .option-tit .btn.more.on:before{display:none;}
+.search-option .option-tab-con .search-option-select .option-list{height:188px;overflow-y:scroll;}
+.search-option .option-tab-con .search-option-select li{width:20%;height:225px;float:left;border-top:1px solid #e8e8e8;border-right:1px solid #e8e8e8;}
+.search-option .option-tab-con .search-option-select.list-col-3 li{width:calc(100% / 3.001);}
+.search-option .option-tab-con .search-option-select li p{text-align:center;line-height:35px;color:#888;}
+.search-option .option-tab-con .col-10{padding:8px 15px 10px;}
+.search-option .option-tab-con .col-10 input[type="text"]{width:75px;padding:3px 5px;}
+.search-option .option-tab-con .col-10 label{color:#222;margin:0 2px;}
+.search-option .option-tab-con .col-10 input[type="checkbox"]{display:none;}
+.search-option .option-tab-con .col-10 .contract{margin-bottom:2px;}
+.search-option .option-tab-con .cargo-guide{width:calc(100% / 5 * 2);border-top:1px solid #e8e8e8;position:absolute;right:1px;top:115px;height:450px;padding:20px 30px;}
+.search-option .option-tab-con .cargo-guide b{display:block;margin-bottom:5px;font-size:16px;}
+
+.search-option .search-option-list{border:1px solid #e9e9e9;padding:20px;position:relative;margin-bottom:60px;}
+.search-option .search-option-list span{color:#4f87e6;}
+.search-option .search-option-list .esc{width:10px;height:10px;position:relative;top:0;right:0;margin-left:5px;margin-right:15px;}
+.search-option .search-option-list .btn.fr{position:relative;top:-5px;}
+.search-option .search-option-list .search-bottom-btn{position:absolute;left:50%;bottom:-36px;transform:translateX(-50%);border:1px solid #e9e9e9;padding:5px 10px;}
+.search-option .search-option-list .search-bottom-btn button{color:#888;}
+.search-option .search-option-list .search-bottom-btn button img{width:auto;position:relative;top:-1px;margin-right:5px;}
+.search-option .search-option-list .search-bottom-btn .btn-close{margin-right:15px;position:relative;}
+.search-option .search-option-list .search-bottom-btn .btn-close:after{content:"";display:block;width:1px;height:11px;background:#ccc;position:absolute;right:-10px;top:3px;}
+
+.search-list-top > span{margin-right:30px;}
+.search-list-top span > img{width:auto;position:relative;top:-2px;margin-right:5px;}
+.search-list-top button{float:left;}
+.search-list-top .list-view{background:url(../images/icon/list.gif);width:22px;height:22px;}
+.search-list-top .image-view{background:url(../images/icon/image.gif);width:22px;height:22px;}
+.search-list-top .list-view.active{background:url(../images/icon/list_active.gif);width:22px;height:22px;}
+.search-list-top .image-view.active{background:url(../images/icon/image_active.gif);width:22px;height:22px;}
+
+.search-list .list-top{background:#f7f7f9;padding:5px;height:auto;border-top:1px solid #979797;text-align:right;position:relative;}
+.search-list .list-top .btn{float:left;position:relative;top:2px;}
+
+.search-list .sort-btn img{width:auto;position:relative;top:-2px;margin-left:5px;}
+
+.search-list .sort{position:absolute;border:1px solid #ccc;background:#fff;padding:4px 10px;right:110px;color:#aaa;display:none;}
+.search-list .sort li{display:block;float:none;text-align:left;}
+.search-list .sort li:hover{color:#4f87e6;cursor:pointer;}
+.search-list .sort li img{width:auto;display:none;position:relative;top:-2px;margin-left:5px;}
+.search-list .sort li.active{color:#4f87e6 !important;}
+
+.search-list .sort-btn.active img{transform:rotate(180deg);}
+.search-list .sort-btn.active ~ .sort.select{display:block;z-index:20;}
+.search-list .plus{width:15px;height:15px;background:url('../images/icon/plus.gif');position:relative;top:3px;margin-left:5px;margin-right:10px;}
+.search-list .plus.active{background:url('../images/icon/plus_active.gif');}
+.search-list .plus.active + .sort{display:block;top:1px;background:#f7f7f9;border:none;right:110px;}
+.search-list .plus.active + .sort li{display:inline-block;margin:0 2px;color:#222;position:relative;}
+.search-list .plus.active + .sort li img{display:inline-block;}
+.search-list .plus.active ~ .sort.select{display:none;}
+
+.search-img-list{border-top:1px solid #e9e9e9;position:relative;padding-bottom:30px;}
+.search-img-list > li{width:calc(25% - 30px / 4);float:left;margin:10px 5px;position:relative;border:1px solid #e9e9e9;height:360px;}
+.search-img-list > li:after{content:"";display:none;position:absolute;left:-11.5px;top:-11.5px;width:calc(100% + 1.47em);height:calc(100% + 144px);border:1px solid #222;z-index:-1;background:#fff;}
+.search-img-list > li:hover:after{display:block;}
+.search-img-list > li:nth-child(1), .search-img-list li:nth-child(5n){margin-left:0;}
+.search-img-list > li:nth-child(4n){margin-right:0;}
+
+.car-detail .car-img{position:relative;}
+.car-detail .car-img .custom-check + label{position:absolute;left:5px;top:5px;width:17px;height:17px;}
+.car-detail .car-img .like-check + label{position:absolute;right:5px;top:3px;}
+
+.car-detail .car-hotmark{padding:0 10px 10px;}
+.car-detail .car-hotmark button{margin-right:2px;}
+.car-detail .car-hotmark button:last-child{margin-right:0;}
+
+.car-detail .car-info{padding:10px 10px 0;}
+.car-detail .car-info .car-name{font-size:17px;word-break:keep-all;margin-bottom:5px;line-height:24px;height:48px;overflow:hidden;}
+.car-detail .car-info .car-name:hover{color:#ff893a;}
+.car-detail .car-info .car-option{line-height:18px;}
+.car-detail .car-info .car-option li{color:#898989;display:inline-block;font-size:13px;margin-right:10px;position:relative;}
+.car-detail .car-info .car-option li:after{content:"";display:block;width:1px;height:11px;background:#ccc;position:absolute;right:-7px;top:4px;}
+.car-detail .car-info .car-option li:last-child:after{display:none;}
+.car-detail .car-info .price{color:#f91d1d;margin:10px 0;display:block;}
+.car-detail .car-info .price .num{font-family:'NanumBarunGothicLight';font-weight:bold;font-size:22px;}
+.car-detail .car-info .price .btn-performance{position:relative;background:url('../images/icon/icon_carview.gif')no-repeat;background-position:center center;width:60px;height:21px;border:1px solid #d8d8d8;display:block;border-radius:5px;background-position:50% 20%;}
+.car-detail .car-info .price .btn-option{padding:2px 7px 3px;margin-right:5px;display:none;}
+
+.car-detail .more{font-size:13px;width:calc(100% + 22px);line-height:20px;}
+.search-img-list .car-detail .more{display:none;position:absolute;z-index:10;left:-10.5px;bottom:-134px;background:#fff;border-top:none;}
+.search-img-list .car-detail .more p{padding:10px 20px !important;}
+.car-detail .more span{display:block;}
+.car-detail .more span img{width:auto;position:relative;top:-1px;margin-right:5px;}
+.car-detail .more .add-compare, .car-detail .more .show-option{background:#949494;color:#fff;width:50%;padding:7px ;float:left;margin-top:5px;}
+.car-detail .more .show-option{background:#85a0e3;}
+
+.search-img-list > li:hover{border-color:#222;z-index:10;}
+.search-img-list > li:hover .car-info .price .btn-performance{background:url('../images/icon/performance.gif')no-repeat;width:60px;background-position:50% 40%;}
+.search-img-list > li:hover .car-info .price .btn-option{display:block;background:url('../images/icon/option.gif')no-repeat;width:35px;background-position:50% 42%;text-indent:-9999px;}
+.search-img-list > li:hover .more{display:block;}
+.search-img-list > li:hover .like-check + label{display:block;}
+
+.search-txt-list-tit{width:100%;border-top:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;color:#aaa;padding:6px 10px;}
+.search-txt-list-tit span{display:inline-block;font-size:13px;}
+.search-txt-list-tit span:nth-child(1){width:300px;}
+.search-txt-list-tit span:nth-child(2){width:257px}
+.search-txt-list{min-height:630px;position:relative;}
+.search-txt-list > li{width:70%;padding:10px;overflow:hidden;}
+.search-txt-list > li > span{display:inline-block;font-size:13px;}
+.search-txt-list > li > span:nth-child(1){width:300px;}
+.search-txt-list > li > .car-name{padding-right:20px;float:left;cursor:pointer;}
+.search-txt-list > li > .car-name:hover{color:#ff893a;}
+.search-txt-list > li > .car-info{color:#777;width:160px;}
+.search-txt-list > li > .car-price{float:right;margin-right:47px;color:#f91d1d;position:relative;}
+.search-txt-list > li > .car-price .num{position:absolute;right:0;}
+.search-txt-list > li > .car-price .btn{position:relative;z-index:1;display:none;}
+.search-txt-list .car-detail{width:250px;border:1px solid #e9e9e9;position:absolute;right:20px;top:60px;display:none;}
+.search-txt-list li.on{background:#efefef;}
+.search-txt-list .on .car-detail{display:block;}
+.search-txt-list .on .car-price .btn{display:inline-block !important;}
+.search-txt-list .car-detail .car-img .car-name{width:100%;display:block;padding:5px;text-align:center;color:#fff;background:rgba(0,0,0,.8);font-size:13px;position:absolute;left:0;bottom:0px;}
+.car-detail .share{width:100%;background:#85a0e3;color:#fff;padding:7px;font-size:13px;}
+
+.share-con{position:absolute;background:#fff;left:0;bottom:0;width:100%;height:315px;padding:15px;display:none;}
+.share-con.active{display:block;}
+.share-con h4{font-size:16px;text-align:center;}
+.share-con h4 + span{text-align:center;color:#999;font-size:14px;display:block;margin-top:-3px;}
+.share-con .share-method{text-align:center;margin:10px 0;}
+.share-con .share-method li{display:inline-block;font-size:12px;margin:0 8px;position:relative;}
+.share-con .share-method li:not(.active) .img{filter:brightness(0.5);}
+.share-con .share-method li.first-state .img{filter:brightness(1);}
+.share-con .share-method li .name{margin-top:-2px;display:block;}
+.share-con .share-method li .img img{width:50px;}
+.share-con .share-method li .img{font-size:17px;color:#fff;width:60px;height:60px;border-radius:30px;cursor:pointer;}
+.share-con .share-method li .img.kakao{background:#fce000;padding-top:5px;}
+.share-con .share-method li .img.url{background:#78da9f;padding-top:21px;}
+
+.share-con .share-method li .kakao-share{position:absolute;background:#fff;z-index:1;width:248px;left:-54px;padding:5px 0 10px;font-size:14px;display:none;}
+.share-con .share-method li .kakao-share .price-modi{border:1px solid #bbb;border-radius:50px;font-size:17px;height:23px;width:23px;text-align:center;line-height:9px;position:relative;background:#eee;opacity:.2;cursor:default;}
+.share-con .share-method li .kakao-share .price-modi.on{background:#fff;opacity:1;cursor:pointer;}
+.share-con .share-method li .kakao-share .price-modi.minus:after{content:"";display:block;position:absolute;left:5px;top:10px;width:10px;height:1px;background:#222;}
+.share-con .share-method li .kakao-share .price-modi.plus:after{content:"";display:block;position:absolute;left:5px;top:10px;width:11px;height:1px;background:#222;}
+.share-con .share-method li .kakao-share .price-modi.plus:before{content:"";display:block;position:absolute;left:10px;top:5px;width:1px;height:11px;background:#222;}
+.share-con .share-method li .kakao-share .price{color:#ccc;font-size:17px;font-family:'NanumBarunGothicLight';font-weight:bold;margin:0 5px;position:relative;top:-5px;width:90px;display:inline-block;}
+.share-con .share-method li .kakao-share .price.on{color:#849fe2;background:#fff;}
+.share-con .share-method li .share-btn-group{position:absolute;bottom:-41px;width:100%;}
+.share-con .share-method li .share-btn-group > *{float:left;width:50%;position:relative;padding:7px;font-size:13px;}
+.share-con .share-method li .kakao-share .share-memo{border:none;border-bottom:1px solid #999;margin-top:5px;}
+.share-con .share-method li.active .kakao-share{display:block;}
+
+.share-con .share-method li .url-share{position:absolute;background:#fff;z-index:1;width:248px;left:-134px;padding:10px 0 5px;font-size:14px;display:none;}
+.share-con .share-method li.active .url-share{display:block;}
+
+.share-con .guide{font-size:13px;text-align:center;color:#999;line-height:16px;padding-bottom:3px;}
+.share-con .share-close{position:absolute;left:0;bottom:0;font-size:13px;width:100%;text-align:center;background:#929292;color:#fff;padding:7px 0;}
+
+.search-img-list .share-con .share-method li .kakao-share{width:235px;left:-48px;padding:11px 0 10px;}
+.search-img-list .share-con .share-method li .kakao-share .price{margin:10px 0;}
+.search-img-list .share-con .share-close{padding:7px 0;}
+.search-img-list .share-con .share-method li .url-share{width:235px;left:-127px;padding:10px 0 2px;}
+.search-img-list .share-con .share-method li .share-btn-group{left:-12px;width:calc(100% + 23.5px);}
+
+.layer-pop.car-option{width:500px;}
+.layer-pop.car-option .like-check + label{display:inline-block;margin-left:20px;position:relative;top:-3px;}
+.layer-pop.car-option .car-option li{display:inline-block;color:#aaa;margin-right:10px;position:relative;}
+.layer-pop.car-option .car-option li:after{content:"";display:block;width:1px;height:12px;background:#ccc;position:absolute;right:-8px;top:7px;}
+.layer-pop.car-option .car-option li:last-child:after{display:none;}
+.layer-pop.car-option .price{color:#aaa;}
+.layer-pop.car-option .price img{width:auto;position:relative;top:-1px;}
+
+.list-table .option-btn{float:right;}
+
+/********** IE 10+ css **********/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.car-detail .share{padding:6px;}
+
+	.share-con .guide{padding-bottom:4px;}
+	.share-con .share-close{padding:6px 0;}
+	.share-con .share-method li .kakao-share{left:-55px;}
+	.share-con .share-method li .share-btn-group{bottom:-41px;}
+	.share-con .share-method li .share-btn-group > *{padding:6px;}
+
+	.search-img-list > li:after{height:calc(100% + 150px);}
+	.search-img-list .car-detail .more{bottom:-140px;left:-10.5px;}
+}
+
+/********** safari css **********/
+@media not all and (min-resolution:.001dpcm) { @media {
+	.search-option .option-tab-con .search > input[type="text"]{padding:8px 20px;}
+	
+	.share-con .guide{padding-bottom:1px;}
+	.share-con .share-method li .url-share{left:-133px;}
+	.share-con .share-method li .kakao-share .price{top:0;}
+	.share-con .share-method li .kakao-share .price-modi{top:-5px;}
+
+	.search-img-list .car-detail .more p{padding:8px 20px !important;}
+	.search-img-list .share-con .share-method li .kakao-share{padding:11px 0 8px;}
+}}

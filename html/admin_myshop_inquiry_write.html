@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <link rel="stylesheet" href="../css/manage.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/basic.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<div class="header-bg">
+				<!-- 상단 알림페이지 -->
+				<div class="alarm-wrap">
+					<button class="esc"></button>
+					<div class="alarm-left">
+						<h3>고객센터</h3>
+						<p>카매니저에서 궁금하신 사항에 대해<br>빠른 답변을 찾을 수 있습니다.</p>
+						<p class="bottom">
+							<img src="../images/icon/customer_icon_1.png" />
+							02-3474-3060
+							<br>
+							<img src="../images/icon/customer_icon_2.png" />
+							평일 : AM 9시 ~ PM 6시
+						</p>
+					</div>
+					<ul class="alarm-list">
+						<li class="top">최근 받은 알림이 최대 10개까지 노출됩니다.</li>
+						<li class="new">
+							<b class="m-r-20">2019.01.10</b>
+							<b class="m-r-5">[1:1 문의]</b>
+							1:1 문의에 대한 답변이 완료되었습니다.
+						</li>
+						<li class="new">
+							<b class="m-r-20">2019.01.10</b>
+							<b class="m-r-5">[서비스 구입]</b>
+							유료딜러 서비스 구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.08</b>
+							<b class="m-r-5">[서비스 구입]</b>
+							핫마크 구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.07</b>
+							<b class="m-r-5">[구매문의]</b>
+							마이샵 구매문의에 대한 답변이 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.06</b>
+							<b class="m-r-5">[광고구입]</b>
+							상사배너 광고구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.05</b>
+							<b class="m-r-5">[광고구입]</b>
+							상사구인 광고구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.04</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스가 종료 되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.03</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">1일</b> 남았습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.02</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">2일</b> 남았습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.01</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">3일</b> 남았습니다.
+						</li>
+					</ul>
+				</div>
+				<!-- //상단 알림페이지 -->
+				<!-- 상단 전체메뉴 -->
+				<div class="all-menu-wrap">
+					<button class="esc"></button>
+					<div class="all-menu-left">
+						<h3>카매니저 2.0<span>이렇게 바뀌었습니다.</span></h3>
+						<p>
+							1. 원하는 페이지까지 빨리 접근<br>
+							2. 사용자별 맞춤 정보 제공<br>
+							3. 광고서비스 개편<br>
+							4. 서비스 정확도 집중
+						</p>
+						<img src="../images/common/monitor.png" />
+					</div>
+					<ul class="menu-list">
+						<li>
+							<h2>국산 · 수입차</h2>
+							<a href="new_search_car.html">매물조회</a>
+							<a href="new_search_car_state.html">매물현황조회</a>
+							<a href="new_search_sale_car.html">팔린매물조회</a>
+						</li>
+						<li>
+							<h2>화물차</h2>
+							<a href="search_cargo.html">매물조회</a>
+							<a href="search_cargo_state.html">매물현황조회</a>
+							<a href="search_cargo_sale.html">팔린매물조회</a>
+						</li>
+						<li>
+							<h2>수출조회</h2>
+							<a href="search_export_car.html">수출차량조회</a>
+							<a href="search_export_dealer.html">수출딜러조회</a>
+						</li>
+						<li>
+							<h2>시세</h2>
+							<a href="search_price.html">승용차 시세조회</a>
+							<a href="search_cargo_price.html">화물차 시세조회</a>
+							<!-- <a href="search_standard_price.html">표준시세표</a> -->
+							<a href="search_newcar_price.html">신차가격표</a>
+						</li>
+						<li>
+							<h2>상사매물관리</h2>
+							<a href="search_board.html">보드판</a>
+							<a href="admin_shop_car.html">상사매물관리</a>
+							<a href="alliance_application.html">제휴신청</a>
+						</li>
+						<li>
+							<h2>고객센터</h2>
+							<a href="customer_FAQ.html">자주하는질문</a>
+							<a href="customer_video_guide.html">동영상가이드</a>
+							<a href="admin_inquiry.html">1:1문의</a>
+							<a href="customer_notice.html">공지사항</a>
+							<a href="customer_event.html">이벤트</a>
+							<!-- <a href="customer_point_info.html">포인트 충전 · 소개</a> -->
+						</li>
+						<li>
+							<h2>마이페이지</h2>
+							<a href="admin_my_car.html">내차관리</a>
+							<a href="admin_myinfo.html">내정보관리</a>
+							<a href="admin_myproduct.html">내상품관리</a>
+							<a href="admin_product_intro.html">상품소개</a>
+							<a href="admin_inquiry.html">1:1문의</a>
+							<a href="search_like_car.html">관심매물</a>
+							<!-- <a href="admin_point.html">포인트 관리</a> -->
+						</li>
+						<li>
+							<h2>카매니저 서비스</h2>
+							<a href="search_shop.html">상사 · 사원확인</a>
+							<a href="search_performance.html">성능기록인쇄</a>
+							<a href="search_car_history.html">사고이력조회</a>
+							<a href="search_car_history2.html">사양조회</a>
+							<a href="search_car_history3.html">원부조회</a>
+							<a href="http://www.367.co.kr/autocafe" target="_blank">원격지원요청</a>
+						</li>
+						<li>
+							<h2>광고 및 서비스 구입</h2>
+							<a href="purchase_ad.html">광고 신청 안내</a>
+							<a href="purchase_service.html">서비스 소개 및 구입</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //상단 전체메뉴 -->
+			</div>
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg" /></a></h1>
+				<!-- 좌측 대메뉴 -->
+				<ul class="gnb-menu left">
+					<li>
+						<a href="new_search_car.html">국산 · 수입차</a>
+						<ul class="depth-2">
+							<li><a href="new_search_car.html">매물조회</a></li>
+							<li><a href="new_search_car_state.html">매물현황조회</a></li>
+							<li><a href="new_search_sale_car.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_cargo.html">화물차</a>
+						<ul class="depth-2">
+							<li><a href="search_cargo.html">매물조회</a></li>
+							<li><a href="search_cargo_state.html">매물현황조회</a></li>
+							<li><a href="search_cargo_sale.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_export_car.html">수출조회</a>
+						<ul class="depth-2">
+							<li><a href="search_export_car.html">수출차량조회</a></li>
+							<li><a href="search_export_dealer.html">수출딜러조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_price.html">시세</a>
+						<ul class="depth-2">
+							<li><a href="search_price.html">시세조회</a></li>
+							<!-- <li><a href="search_standard_price.html">표준시세표</a></li> -->
+							<li><a href="search_newcar_price.html">신차가격표</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- //좌측 대메뉴 -->
+				<!-- 우측 메뉴 -->
+				<ul class="gnb-menu right">
+					<li><a href="search_shop.html">상사 · 사원확인</a></li>
+					<li><a href="search_performance.html">성능기록인쇄</a></li>
+					<li><a href="search_car_history.html">사고이력조회</a></li>
+					<li><a href="search_car_history.html">사양조회</a></li>
+					<li><a href="search_car_history.html">원부조회</a></li>
+					<li><button class="alarm on"><img src="../images/icon/bell.svg" /></button></li>
+					<li><button class="full-menu"><img src="../images/icon/menu.png" /></button></li>
+				</ul>
+				<!-- //우측 메뉴 -->
+				<!-- 우측상단 lnb -->
+				<ul class="lnb-menu">
+					<li><span class="txt-black m-r-10"><b>김로사</b> 님</span><a href="index.html">로그아웃</a></li>
+					<li><a href="admin_my_car.html">마이페이지</a></li>
+					<li><a href="customer_FAQ.html">고객센터</a></li>
+					<li>즐겨찾기 추가</li>
+					<li><a href="http://www.367.co.kr/autocafe" target="_blank">원격지원 요청</a></li>
+					<li>바로가기 추가</li>
+				</ul>
+				<!-- //우측상단 lnb -->
+			</div>
+			<!-- 스크롤시 헤더 -->
+			<div class="scroll-header">
+				<div class="header-wrap">
+					<h1 class="logo"><a href="index.html"><img src="../images/common/logo_white.svg" /></a></h1>
+					<ul class="gnb-menu left">
+						<li><a href="new_search_car.html">국산 · 수입차</a></li>
+						<li><a href="search_cargo.html">화물차</a></li>
+						<li><a href="search_export_car.html">수출조회</a></li>
+						<li><a href="search_price.html">시세</a></li>
+					</ul>
+					<ul class="gnb-menu right">
+						<li><a href="search_performance.html">성능기록인쇄</a></li>
+						<li><a href="search_car_history.html">사양조회</a></li>
+						<li><a href="search_car_history.html">등록원부조회</a></li>
+						<li class="search">
+							<input type="text" placeholder="모델명 입력" />
+							<button><img src="../images/icon/ico_search_white.png" /></button>
+						</li>
+						<li><button class="alarm"><img src="../images/icon/bell_white.svg" /></button></li>
+						<li><button class="full-menu"><img src="../images/icon/menu_white.png" /></button></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //스크롤시 헤더 -->
+		</header>
+
+		<div class="content left-menu-exist">
+			<div class="page-top-navi">
+				<img src="../images/icon/icon_home.png" /> <img src="../images/icon/arrow_right.png" /> 마이페이지 <img src="../images/icon/arrow_right.png" /> 상품소개 <img src="../images/icon/arrow_right.png" /> 마이샵 구매문의
+			</div>
+			<!-- left menu -->
+			<div class="left-menu">
+				<h3 class="menu-tit">마이페이지</h3>
+				<a href="admin_my_car.html" class="depth-exist">내차관리</a>
+				<div class="depth2">
+					<a href="admin_my_car.html">- 내차관리</a>	
+					<a href="admin_setting_before.html">- 환경설정</a>	
+					<a href="admin_explanation.html">- 설명글관리</a>	
+					<a href="admin_register.html">- 차량등록하기</a>	
+				</div>
+				<a href="admin_search_car.html">이용내역관리</a>
+				<a href="admin_myinfo_before.html" class="depth-exist">내정보관리</a>
+				<div class="depth2">
+					<a href="admin_myinfo_before.html">- 내정보수정</a>	
+					<a href="admin_change_pass.html">- 비밀번호 변경</a>	
+					<a href="admin_login_record.html">- 로그인 기록</a>
+				</div>
+				<a href="admin_myproduct.html">내상품관리</a>
+				<a href="admin_product_intro.html" class="depth-exist on">상품소개</a>
+				<div class="depth2">
+					<a href="admin_product_intro.html">- 상품소개</a>	
+					<a href="admin_myshop_inquiry.html" class="on">- 마이샵 구매문의</a>
+				</div>
+				<a href="admin_inquiry.html">1:1문의</a>
+				<a href="admin_point.html">포인트관리</a>
+			</div>
+			<!-- //left menu -->
+
+			<h4 class="contets-tit">마이샵 구매문의</h4>
+
+			<!-- 구매문의상세 -->
+			<table class="list-table txt-left">
+				<tr class="tit">
+					<th width="20%">제목</th>
+					<td colspan="3"><input type="text" class="col-10"/></td>
+				</tr>
+				<tr class="tit">
+					<th>작성자</th>
+					<td width="30%">김비즈</td>
+					<th width="20%">상태</th>
+					<td width="30%">상담문의</td>
+				</tr>
+				<tr class="tit">
+					<th>작성일</th>
+					<td>2018-12-05 19:22:00</td>
+					<th>답변일</th>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<span class="font-sm m-t-20">문의내용</span>
+						<textarea class="m-t-5 col-10 font-sm h-100">구매문의</textarea>
+						<br><br>
+						<span class="font-sm m-t-15">답변내용</span>
+						<p class="txt-primary txt-center bg-gray p-t-30 m-t-5 m-b-20 h-100">현재 고객님의 상담문의가 접수 되었습니다.<br>담당자가 확인을 할 경우 답변중으로 변경됩니다.</p>
+					</td>
+				</tr>
+			</table>
+			<!-- //구매문의상세 -->	
+
+			<table class="btn-group m-t-10">
+				<tr>
+					<td class="center">
+						<button type="button" class="btn-round btn-medium btn-primary m-r-5">등록</button>
+						<button type="button" class="btn-round btn-medium btn-gray" onclick="location.href='admin_myshop_inquiry.html'">취소</button>
+					</td>
+				</tr>
+			</table>
+			<table class="btn-group m-t-10">
+				<tr>
+					<td class="center">
+						<button type="button" class="btn-round btn-medium btn-primary m-r-5">수정</button>
+						<button type="button" class="btn-round btn-medium btn-gray" onclick="location.href='admin_myshop_inquiry.html'">취소</button>
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li>이용약관</li>
+					<li>개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+
+	</div>
+
+</body>
+</html>

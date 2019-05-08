@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PC CARMANAGER Publishing CodingList</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="../js/jquery-1.8.2.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/basic.js"></script>
+	<style>
+		h1{text-align:center;font-size:22px;color:#fff;line-height:40px;background:#323232}
+		table{width:100%;border-collapse:collapse}
+		th{background:#f9f9f9;border:1px solid #e2e2e2;padding:4px;font-size:14px}
+		td{font-size:14px;border:1px solid #e2e2e2;padding:4px 6px;font-size:13px;width:calc(100% / 6);}
+		a{color:#003eb1}
+		a:hover{text-decoration:underline}
+		tr.line td{border-bottom:2px solid #e2e2e2}
+		tr:nth-child(even){background:#fefefe}
+		td.mod{color:#ff4040}
+		td.com{color:#4068ff}
+		tr:hover{background:rgba(255,255,0,.1);}
+		/* td.new{background:rgba(255,255,0,0.2);}
+		.new td{background:rgba(255,255,0,0.2);} */
+	</style>
+</head>
+<body>
+	<h1 id="docTit">PC CARMANAGER 2차 CodingList</h1>
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">MENU</th>
+				<th scope="col">2Depth</th>
+				<th scope="col">3Depth</th>
+				<th scope="col">File</th>
+				<th scope="col">진행상황</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="new">
+				<td>메인(로그인 전)</td>
+				<td></td>
+				<td></td>
+				<td><a href="index.html" target="_blank">index.html</a></td>
+				<td class="com">2019.02.11 완료</td>
+				<td>로그인팝업<br>사파리에서 z-index문제로 html구조 변경(4.26)</td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>기존회원 인증받기(딜러인증)</td>
+				<td></td>
+				<td><a href="main_certify.html" target="_blank">main_certify.html</a></td>
+				<td class="com">2019.02.14 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td></td>
+				<td>기존회원 인증받기 실패</td>
+				<td><a href="main_certify_fail.html" target="_blank">main_certify_fail.html</a></td>
+				<td class="com">2019.02.14 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td></td>
+				<td>딜러 인증하기 동의 및 정보입력</td>
+				<td><a href="main_certify_addinfo.html" target="_blank">main_certify_addinfo.html</a></td>
+				<td class="com">2019.02.14 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td></td>
+				<td>딜러 인증하기 완료</td>
+				<td><a href="main_certify_result.html" target="_blank">main_certify_result.html</a></td>
+				<td class="com">2019.02.14 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>아이디찾기</td>
+				<td></td>
+				<td><a href="main_id.html" target="_blank">main_id.html</a></td>
+				<td class="com">2018.12.06 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>아이디찾기 결과</td>
+				<td><a href="main_id_result.html" target="_blank">main_id_result.html</a></td>
+				<td class="com">2018.12.06 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>비밀번호찾기</td>
+				<td></td>
+				<td><a href="main_pass.html" target="_blank">main_pass.html</a></td>
+				<td class="com">2018.12.06 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>비밀번호찾기 결과</td>
+				<td><a href="main_pass_result.html" target="_blank">main_pass_result.html</a></td>
+				<td class="com">2018.12.06 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>상품소개</td>
+				<td>상품소개</td>
+				<td><a href="join_product_intro.html" target="_blank">join_product_intro.html</a></td>
+				<td class="com">2019.01.15 완료</td>
+				<td>guide window팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>가입신청</td>
+				<td>유료상사 가입신청서</td>
+				<td><a href="join_charge_shop_apply.html" target="_blank">join_charge_shop_apply.html</a></td>
+				<td class="com">2018.12.26 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>유료딜러 가입신청서</td>
+				<td><a href="join_charge_dealer_apply.html" target="_blank">join_charge_dealer_apply.html</a></td>
+				<td class="com">2018.12.26 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>수출딜러 가입신청서</td>
+				<td><a href="join_export_dealer_apply.html" target="_blank">join_export_dealer_apply.html</a></td>
+				<td class="com">2018.12.26 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>신차딜러 가입신청서</td>
+				<td><a href="join_newcar_dealer_apply.html" target="_blank">join_newcar_dealer_apply.html</a></td>
+				<td class="com">2018.12.26 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>가입신청 성공</td>
+				<td><a href="join_apply_success.html" target="_blank">join_apply_success.html</a></td>
+				<td class="com">2018.12.26 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>가입신청 실패</td>
+				<td><a href="join_apply_fail.html" target="_blank">join_apply_fail.html</a></td>
+				<td class="com">2018.12.26 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>상사변경신청</td>
+				<td>로그인</td>
+				<td><a href="main_shop_login.html" target="_blank">main_shop_login.html</a></td>
+				<td class="com">2018.12.26 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>로그인 후</td>
+				<td><a href="main_shop_after_login.html" target="_blank">main_shop_after_login.html</a></td>
+				<td class="com">2018.12.26 완료</td>
+				<td>메인 구인구직배너 변경(4.29)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>상사변경신청완료</td>
+				<td><a href="main_shop_result.html" target="_blank">main_shop_result.html</a></td>
+				<td class="com">2018.12.26 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td>메인(로그인 후)</td>
+				<td></td>
+				<td></td>
+				<td><a href="main.html" target="_blank">main.html</a></td>
+				<td class="com">2018.11.23 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>필수 유의사항 동의서</td>
+				<td></td>
+				<td><a href="info(agree_pop).html" target="_blank">info(agree_pop).html</a></td>
+				<td class="com">2019.01.23 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>관심매물</td>
+				<td></td>
+				<td><a href="search_like_car.html" target="_blank">search_like_car.html</a></td>
+				<td class="com">2018.12.11 완료</td>
+				<td>리스트 수정(04.05)</td>
+			</tr>
+			<tr class="new">
+				<td>매물조회</td>
+				<td>매물조회</td>
+				<td></td>
+				<td><a href="new_search_car.html" target="_blank">new_search_car.html</a></td>
+				<td class="com">2019.03.06 완료</td>
+				<td>검색결과 없을 시 화면 추가(04.01)<br>공유하기 추가, 화물차 옵션 예시 추가<br>더보기/접기 추가, 빠른검색옵션 빠짐(4.24)</td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>매물조회(화물차 tab active)</td>
+				<td></td>
+				<td><a href="search_cargo.html" target="_blank">search_cargo.html</a></td>
+				<td class="com">2019.04.04 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>매물현황조회</td>
+				<td></td>
+				<td><a href="new_search_car_state.html" target="_blank">new_search_car_state.html</a></td>
+				<td class="com">2019.03.07 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>매물현황조회(화물차 tab active)</td>
+				<td></td>
+				<td><a href="search_cargo_state.html" target="_blank">search_cargo_state.html</a></td>
+				<td class="com">2019.04.04 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>팔린매물조회</td>
+				<td></td>
+				<td><a href="new_search_sale_car.html" target="_blank">new_search_sale_car.html</a></td>
+				<td class="com">2019.03.07 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>팔린매물조회(화물차 tab active)</td>
+				<td></td>
+				<td><a href="search_cargo_state.html" target="_blank">search_cargo_state.html</a></td>
+				<td class="com">2019.04.04 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>가격조회</td>
+				<td>시세조회</td>
+				<td></td>
+				<td><a href="search_price.html" target="_blank">search_price.html</a></td>
+				<td class="com">2018.12.05 완료</td>
+				<td>상단 검색 옵션 수정(04.05)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>신차가격표</td>
+				<td></td>
+				<td><a href="search_newcar_price.html" target="_blank">search_newcar_price.html</a></td>
+				<td class="com">2018.12.05 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>수출조회</td>
+				<td>수출차량조회</td>
+				<td></td>
+				<td><a href="search_export_car.html" target="_blank">search_export_car.html</a></td>
+				<td class="com">2018.12.11 완료</td>
+				<td>상단 검색 옵션 수정(04.05)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>수출딜러조회</td>
+				<td></td>
+				<td><a href="search_export_dealer.html" target="_blank">search_export_dealer.html</a></td>
+				<td class="com">2018.12.12 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>수출딜러조회상세</td>
+				<td></td>
+				<td><a href="search_export_dealer_detail.html" target="_blank">search_export_dealer_detail.html</a></td>
+				<td class="com">2018.12.12 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td>확인서비스</td>
+				<td>상사확인</td>
+				<td></td>
+				<td><a href="search_shop.html" target="_blank">search_shop.html</a></td>
+				<td class="com">2018.12.05 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>사원확인</td>
+				<td></td>
+				<td><a href="search_employee.html" target="_blank">search_employee.html</a></td>
+				<td class="com">2018.12.05 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>상사 사원확인 상세</td>
+				<td></td>
+				<td><a href="search_shop_result.html" target="_blank">search_shop_result.html</a></td>
+				<td class="com">2019.03.12 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>성능기록인쇄</td>
+				<td></td>
+				<td><a href="search_performance.html" target="_blank">search_performance.html</a></td>
+				<td class="com">2018.12.05 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>차량이력조회(간편원부조회)</td>
+				<td></td>
+				<td><a href="search_car_history.html" target="_blank">search_car_history.html</a></td>
+				<td class="com">2019.01.28 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>차량이력조회(사양조회)</td>
+				<td></td>
+				<td><a href="search_car_history2.html" target="_blank">search_car_history2.html</a></td>
+				<td class="com">2019.03.22 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>차량이력조회(사고이력조회)</td>
+				<td></td>
+				<td><a href="search_car_history3.html" target="_blank">search_car_history3.html</a></td>
+				<td class="com">2019.03.22 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상사매물관리</td>
+				<td>보드판</td>
+				<td></td>
+				<td><a href="search_board.html" target="_blank">search_board.html</a></td>
+				<td class="com">2018.12.05 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>상사매물관리</td>
+				<td></td>
+				<td><a href="admin_shop_car.html" target="_blank">admin_shop_car.html</a></td>
+				<td class="com">2018.12.07 완료</td>
+				<td>alert, confirm 팝업</td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>제휴신청</td>
+				<td></td>
+				<td><a href="alliance_application.html" target="_blank">alliance_application.html</a></td>
+				<td class="com">2019.02.15 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td>고객센터</td>
+				<td>자주하는질문</td>
+				<td></td>
+				<td><a href="customer_FAQ.html" target="_blank">customer_FAQ.html</a></td>
+				<td class="com">2019.02.19 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>동영상가이드</td>
+				<td></td>
+				<td><a href="customer_video_guide.html" target="_blank">customer_video_guide.html</a></td>
+				<td class="com">2019.02.19 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>공지사항</td>
+				<td></td>
+				<td><a href="customer_notice.html" target="_blank">customer_notice.html</a></td>
+				<td class="com">2019.02.18 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td></td>
+				<td>공지상세</td>
+				<td><a href="customer_notice_detail.html" target="_blank">customer_notice_detail.html</a></td>
+				<td class="com">2019.02.18 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>이벤트</td>
+				<td></td>
+				<td><a href="customer_event.html" target="_blank">customer_event.html</a></td>
+				<td class="com">2019.02.18 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td></td>
+				<td>이벤트상세</td>
+				<td><a href="customer_event_detail.html" target="_blank">customer_event_detail.html</a></td>
+				<td class="com">2019.02.18 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>포인트안내/결제</td>
+				<td></td>
+				<td><a href="customer_point_info.html" target="_blank">customer_point_info.html</a></td>
+				<td class="com">2019.02.20 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td></td>
+				<td>포인트결제성공</td>
+				<td><a href="customer_point_result.html" target="_blank">customer_point_result.html</a></td>
+				<td class="com">2019.02.20 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>마이페이지</td>
+				<td>내차관리</td>
+				<td></td>
+				<td><a href="admin_my_car.html" target="_blank">admin_my_car.html</a></td>
+				<td class="com">2018.12.11 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>환경설정(비밀번호 재확인 화면)</td>
+				<td><a href="admin_setting_before.html" target="_blank">admin_setting_before.html</a></td>
+				<td class="com">2018.12.11 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>환경설정</td>
+				<td><a href="admin_setting.html" target="_blank">admin_setting.html</a></td>
+				<td class="com">2018.12.11 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>설명글 관리</td>
+				<td><a href="admin_explanation.html" target="_blank">admin_explanation.html</a></td>
+				<td class="com">2018.12.11 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>차량등록하기</td>
+				<td><a href="admin_register.html" target="_blank">admin_register.html</a></td>
+				<td class="com">2018.12.12 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>차량수정하기</td>
+				<td><a href="admin_register_modi.html" target="_blank">admin_register_modi.html</a></td>
+				<td class="com">2018.12.12 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>차량등록하기(화물차)</td>
+				<td><a href="admin_register_cargo.html" target="_blank">admin_register_cargo.html</a></td>
+				<td class="com">2018.12.12 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>차량수정하기(화물차)</td>
+				<td><a href="admin_register_cargo_modi.html" target="_blank">admin_register_cargo_modi.html</a></td>
+				<td class="com">2018.12.12 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>이용내역관리</td>
+				<td>검색매물관리</td>
+				<td><a href="admin_search_car.html" target="_blank">admin_search_car.html</a></td>
+				<td class="com">2019.04.08 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>공유매물관리</td>
+				<td><a href="admin_share_car.html" target="_blank">admin_share_car.html</a></td>
+				<td class="com">2019.04.08 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>사고이력조회 내역</td>
+				<td><a href="admin_accident_inquiry.html" target="_blank">admin_accident_inquiry.html</a></td>
+				<td class="com">2019.04.04 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>사양조회 내역</td>
+				<td><a href="admin_spec_inquiry.html" target="_blank">admin_spec_inquiry.html</a></td>
+				<td class="com">2019.04.04 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>내정보관리</td>
+				<td>내정보수정</td>
+				<td><a href="admin_myinfo.html" target="_blank">admin_myinfo.html</a></td>
+				<td class="com">2018.12.12 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>비밀번호 변경</td>
+				<td><a href="admin_change_pass.html" target="_blank">admin_change_pass.html</a></td>
+				<td class="com">2018.12.12 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>로그인 기록</td>
+				<td><a href="admin_login_record.html" target="_blank">admin_login_record.html</a></td>
+				<td class="com">2018.12.12 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>내상품관리 - 인증딜러</td>
+				<td></td>
+				<td><a href="admin_myproduct.html" target="_blank">admin_myproduct.html</a></td>
+				<td class="com">2018.12.13 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>상품 사용내역 확인</td>
+				<td><a href="admin_myproduct_list.html" target="_blank">admin_myproduct_list.html</a></td>
+				<td class="com">2018.12.14 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>내상품관리 - 유료상사</td>
+				<td></td>
+				<td><a href="admin_myproduct_charge_shop.html" target="_blank">admin_myproduct_charge_shop.html</a></td>
+				<td class="com">2018.12.14 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>소속딜러관리</td>
+				<td><a href="admin_myproduct_dealer_admin.html" target="_blank">admin_myproduct_dealer_admin.html</a></td>
+				<td class="com">2018.12.14 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>내상품관리 - 수출딜러</td>
+				<td></td>
+				<td><a href="admin_myproduct_export_dealer.html" target="_blank">admin_myproduct_export_dealer.html</a></td>
+				<td class="com">2018.12.21 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>사용내역 확인</td>
+				<td><a href="admin_myproduct_export_list.html" target="_blank">admin_myproduct_export_list.html</a></td>
+				<td class="com">2018.12.21 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>매입광고 관리</td>
+				<td><a href="admin_myproduct_export_advertisement.html" target="_blank">admin_myproduct_export_advertisement.html</a></td>
+				<td class="com">2018.12.21 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>매입광고 등록</td>
+				<td><a href="admin_myproduct_export_advertisement_register.html" target="_blank">admin_myproduct_export_advertisement_register.html</a></td>
+				<td class="com">2018.12.21 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>매입광고 상세</td>
+				<td><a href="admin_myproduct_export_advertisement_detail.html" target="_blank">admin_myproduct_export_advertisement_detail.html</a></td>
+				<td class="com">2018.12.21 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>매입광고 수정</td>
+				<td><a href="admin_myproduct_export_advertisement_revise.html" target="_blank">admin_myproduct_export_advertisement_revise.html</a></td>
+				<td class="com">2018.12.21 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>내상품관리 - 신차딜러</td>
+				<td></td>
+				<td><a href="admin_myproduct_newcar_dealer.html" target="_blank">admin_myproduct_newcar_dealer.html</a></td>
+				<td class="com">2018.12.21 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>상품소개</td>
+				<td>상품소개</td>
+				<td><a href="admin_product_intro.html" target="_blank">admin_product_intro.html</a></td>
+				<td class="com">2018.12.13 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>상품결제</td>
+				<td><a href="admin_product_pay.html" target="_blank">admin_product_pay.html</a></td>
+				<td class="com">2018.12.13 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>상품결제완료</td>
+				<td><a href="admin_product_pay_com.html" target="_blank">admin_product_pay_com.html</a></td>
+				<td class="com">2018.12.13 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>마이샵 구매문의 </td>
+				<td><a href="admin_myshop_inquiry.html" target="_blank">admin_myshop_inquiry.html</a></td>
+				<td class="com">2018.12.13 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>마이샵 구매문의 작성</td>
+				<td><a href="admin_myshop_inquiry_write.html" target="_blank">admin_myshop_inquiry_write.html</a></td>
+				<td class="com">2018.12.13 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>마이샵 구매문의글 보기</td>
+				<td><a href="admin_myshop_inquiry_detail.html" target="_blank">admin_myshop_inquiry_detail.html</a></td>
+				<td class="com">2018.12.13 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>1:1문의</td>
+				<td>1:1문의</td>
+				<td><a href="admin_inquiry.html" target="_blank">admin_inquiry.html</a></td>
+				<td class="com">2018.12.14 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>1:1문의 작성</td>
+				<td><a href="admin_inquiry_write.html" target="_blank">admin_inquiry_write.html</a></td>
+				<td class="com">2018.12.14 완료</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>1:1문의 상세</td>
+				<td><a href="admin_inquiry_detail.html" target="_blank">admin_inquiry_detail.html</a></td>
+				<td class="com">2018.12.14 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td></td>
+				<td>포인트관리</td>
+				<td><a href="admin_point.html" target="_blank">admin_point.html</a></td>
+				<td class="com">2019.02.21 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td></td>
+				<td>사양조회 내역</td>
+				<td><a href="admin_spec_inquiry.html" target="_blank">admin_spec_inquiry.html</a></td>
+				<td class="com">2019.04.04 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td>광고 및 서비스 구입</td>
+				<td>광고 신청 안내</td>
+				<td></td>
+				<td><a href="purchase_ad.html" target="_blank">purchase_ad.html</a></td>
+				<td class="com">2019.03.08 완료</td>
+				<td></td>
+			</tr>
+			<tr class="new">
+				<td></td>
+				<td>서비스 소개 및 구입</td>
+				<td></td>
+				<td><a href="purchase_service.html" target="_blank">purchase_service.html</a></td>
+				<td class="com">2019.03.08 완료</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

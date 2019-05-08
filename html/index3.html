@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <link rel="stylesheet" href="../css/ico.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/basic.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+		<!-- 상단 알림페이지 -->
+			<div class="alarm-wrap">
+				<button class="esc"></button>
+				<div class="alarm-left">
+					<h3>고객센터</h3>
+					<p>카매니저에서 궁금하신 사항에 대해<br>빠른 답변을 찾을 수 있습니다.</p>
+					<p class="bottom">
+						<img src="../images/icon/customer_icon_1.png" />
+						02-3474-3060
+						<br>
+						<img src="../images/icon/customer_icon_2.png" />
+						평일 : AM 9시 ~ PM 6시
+					</p>
+				</div>
+				<ul class="alarm-list">
+					<li class="top">최근 받은 알림이 최대 20개까지 노출됩니다.</li>
+					<li>
+						로그인 이후 알림 내용을 확인할 수 있습니다.
+						<br>
+						<button type="button" class="btn btn-sm btn-lightblue col-5 m-t-5">로그인하기</button>
+					</li>
+				</ul>
+			</div>
+		<!-- //상단 알림페이지 -->
+		<!-- 상단 전체메뉴 -->
+			<div class="all-menu-wrap">
+				<button class="esc"></button>
+				<div class="all-menu-left">
+					<h3>카매니저 2.0<span>이렇게 바뀌었습니다.</span></h3>
+					<p>
+						1. 원하는 페이지까지 빨리 접근<br>
+						2. 사용자별 맞춤 정보 제공<br>
+						3. 광고서비스 개편<br>
+						4. 서비스 정확도 집중
+					</p>
+					<img src="../images/common/monitor.png" />
+				</div>
+				<ul class="menu-list">
+					<li>
+						<h2>국산 · 수입차</h2>
+						<a href="new_search_car.html">매물조회</a>
+						<a href="new_search_car_state.html">매물현황조회</a>
+						<a href="new_search_sale_car.html">팔린매물조회</a>
+					</li>
+					<li>
+						<h2>화물차</h2>
+						<a href="search_cargo.html">매물조회</a>
+						<a href="search_cargo_state.html">매물현황조회</a>
+						<a href="search_cargo_sale.html">팔린매물조회</a>
+					</li>
+					<li>
+						<h2>수출조회</h2>
+						<a href="search_export_car.html">수출차량조회</a>
+						<a href="search_export_dealer.html">수출딜러조회</a>
+					</li>
+					<li>
+						<h2>시세</h2>
+						<a href="search_price.html">승용차 시세조회</a>
+						<a href="search_cargo_price.html">화물차 시세조회</a>
+						<!-- <a href="search_standard_price.html">표준시세표</a> -->
+						<a href="search_newcar_price.html">신차가격표</a>
+					</li>
+					<li>
+						<h2>제휴서비스</h2>
+						<a href="alliance_application.html">제휴신청</a>
+					</li>
+					<li>
+						<h2>고객센터</h2>
+						<a href="customer_FAQ.html">자주하는질문</a>
+						<a href="customer_video_guide.html">동영상가이드</a>
+						<a href="admin_inquiry.html">1:1문의</a>
+						<a href="customer_notice.html">공지사항</a>
+						<a href="customer_event.html">이벤트</a>
+						<!-- <a href="customer_point_info.html">포인트 충전 · 소개</a> -->
+					</li>
+					<li>
+						<h2>마이페이지</h2>
+						<a href="admin_my_car.html">내차관리</a>
+						<a href="admin_myinfo.html">내정보관리</a>
+						<a href="admin_myproduct.html">내상품관리</a>
+						<a href="admin_product_intro.html">상품소개</a>
+						<a href="admin_inquiry.html">1:1문의</a>
+						<a href="search_like_car.html">관심매물</a>
+						<!-- <a href="admin_point.html">포인트 관리</a> -->
+					</li>
+					<li>
+						<h2>카매니저 서비스</h2>
+						<a href="search_shop.html">상사 · 사원확인</a>
+						<a href="search_performance.html">성능기록인쇄</a>
+						<a href="search_car_history.html">사고이력조회</a>
+						<a href="search_car_history2.html">사양조회</a>
+						<a href="search_car_history3.html">원부조회</a>
+						<a href="http://www.367.co.kr/autocafe" target="_blank">원격지원요청</a>
+					</li>
+					<li>
+						<h2>광고 및 서비스 구입</h2>
+						<a href="purchase_ad.html">광고 신청 안내</a>
+						<a href="purchase_service.html">서비스 소개 및 구입</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //상단 전체메뉴 -->
+			<div class="header-bg">
+			</div>
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg" /></a></h1>
+				<!-- 좌측 대메뉴 -->
+				<ul class="gnb-menu left">
+					<li>
+						<a href="new_search_car.html">국산 · 수입차</a>
+						<ul class="depth-2">
+							<li><a href="new_search_car.html">매물조회</a></li>
+							<li><a href="new_search_car_state.html">매물현황조회</a></li>
+							<li><a href="new_search_sale_car.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_cargo.html">화물차</a>
+						<ul class="depth-2">
+							<li><a href="search_cargo.html">매물조회</a></li>
+							<li><a href="search_cargo_state.html">매물현황조회</a></li>
+							<li><a href="search_cargo_sale.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_export_car.html">수출조회</a>
+						<ul class="depth-2">
+							<li><a href="search_export_car.html">수출차량조회</a></li>
+							<li><a href="search_export_dealer.html">수출딜러조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_price.html">시세</a>
+						<ul class="depth-2">
+							<li><a href="search_price.html">시세조회</a></li>
+							<!-- <li><a href="search_standard_price.html">표준시세표</a></li> -->
+							<li><a href="search_newcar_price.html">신차가격표</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- //좌측 대메뉴 -->
+				<!-- 우측 메뉴 -->
+				<ul class="gnb-menu right">
+					<li><a href="search_shop.html">상사 · 사원확인</a></li>
+					<li><a href="search_performance.html">성능기록인쇄</a></li>
+					<li><a href="search_car_history.html">간편원부조회</a></li>
+					<li><a href="search_car_history2.html">사양조회</a></li>
+					<li><a href="search_car_history3.html">사고이력조회</a></li>
+					<li><button class="alarm"><img src="../images/icon/bell.svg" /></button></li>
+					<li><button class="full-menu"><img src="../images/icon/menu.png" /></button></li>
+				</ul>
+				<!-- //우측 메뉴 -->
+				<!-- //우측상단 lnb -->
+				<ul class="lnb-menu">
+					<li name="login-pop" onclick="pop_open(this)">로그인</li>
+					<li><a href="join_product_intro.html">상품가입</a></li>
+					<li><a href="customer_FAQ.html">고객센터</a></li>
+					<li>즐겨찾기 추가</li>
+					<li><a href="http://www.367.co.kr/autocafe" target="_blank">원격지원 요청</a></li>
+					<li>바로가기 추가</li>
+				</ul>
+				<!-- //우측상단 lnb -->
+			</div>
+			<!-- 스크롤시 헤더 -->
+			<div class="scroll-header">
+				<div class="header-wrap">
+					<h1 class="logo"><a href="index.html"><img src="../images/common/logo_white.svg" /></a></h1>
+					<ul class="gnb-menu left">
+						<li><a href="new_search_car.html">국산 · 수입차</a></li>
+						<li><a href="search_cargo.html">화물차</a></li>
+						<li><a href="search_export_car.html">수출조회</a></li>
+						<li><a href="search_price.html">시세</a></li>
+					</ul>
+					<ul class="gnb-menu right">
+						<li><a href="search_performance.html">성능기록인쇄</a></li>
+						<li><a href="search_car_history.html">간편원부조회</a></li>
+						<li><a href="search_car_history2.html">사양조회</a></li>
+						<li class="search">
+							<input type="text" placeholder="모델명 입력" />
+							<button><img src="../images/icon/ico_search_white.png" /></button>
+						</li>
+						<li><button class="alarm"><img src="../images/icon/bell_white.svg" /></button></li>
+						<li><button class="full-menu"><img src="../images/icon/menu_white.png" /></button></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //스크롤시 헤더 -->
+		</header>
+
+		<div class="content">
+			<div class="before-login-top">
+				<div class="left">
+					<ul class="state-count">
+						<li>
+							<ul class="sale-state">
+								<li class="tit">매물현황</li>
+								<li><span class="sub-tit">전체매물</span>207,547</li>
+								<li><span class="sub-tit">국산 · 수입차</span>185,857</li>
+								<li><span class="sub-tit">화물차</span>21,690</li>
+								<li><span class="sub-tit">수출대상</span>538</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="access-state">
+								<li class="tit">접속현황</li>
+								<li><span class="sub-tit">전체접속</span>7,547</li>
+								<li><span class="sub-tit">승용차딜러</span>5,857</li>
+								<li><span class="sub-tit">화물차딜러</span>1,530</li>
+								<li><span class="sub-tit">수출딜러</span>160</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="ad-state">
+								<li class="tit">광고현황</li>
+								<li><span class="sub-tit">전체광고</span>150</li>
+								<li><span class="sub-tit">상사광고</span>45</li>
+								<li><span class="sub-tit">구인광고</span>93</li>
+								<li><span class="sub-tit">기타광고</span>12</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="popular">
+								<li class="tit">인기검색 모델</li>
+								<li>K7</li>
+								<li>소나타 2.0</li>
+								<li>울란도 플레티넘</li>
+								<li class="standard-date">기준 : 2019.01.18 현재</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="shop-state">
+								<li class="tit m-b-0">매물등록 · 판매현황</li>
+								<li class="standard-date">기준 : 2018.12.19~2019.01.18</li>
+								<li><span class="num"></span><span class="regist">등록</span><span class="sell">판매</span></li>
+								<li><span class="num">1</span><span class="regist">286</span><span class="sell">315</span></li>
+								<li><span class="num">2</span><span class="regist">122</span><span class="sell">121</span></li>
+								<li><span class="num">3</span><span class="regist">99</span><span class="sell">94</span></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="main-search">
+						<ul class="search-type tab-menu main-tab">
+							<li name="car-search" class="active">
+								<i class="ico-search"></i>
+								차량 검색
+							</li>
+							<li name="shop-search">
+								<i class="ico-user"></i>
+								상사 검색
+							</li>
+							<li name="performance-search">
+								<i class="ico-list"></i>
+								성능기록부 조회
+							</li>
+							<li name="register-search">
+								<i class="ico-id-card"></i>
+								간편원부 조회
+							</li>
+							<li name="specifications-search">
+								<i class="ico-car"></i>
+								사양 조회
+							</li>
+						</ul>
+						<div class="search-con tab-con car-search active">
+							<ul class="search-top">
+								<li>
+									<input type="radio" id="car-type1" name="search-type-1" checked="" />
+									<label for="car-type1">국산차</label>
+									<input type="radio" id="car-type2" name="search-type-1" />
+									<label for="car-type2">수입차</label>
+									<input type="radio" id="car-type3" name="search-type-1" />
+									<label for="car-type3">화물차</label>
+								</li>
+								<li class="search">
+									상세검색<img src="../images/icon/arrow_right.png" />
+								</li>
+							</ul>
+							<table class="search-form">
+								<tr>
+									<td>
+										<input type="text" placeholder="세부모델 직접입력">
+									</td>
+									<td>
+										<select class="custom-select">
+											<option>제조사 선택1</option>
+											<option>제조사 선택2</option>
+											<option>제조사 선택3</option>
+										</select>
+									</td>
+									<td>
+										<select class="custom-select">
+											<option>모델 선택1</option>
+											<option>모델 선택2</option>
+										</select>
+									</td>
+									<td>
+										<select class="custom-select">
+											<option>세부모델 선택</option>
+										</select>
+									</td>
+									<td>
+										<button>검색</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="search-con tab-con shop-search">
+							<ul class="search-top">
+								<li>
+									<input type="radio" id="shop" name="search-type-2" checked="" />
+									<label for="shop">상사명</label>
+									<input type="radio" id="name" name="search-type-2" />
+									<label for="name">대표자명</label>
+								</li>
+							</ul>
+							<table class="search-form">
+								<tr>
+									<td>
+										<input type="text" placeholder="상사명을 입력해주세요.">
+									</td>
+									<td width="50px">
+										<button>검색</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="search-con tab-con performance-search">
+							<ul class="search-top">
+								<li>
+									<input type="radio" id="car-num" name="search-type-3" checked="" />
+									<label for="car-num">차량번호</label>
+									<input type="radio" id="performance-num" name="search-type-3" />
+									<label for="performance-num">성능점검번호</label>
+								</li>
+							</ul>
+							<table class="search-form">
+								<tr>
+									<td>
+										<input type="text" placeholder="차량번호를 입력해주세요.">
+									</td>
+									<td width="50px">
+										<button>검색</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="search-con tab-con specifications-search">
+							<ul class="search-top">
+								<li>
+									&nbsp;
+								</li>
+							</ul>
+							<table class="search-form">
+								<tr>
+									<td>
+										<input type="text" placeholder="차량번호(98가7654) 또는 차대번호(ABCDE3FG4HI0123456)를 입력해 주세요.">
+									</td>
+									<td width="50px">
+										<button>검색</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="search-con tab-con register-search">
+							<ul class="search-top">
+								<li>
+									&nbsp;
+								</li>
+							</ul>
+							<table class="search-form">
+								<tr>
+									<td>
+										<input type="text" placeholder="차량번호(98가7654) 또는 차대번호(ABCDE3FG4HI0123456)를 입력해 주세요.">
+									</td>
+									<td width="50px">
+										<button>검색</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="login-area">
+						<ul class="find">
+							<li><a href="join_product_intro.html">상품가입</a></li>
+							<li class="find-id"><a href="main_id.html">아이디 찾기</a></li>
+							<li><a href="main_pass.html">비밀번호 찾기</a></li>
+						</ul>
+						<div class="login-form">
+							<input type="text" placeholder="아이디" />
+							<input type="password" placeholder="비밀번호" />
+							<button type="button" class="login-btn" onclick="location.href='main.html'">로그인</button>
+						</div>
+						<input type="checkbox" id="save-login" />
+						<label for="save-login" class="m-r-10">로그인 유지</label>
+						<input type="checkbox" id="save-id" />
+						<label for="save-id">아이디 저장</label>
+					</div>
+					<div class="clear"></div>
+					<div class="before-login-menu" onclick="location.href='main_certify.html'">
+						<h3>기존회원 인증받기</h3>
+						<p>종사원증 소지자만 이용 가능 합니다.</p>
+						<img src="../images/icon/arrow_red.png" />
+					</div>
+					<div class="before-login-menu" onclick="location.href='main_shop_login.html'">
+						<h3>상사변경 신청</h3>
+						<img src="../images/icon/arrow_red.png" />
+					</div>
+					<div class="before-login-menu" onclick="location.href='join_product_intro.html'">
+						<h3>카매니저 상품소개</h3>
+						<p>회원유형에 맞게 가입 가능 합니다.</p>
+						<img src="../images/icon/arrow_red.png" />
+					</div>
+				</div>
+			</div>
+			<div class="before-login-banner">
+				<img src="../images/banner/before_login_banner.jpg" usemap="#app_down" />
+				<map name="app_down">
+					<area shape="rect" coords="772,18,933,49" href="https://itunes.apple.com/kr/app/%EC%B9%B4%EB%A7%A4%EB%8B%88%EC%A0%80-%EC%A4%91%EA%B3%A0%EC%B0%A8-%EB%A7%A4%EB%AC%BC%EA%B3%B5%EC%9C%A0-no-1/id1412584200?mt=8" target="_blank" />
+					<area shape="rect" coords="772,60,955,91" href="https://play.google.com/store/apps/details?id=kr.co.autocafe.carmanager" target="_blank" />
+				</map>
+				<div class="banner-wrap sm">
+					<img src="../images/banner/kb_banner_sm.png" />
+					<img src="../images/banner/kb_banner_sm.png" />
+					<img src="../images/banner/kb_banner_sm.png" />
+					<img src="../images/banner/kb_banner_sm.png" />
+				</div>
+			</div>
+			<div class="main-bottom">
+				<img src="../images/banner/main_bottom.jpg" />
+			</div>
+		</div>
+
+		<div class="quick-menu active">
+			<button class="fold" onclick="quick_menu();"><img src="../images/icon/arrow_right2.png" /></button>
+			<ul class="quick-menu-list">
+				<li>
+					<div class="quick-icon mybox"><i class="ico-box"></i><span>나의 박스</span></div>
+					
+					<div class="quick-con mybox">
+						<h3>나의 박스</h3>
+						<button type="button" class="close-quick-con" onclick="quick_con_close()"><img src="../images/icon/esc_big.png" /></button>
+						<table class="before-login-mybox">
+							<tr>
+								<td>
+									로그인 이후 나의 박스 상세정보를<br> 확인 할 수 있습니다.
+									<button type="button" class="btn btn-sm btn-lightblue col-10 m-t-5">로그인하기</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									아직 상품가입 전 이신가요?
+									<button type="button" class="btn btn-sm btn-lightblue col-10 m-t-5" onclick="location.href='join_product_intro.html'">상품가입하기</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									아직 딜러인증 전 이신가요?
+									<button type="button" class="btn btn-sm btn-lightblue col-10 m-t-5">딜러인증하기</button>
+								</td>
+							</tr>
+						</table>
+						<div class="bottom-ad">
+							<button><img src="../images/banner/alliance_banner.png" /></button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="quick-icon"><i class="ico-time"></i><span class="quick_badge">20</span><span>최근 본 차량</span></div>
+					
+					<div class="quick-con recently-view">
+						<h3 class="m-b-5">최근 본 차량</h3>
+						<button type="button" class="close-quick-con" onclick="quick_con_close()"><img src="../images/icon/esc_big.png" /></button>
+						<span><input type="checkbox" class="custom-check" id="all" /><label for="all" class="m-r-5"></label><label for="all">전체선택</label></span>
+						<ul class="car-list recently-view-list">
+							<li class="br-n">
+								최근 보신 차량이 없습니다. 
+							</li>
+						</ul>
+						<div class="page">
+							<button type="button"><img src="../images/icon/arrow_left2.png" /></button>
+							<span>1/1</span>
+							<button type="button"><img src="../images/icon/arrow_right2.png" /></button>
+						</div>
+						<button type="button" class="btn btn-xsm btn-gray col-10">관심매물등록</button>
+						<button type="button" class="btn btn-xsm btn-gray col-5">상세보기</button>
+						<button type="button" class="btn btn-xsm btn-gray m-t-5 m-b-10 col-5">비교하기</button>
+					</div>
+				</li>
+				<li>
+					<div class="quick-icon"><i class="ico-like"></i><span>관심매물</span></div>
+					
+					<div class="quick-con like-car">
+						<h3 class="m-b-5">관심매물</h3>
+						<button type="button" class="close-quick-con" onclick="quick_con_close()"><img src="../images/icon/esc_big.png" /></button>
+						<span class="txt-right"><button class="more"> <!-- 더보기<img src="../images/icon/arrow_right.png"> --></button></span>
+						<ul class="car-list">
+							<li class="br-n">
+								로그인 후 확인 가능한 서비스 <br>입니다.  
+							</li>
+						</ul>
+						<div class="page">
+							<button type="button"><img src="../images/icon/arrow_left2.png" /></button>
+							<span>1/1</span>
+							<button type="button"><img src="../images/icon/arrow_right2.png" /></button>
+						</div>
+						<button type="button" class="btn btn-xsm btn-gray col-5">상세보기</button>
+						<button type="button" class="btn btn-xsm btn-gray m-t-5 m-b-10 col-5">비교하기</button>
+					</div>
+				</li>
+				<li>
+					<div class="quick-icon"><i class="ico-share"></i><span>공유매물</span></div>
+					
+					<div class="quick-con share-car">
+						<h3 class="m-b-5">공유매물</h3>
+						<button type="button" class="close-quick-con" onclick="quick_con_close()"><img src="../images/icon/esc_big.png" /></button>
+						<span class="txt-right"><button class="more"> <!-- 더보기<img src="../images/icon/arrow_right.png"> --></button></span>
+						<ul class="car-list">
+							<li class="br-n">
+								로그인 후 확인 가능한 서비스 <br>입니다.  
+							</li>
+						</ul>
+						<div class="page">
+							<button type="button"><img src="../images/icon/arrow_left2.png" /></button>
+							<span>1/1</span>
+							<button type="button"><img src="../images/icon/arrow_right2.png" /></button>
+						</div>
+						<button type="button" class="btn btn-xsm btn-gray col-5">상세보기</button>
+						<button type="button" class="btn btn-xsm btn-gray m-t-5 m-b-10 col-5">비교하기</button>
+					</div>
+				</li>
+				<li>
+					<div class="quick-icon"><i class="ico-star"></i><span>자주찾는 메뉴</span></div>
+					
+					<div class="quick-con mybox">
+						<h3>자주찾는 메뉴</h3>
+						<button type="button" class="close-quick-con" onclick="quick_con_close()"><img src="../images/icon/esc_big.png" /></button>
+						<table class="before-login-mybox">
+							<tr>
+								<td>
+									로그인 이후 자주찾는 메뉴<br>상세정보를 확인 할 수 있습니다.
+									<button type="button" class="btn btn-sm btn-lightblue col-10 m-t-5">로그인하기</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									아직 상품가입 전 이신가요?
+									<button type="button" class="btn btn-sm btn-lightblue col-10 m-t-5" onclick="location.href='join_product_intro.html'">상품가입하기</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									아직 딜러인증 전 이신가요?
+									<button type="button" class="btn btn-sm btn-lightblue col-10 m-t-5">딜러인증하기</button>
+								</td>
+							</tr>
+						</table>
+						<div class="bottom-ad">
+							<button><img src="../images/banner/alliance_banner.png" /></button>
+							<button class="m-b-10"><img src="../images/banner/purchase_guide_banner.png" /></button>
+							<img src="../images/banner/appdown_banner.png" usemap="#app_down2" />
+							<map id="app_down2" name="app_down2"><area shape="rect" coords="10,44,94,68" href="https://itunes.apple.com/kr/app/%EC%B9%B4%EB%A7%A4%EB%8B%88%EC%A0%80-%EC%A4%91%EA%B3%A0%EC%B0%A8-%EB%A7%A4%EB%AC%BC%EA%B3%B5%EC%9C%A0-no-1/id1412584200?mt=8" target="_blank" /><area shape="rect" coords="100,44,183,68" href="https://play.google.com/store/apps/details?id=kr.co.autocafe.carmanager" target="_blank" /></map>
+						</div>
+					</div>
+				</li>
+				<li class="ad">
+					카매니저<br>광고신청
+				</li>
+			</ul>
+			<button type="button" class="top-btn">위로<img src="../images/icon/arrow_right2.png" /></button>
+			<button type="button" class="bottom-btn">아래로<img src="../images/icon/arrow_right2.png" /></button>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li onclick="pop_open(this)" name="terms">이용약관</li>
+					<li onclick="pop_open(this)" name="personal">개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+	</div>
+
+	<div class="dim"></div>
+	<!-- 로그인팝업 -->
+	<div class="layer-pop login-pop">
+		<h3 class="p-5 font-lg">로그인
+	        <button type="button" class="esc" onclick="pop_close(this);"></button>
+	    </h3>
+		<div class="login-area p-5 p-b-15 br-b-gray">
+			<div class="login-form">
+				<input class="login-id" type="text" placeholder="아이디">
+				<input class="login-pass" type="password" placeholder="비밀번호">
+				<span class="font-xsm txt-danger"><img src="../images/icon/alert.png" class="m-r-5" />존재하지 않는 아이디 입니다.</span>
+				<div class="save-id">
+					<input class="custom-check" type="checkbox" id="pop-save-id" />
+					<label for="pop-save-id"></label>
+					<label for="pop-save-id" class="font-sm txt-gray m-l-5">아이디 저장</label>
+				</div>
+				<button type="button" class="login-btn" onclick="location.href='main.html'">로그인</button>
+				<!-- 활성화시 button에 active class add -->
+			</div>
+			<ul class="txt-center">
+				<li><a href="main_id.html">아이디 찾기</a></li>
+				<li><a href="main_pass.html">비밀번호 찾기</a></li>
+				<li><a href="join_product_intro.html">상품가입</a></li>
+			</ul>
+		</div>
+		<div class="p-t-10 p-b-10">
+			<button onclick="location.href='main_certify.html'" class="btn pop-login-btn">기존회원 인증받기</button>
+			<button onclick="location.href='main_shop_login.html'" class="btn pop-login-btn right">상사변경 신청하기</button>
+		</div>
+		<div class="app-down">
+			<p>앱 다운받기</p>
+			<a href="https://itunes.apple.com/kr/app/%EC%B9%B4%EB%A7%A4%EB%8B%88%EC%A0%80-%EC%A4%91%EA%B3%A0%EC%B0%A8-%EB%A7%A4%EB%AC%BC%EA%B3%B5%EC%9C%A0-no-1/id1412584200?mt=8" target="_blank"><img src="../images/common/app_iphone_wh2.png" /></a>
+			<a href="https://play.google.com/store/apps/details?id=kr.co.autocafe.carmanager" target="_blank"><img src="../images/common/app_android_wh2.png" /></a>
+		</div>
+	</div>
+	<!-- //로그인팝업 -->
+	<div class="layer-pop terms" style="width:980px;">
+		<h3 class="p-20"><button type="button" class="esc" onclick="pop_close(this);"></button></h3>
+
+		<ul class="tab-menu">
+			<li name="terms-conditions" class="active m-l-20">이용약관</li>
+			<li name="personal-information">개인정보 수집 및 이용 목적</li>
+		</ul>
+		<div class="tab-con terms-conditions active">
+			<div class="br-t-gray p-20">
+				<p class="scrollbar-lg">
+					<strong>제1조 (목적)</strong><br>
+					이 약관은, 주식회사 비즈인포그룹(이하, "회사"라고 합니다)이 개발한 정보공유시스템을 기반으로 인터넷사이트(http://www.carmanager.co.kr ; 이하, "카매니저" 또는 "카매니저 홈페이지")를 통하여 제공하는 중고차매물정보 공유서비스 및 기타 서비스 또는 그와 관련된 재화의 제공(이하, 총칭하여 "카매니저 서비스")과 관련하여, 회원의 카매니저 서비스 이용 방법과 절차, 회사와 회원들 간의 권리와 의무 및 책임사항을 명확히 규정하는데 그 주된 목적이 있습니다. <br><br>
+					<strong>제2조 (용어의 정의)</strong><br>
+					이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+					1.	"회원" : 이 약관의 내용에 동의함으로써 이 약관 내용이 편입되어 체결된 것으로 간주되는 카매니저 서비스 이용계약(이하, "카매니저 서비스 이용계약")을 체결하고 그에 따라 카매니저에 접속하여 이 약관에 따른 카매니저 서비스를 제공받는 회원을 말합니다. 회원은 본조에 정한 바에 따라 구분되고, 회사는 그 정책에 의거 회원의 등급을 구분하여 각 회원 별 또는 서비스 별로 서비스 이용 범위나 제공일정 및 제공방법과 혜택 부여 등을 달리 정할 수 있습니다.<br>
+					2.	"유료상사회원" : 자동차관리법상 자동차관리사업 중 자동차매매업을 등록한 자동차 매매업자(이하, "매매상사")로서, 본인이 개별 가입을 신청하거나 또는 본인이 속한 사업자 단체(이하, "조합") 혹은 본인이 속한 임의단체(이하, "단지") 등을 통해 일괄 가입을 신청하고 그에 대한 대가로서 제공되는 유료의 카매니저 서비스(이하, "유료 서비스")를 이용하는 회원을 말합니다.<br>
+					3.	"유료딜러회원" : 매매상사에 소속된 자로서,본인이 개별 가입을 신청하거나 또는 본인이 속한 조합 또는 단지등을 통해 일괄 가입을 신청하여, 일정 사용료 기타 유료의 대금을 납부하고 유료 서비스를 이용하는 회원을 말합니다.<br>
+					4.	"수출 딜러 회원" : 자동차와 관련된 수출업을 경영하거나 이에 종사하는 자로서, 이 약관이 정한 바에 따라 유료 혹은 무료로 수출 관련 카매니저 서비스를 이용하는 회원을 말합니다.<br>
+					5.	"신차 딜러 회원" : 신조차 판매업을 경영하거나 이에 종사하는 자로서, 이 약관이 정한 바에 따라 유료 혹은 무료로 신차 관련 카매니저 서비스를 이용하는 회원을 말합니다.<br>
+					6.	"아이디(ID)" : 회원의 식별과 회원의 카매니저 서비스 이용을 위하여 회원이 설정하고 회사가 승인하여 카매니저에 등록된 영문, 특수문자, 숫자 또는 그 전부 또는 일부의 조합을 말합니다.<br>
+					7.	"패스워드(PW)" : 회원 가입 여부를 확인하고 회원의 비밀을 보호하기 위하여 회원 스스로가 설정하여 카매니저에 등록한 영문, 특수문자, 숫자 또는 그 전부 또는 일부의 조합을 말합니다.<br>
+					8.	"매물정보" : 회원이 판매를 목적으로 보유한 모든 중고자동차 등의 상품(이하, "상품")과 관련된 모든 정보 그리고 기타의 판매 촉진을 위한 모든 정보를 의미하며, 여기에는 상품과 관련된 자동차등록원부를 포함한 일체의 공부상에 기재된 정보와, 판매하고자 하는 회원의 상호와 연락처 등 그리고 해당 상품의 상태를 표현한 모든 정보가 포함됩니다. 매물정보 해당여부는 문자텍스트,이미지 또는 동영상 등 그 존재형태와 관계가 없으며, 회원이 카매니저에 직접 입력했는지 여부와도 관계가 없습니다.<br>
+					9.	"개인정보" : 회원이 카매니저 서비스 이용계약 체결 과정에서 회사에 제공하거나 혹은 회원 가입.등록 과정에서 회사에 제공하는 일체의 개인 식별과 관련된 정보(해당 정보만으로는 특정 개인을 알아볼 수 없더라도 다른 정보와 쉽게 결합하여 알아볼 수 있는 것을 포함합니다)를 말합니다. 회원은 매물정보에 개인정보가 포함되지 아니하게끔 하여야 하며 만일 매물정보에 개인정보나 그와 유사한 형태의 정보(판매담당자 성명, 연락처 등)가 있는 경우, 이는 회원이 자신의 사업 목적을 위하여 자발적으로 공개한 내용이어서 개인정보보호법 등에서 보호대상으로 정한 개인정보에 해당하지 아니하고 따라서 누구나 자유롭게 수집.이용.처리하는데 동의한 것으로 간주합니다.<br>
+					10.	"포인트" : 회원이 카매니저에서 제공되는 유료 서비스 이용을 위한 결제시 현금처럼 사용할 수 있는 카매니저 전용의 사이버 화폐를 말합니다.<br><br>
+					<strong>제3조 (약관의 명시 및 개정과 그 적용)</strong><br>
+					①	이 약관의 내용은 회사가 카매니저를 통해 제공하는 모든 카매니저 서비스의 이용 조건 및 기타 그 이용에 필요한 일체의 사항에 적용됩니다.<br>
+					②	회사는 이 약관의 내용과 상호, 소재지, 대표자의 성명, 연락처(전화, 팩스, 전자우편 주소 등) 등을 회원이 알 수 있도록 카매니저 화면에 게시하거나 기타의 방법으로 회원에게 고지합니다.<br>
+					③	회사는 '약관의 규제에 관한 법률', '전자거래기본법', '전자서명법', '정보통신망 이용촉진 및 정보보호 등에 관한 법률', 방문판매 등에 관한 법률', '소비자보호법' 등 관련법령을 위배하지 않는 범위 내에서 이 약관을 개정할 수 있고, 개정된 약관은 제2항과 같은 방법으로 게시 또는 고지함으로써 그 즉시 효력을 발생합니다.<br>
+					④	전항의 방법으로 개정하여 고지된 약관은 개정 고지일 이전에 가입한 회원에게도 유효하게 효력이 발생합니다. 다만, 이 약관의 내용(개정 내용 포함)에 이의가 있는 회원은 이 약관이 정한 바에 따라 회원탈퇴(카매니저 서비스 이용계약의 해지)를 요청할 수 있고, 본조 제2항에 정해진 바에 따른 약관 내용 또는 그 변경.개정 내용의 게시 또는 고지가 있은 후 이의 제기 없이 카매니저 서비스를 이용하거나 혹은 그 게시 또는 고지한 때로부터 30일 이내에 카매니저 서비스 이용계약을 해지하거나 혹은 회원탈퇴를 하지 않는 회원은 개정된 약관에 동의한 것으로 간주합니다.<br>
+					⑤	이 약관은 회사와 회원 간에 성립되는 카매니저 서비스 이용계약의 기본약정입니다. 회사는 필요한 경우 특정 서비스에 관하여 적용될 사항을 별도의 개별약관으로 정하여 미리 공지할 수 있습니다. 회원이 이러한 개별약관에 동의하고 그 특정 서비스를 이용하는 경우에는 그 개별약관이 이 약관에 우선적으로 적용되고 그 경우 이 약관은 보충적으로 적용됩니다. 이러한 개별약관의 개정에 관해서도 본조 내용이 그대로 준용됩니다.<br><br>
+					<strong>제4조 (카매니저 서비스 이용계약 체결을 위한 회원 가입)</strong><br>
+					①	회원 가입을 원하는 자는, 이 약관이 정하는 회원 가입 및 등록 절차 완료와 동시에 회사와 카매니저 서비스 이용계약을 체결한 것으로 간주됩니다.<br>
+					②	카매니저 서비스 이용계약을 위한 회원 가입을 원하는 자는, 카매니저 홈페이지의 카매니저 서비스 이용 신청 절차에 따라 이 약관이 정하는 회원 가입 절차를 준수하여 이 약관을 읽고'동의함' 버튼을 선택한 후 회사가 정한 양식의 가입의사를 제출함으로써 카매니저 서비스 이용 신청을 하고, 회사는 위 신청서의 기재항목에 이상이 없을 경우 이를 승인함으로써 카매니저 서비스 이용계약이 성립합니다.<br>
+					③	회원 가입을 원하는 자는, 본 조 제2항의 절차 외에도 대금의 경감이나 업무처리의 편의 등을 위해 자신의 회원 가입 신청을 자신이 속한 매매상사나 단지 또는 조합에 위임할 수 있으며, 회사는 매매상사나 단지또는 조합을 통한 일괄 가입신청이 있는 경우, 7일 내에 별도의 개별적인 이의 제기가 없는 한, 일괄 가입신청시 제출된 회원 가입 명단에 기재된 당해 매매상사나 단지 또는 조합에 소속된 개인들 모두의 적법한 위임이 있었던 것으로 간주하여 회원가입 절차를 처리할 수 있습니다.<br>
+					④	회원 가입은 회원 ID단위로 체결하며 복수의 회원 가입을 체결하고자 하는 경우 개별 회원 ID별로 신청을 하여야 합니다.<br>
+					⑤	카매니저 서비스 이용 신청 회원이 미성년자 또는 한정치산자인 경우에는 법정대리인의 동의를 얻은 후 이를 입증하는 자료를 제출하거나, 부모 또는 법정대리인으로 하여금 서비스 신청을 하도록 하여야 합니다.<br>
+					⑥	회원과 실제 서비스를 이용하는 회원이 다를 경우 회사는 이를 확인하기 위해 제증명을 요구할 수 있습니다.<br>
+					⑦	카매니저 서비스 이용 신청 회원은 회사에서 요청하는 제반 정보(이름, Email, 연락처 등)를 제공하여야 합니다.<br>
+					⑧	타인의 명의(이름 및 주민등록번호)를 도용하여 서비스 신청을 한 회원의 모든 ID는 삭제되며, 관계법령에 따라 처벌 받을 수 있습니다.<br>
+					⑨	카매니저 서비스 이용 신청에 대한 회사의 승낙은, 무료 회원의 경우, 회사가 정한 신청양식의 기재항목에 이상이 없음을 확인하는 시점에서 이루어지고, 유료 회원의 경우, 서비스 신청회원이 사용료 결제를 완료시킨 시점에서 이루어집니다.<br>
+					⑩	회사는, 본조의 다른 내용에도 불구하고, 다음 각 호의 1에 해당하는 경우, 카매니저 서비스 이용 신청에 대한 승낙을 제한하거나 거부할 수 있습니다.<br>
+					1.	본인 실명을 사용하지 않고 타인의 명의를 도용하여 가입한 경우<br>
+					2.	허위 정보 및 서류 등을 이용하여 가입을 한 경우<br>
+					3.	음란한 내용, 허위사실에 의한 비방, 훼손, 불법복제 등 지적재산권 침해, 국가기밀 침해 등의 가능성이 있는 경우<br>
+					4.	이적물의 배포, 전시 및 타인의 저작권을 침해하거나, 침해할 가능성이 있는 경우<br>
+					5.	서비스 신청회원이 미성년자 기타 계약을 체결할 법적 능력이 결여된 자인 경우<br>
+					6.	회사에 미납요금이 있거나 통신사업자 미납DB에 등록된 서비스 신청회원인 경우<br>
+					7.	기타 서비스 신청회원의 귀책사유로 이용승낙이 곤란한 경우<br>
+					8.	기타 회사가 서비스 제공에 곤란한 객관적인 사유가 있는 경우<br>
+					⑪	회사는, 카매니저 서비스 이용 신청이 다음 각 호의 1에 해당하는 경우, 해당 신청에 대하여 승낙 제한 사유가 해소될 때까지 승낙을 유보할 수 있습니다.<br>
+					1.	회사가 설비의 여유가 없는 경우<br>
+					2.	회사의 기술상 지장이 있는 경우<br>
+					3.	기타 이용 승낙이 곤란한 사유가 있는 경우<br>
+					⑫	회원 ID는 원칙적으로 변경이 불가능하며 부득이한 사유로 인하여 변경하고자 하는 경우에는 해당 ID를 해지하고 재가입해야 합니다. 회원은 회원 ID 및 비밀번호에 대한 관리 책임이 있으며, 서비스 이용상의 과실 또는 제3자에 의한 부정 사용 등으로 인하여 발생하는 모든 불이익에 대한 책임을 부담합니다.<br>
+					⑬	이 약관 제2조 제2항 내지 제5항의 유료 회원에 대한 유료 서비스를 제공함에 있어 회사의 사정에 따라 회원 별로 그 이용대금이 감면 또는 면제되어 적용될 수 있습니다.<br><br>
+					<strong>제5조 (카매니저 서비스의 제공 및 관련 정보 제공과 그 정보의 변경)</strong><br>
+					①	회사는, 다음과 같은 업무를 수행하여 서비스를 제공하되, 각각의 회원에게 회원 별로 다르게 또는 회원 별로 차별화된 수준에 따라 회사가 자체 개발하는 서비스, 타 업체와 협력하여 개발한 서비스, 타 업체가 개발한 서비스 및 카매니저에서 별도로 정하는 각종 서비스 등을 차등 있게 제공할 수 있습니다. 또한 회사는 제공하는 카매니저 서비스 중 일부에 대한 서비스 이용시간을 별도로 정할 수 있고, 이 경우 그 이용시간을 사전에 회원에게 공지 또는 통지합니다.
+					1.	자동차 생애 주기(신차, 중고차, 폐차, 수출 등) 동안 회원들에게 필요한 자동차 관리 정보의 제공
+					2.	자동차 매매 및 중개 관련 정보 제공.
+					3.	회원의 자동차 매매 및 중개과정에서 발생할 수 있는 금융 및 보험관련 정보의 제공
+					4.	기타 회사가 정하는 업무(회원이 등록한 중고자동차 등 상품에 관한 매물정보의 일반 대중에 대한 제공)<br>
+					②	회사는 상품의 품질 또는 기술적 사양의 변경 등의 경우에는 장차 체결되는 계약에 의해 제공할 상품의 내용을 변경할 수 있습니다. 이 경우 변경된 상품의 제공일자를 명시하여 현재의 상품 내용을 게시한 곳에 그 제공일자 이전 7일부터 7일간 공지합니다.<br>
+					회원가입은 "카매니저"의 가입 절차(본인정보 기재 혹은 사업자 단체의 정보를 확인하여 인증)에 따르며, 계약의 성립시기는 "카매니저"에서 회원으로 등록한 시점으로 한다.<br>
+					③	회사가 제공하기로 회원과 이미 계약을 체결한 카매니저 서비스의 내용을 상품의 품절 또는 기술적인 사유로 변경하는 경우, 회원은 이로 인하여 회원이 입은 손해의 배상을 회사에 청구할 수 있습니다. 단, 회사의 고의 또는 고의와 동일시할 수 있을 정도의 중대한 과실이 없는 경우에는 그러하지 아니합니다.<br>
+					④	회사가 카매니저 서비스를 제공하는 목적은 회원 또는 회원 각자의 자기의사결정에 의하여 회원 또는 회원 상호 간에 거래가 이루어 질 수 있도록 사이버 거래장소를 온라인으로 제공함으로써, 각 회원들이 보유하고 있는 상품의 판매를 촉진하고자 함에 있습니다.회사는 단지 회원간 거래의 안정성, 신뢰성, 편리성을 증진시키는 도구만을 제공합니다. 회원간 거래와 관련된 일체의 책임은 거래당사자인 회원들 스스로가 부담합니다.<br>
+					⑤	회원은, 각 회원이 보유한 모든 매물정보를 회사에 제공하는 것에 동의하고, 회사가 이러한 매물정보를 제3자에게 제공하거나 혹은 회사가 회사의 업무 수탁자에게 제공하는 과정에서 정보가 수탁자에게 이전되도록 할 수 있음에 동의하며, 불특정 다수인 간에 이루어지는 중고차 매매 및 그와 관련된 거래를 촉진하고자 하는 것을 목적으로 하는 한, 제공받은 제3자가 재차 다른 제3자나 기존에 동의.허락된 자에게 매물정보를 제공하거나 혹은 그 업무 위탁과 관련하여 매물정보가 이전되도록 할 수 있음에 동의합니다.<br>
+					⑥	회원은 본인이 보유한 매물정보 중 타 회원에게 공개되기를 원치 아니하는 정보가 있는 경우 그 의사를 카매니저에 통지하기로 하며 카매니저는 통지를 수령하면 지체 없이 해당 정보가 타 회원에 공개되지 않도록 처리하여야 합니다.<br>
+					⑦	회원은, 각 회원의 개인정보를 이 약관이 정한 이용계약 체결 절차 또는 회원 가입 절차를 통해 회사에 제공하는 것에 동의하고, 회사가 이러한 개인정보를 이 약관이 정하거나 혹은 카매니저 홈페이지에서 정하는 '개인 정보 수집 및 이용에 관한 동의' 내용에 따라 제3자에게 제공하거나 혹은 회사가 회사의 업무 수탁자에게 제공하는 과정에서 정보가 수탁자에게 이전되도록 할 수 있음에 동의합니다.<br>
+					⑧	회원은, 이용계약 체결 또는 회원 가입 과정을 포함하여 카매니저 서비스 이용을 위하여 기재하거나 또는 입력한 사항이 변경된 경우, 또는 매물정보에 입력되거나 해당하는 사항이 변경된 경우, 즉시 입력된 또는 해당되는 사항을 카매니저 홈페이지에서 변경하거나 유선, 전자우편 또는 기타의 방법으로 회사에 그 변경사항을 알려야 하고, 알리지 않음으로 인한 불이익은 각 회원이 부담합니다.<br><br>
+					<strong>제6조 (서비스의 중단, 정지)</strong><br>
+					①	회사는, 다음 각 호에 해당하는 경우, 카매니저 서비스 제공 전부 또는 일부를한시적으로 혹은 영구적으로 중단하거나 정지할 수 있습니다.<br>
+					1.	회사가 사전에 회원에게 공지하거나 통지한 경우<br>
+					2.	컴퓨터 등 정보통신설비의 보수점검 교체 및 고장, 통신의 두절 등의 경우<br>
+					3.	회원의 서비스 이용 폭주 등으로 서비스 제공이 불가능한 경우.<br>
+					4.	설비 등을 긴급히 복구하여야 할 경우<br>
+					5.	기타 회사가 합리적으로 통제할 수 없는 경우<br>
+					6.	전기통신사업법에 규정된 기간통신사업자가 전기통신 서비스를 중지했을 경우<br>
+					7.	기타 불가항력적 사유가 있는 경우.<br>
+					②	회사는 새로운 서비스로 교체 또는 기타 회사가 서비스를 제공할 수 없는 사유 발생 시 제공되는 서비스를 중단할 수 있습니다.<br><br>
+					<strong>제7조 (이용계약의 해지, 종료 및 회원 지위 정지 등)</strong><br>
+					①	회원은 회사에 언제든지 카매니저 서비스 이용계약의 해지를 요청할 수 있습니다. 다만, 회원은 그 해지 의사를 통지하기 전에 모든 거래중인 절차를 완료, 철회 또는 취소한 후에 그 해지의 의사표시를 할 수 있고, 이 경우 관련 거래의 철회 취소로 인한 불이익은 회원이 부담합니다. 회원의 이용계약 해지 의사가 회사에 도달한 때 이용계약은 종료됩니다. 회사는 해당회원의 이용계약 해지를 위한 절차를 밟아 그 회원의 정보를 삭제합니다. 단, 단, '개인정보취급방침'에서 정한 바에 따라 그 정보주체로부터 사전에 동의를 받은 경우 또는 상법 등 관련법규에 의하여 보존할 필요성이 있는 경우에는 그 개인정보를 일정기간 동안 보유하고 그 목적에 따라 활용합니다. 본 항에 따른 해지를 한 회원은 해지 후 6개월 경과 후 또는 회사가 승인한 경우에 한하여 이 약관이 정하는 바에 따라 회원의 지위를 다시 얻을 수 있습니다.<br>
+					②	회사는, 회원이 카매니저 홈페이지 내 운영 질서 또는 그 거래 질서를 어지럽히는 등의 부당한 행위를 할 경우, 회원의 자격을 30일 간의 기간을 정하여 정지시킬 수 있고, 30일 이내에 그 사유가 시정되지 아니하거나 혹은 시정되었다 하더라도 이후 동일한 행위가 2회 이상 반복되는 경우,회사는 회원의 자격을 상실시킬 수 있습니다.<br>
+					③	회사는, 회원이 다음 각 호의 사유에 해당하는 경우, 그 회원의 자격을 즉시 상실시키거나 이용계약을 해지할 수 있습니다.<br>
+					1.	이 약관 및 서비스 이용에 관련된 관계법령을 위반한 사실이 밝혀진 경우<br>
+					2.	범죄와 관련이 되었다고 추정되는 일체의 행위를 한 경우<br>
+					3.	공공의 이익을 해할 목적으로 서비스를 이용하는 경우<br>
+					4.	서비스의 운영을 고의로 방해하는 경우<br>
+					5.	ID와 비밀번호 등 회원의 비밀사항을 타인에게 누설하거나 타인의 ID와 비밀번호 등을 도용하는 경우<br>
+					6.	회원이 게시판 등에 음란물을 게재하거나 음란사이트를 링크 하는 경우<br>
+					7.	회사 또는 회사가 제휴한 회사의 지적재산권 등 정당한 권리를 침해하는 경우<br>
+					8.	매물정보 및/또는 개인정보와 관련하여 고의 또는 과실로 허위의 정보를 제공한 경우<br>
+					9.	기타 관계법령이나 회사가 정한 이용규칙에 중대하게 위반한 경우<br>
+					④	본 조 제2항 및 제3항에 해당하는 행위를 한 회원은 이로 인해 회사나 다른 회원에게 발생한 손해를 배상할 책임이 있습니다.<br>
+					⑤	회사가본 조 제2항 및 제3항에 의거하여 회원자격을 상실시키는 경우에는,그 위반행위의 기록 및 재가입 제한조치를 위해 상실 조치 이후 3년간 최소한의 회원의 개인정보 등 관련 정보를 보유할 수 있고, 그 기간 경과 이후 정보는 말소됩니다.<br><br>
+					<strong>제8조 (회원에 대한 통지)</strong><br>
+					①	회사가, 회원에 대한 개별 통지를 하는 경우, 회원이 회사에 제공한 전자우편 주소로 할 수 있습니다.<br>
+					②	회사는, 회원에 대한 개별 통지와 관련하여, 1주일 이상의 기간을 정하여 카매니저 홈페이지에 그 통지할 내용을 게시함으로써 개별 통지에 갈음할 수 있습니다.<br><br>
+					<strong>제9조 (회원정보의 수집과 보호)</strong><br>
+					①	회사는, 회원이 카매니저 서비스 이용계약을 위하여 제공한 정보 외에도, 수집목적 또는 이용목적을 밝혀 다음 각 호의 정보를 포함하여 회원의 정보를 수집할 수 있고, 이 경우 회사는 개인식별이 가능한 개인정보를 수집하는 때에는 회원으로부터 정보수집에 대한 동의를 받습니다. 회사가 정보수집을 위해 동의를 받는 경우, 수집하는 개인정보의 항목 및 수집방법, 수집목적 및 이용목적, 개인정보의 보유 및 이용기간, 제3자에 대한 정보제공 사항(제공받는 자, 제공받는 자의 이용목적, 제공정보의 항목, 보유 및 이용기간)을 개인정보취급방침으로 미리 고지합니다. 회원은 정보제공에 동의하더라도 언제든지 그 동의를 철회할 수 있습니다. 회원은 회사에게 정보를 제공할 경우 반드시 사실대로 제공해야 합니다.<br>
+					1.	성명<br>
+					2.	ID<br>
+					3.	비밀번호(비밀번호 확인)<br>
+					4.	(휴대)전화번호<br>
+					5.	이메일<br>
+					6.	매매상사,단지,조합 등 소속 단체<br>
+					7.	자동차매매사원증 번호<br>
+					②	회사는, 아이디(ID) 등 카매니저 서비스 홈페이지 화면을 통해 공개되는 정보를 제외하고는, 회사가 수집한 회원의 개인정보를 정보수집 시에 '개인정보취급방침'을 통해서 미리 밝힌 수집목적, 이용목적, 외의 용도로 사용하거나 당해 회원의 동의 없이 제3자에게 제공하지 않습니다. 다만, 다음 각호의 경우에는 예외로 합니다.<br>
+					1.	통계작성, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우 또는 법령이 회원 정보의 이용과 제3자에 대한 정보제공을 허용하고 있는 경우<br>
+					2.	회원의 동의 하에, 회사와 제휴된 업체에게 광고 기타 상업적 목적 등 그 업체의 거래 목적을 위한 자료로 제공하는 경우<br>
+					3.	기타 사회상규에 위배되지 않거나 정당한 이유가 있는 경우<br>
+					③	회사는 개인정보보호를 위해 관리자를 지정하여 운영하고 보안시스템을 구축하여 개인정보취급방침을 공시하고 이를 준수합니다.<br>
+					④	회원의 개인정보의 분실, 도난, 유출, 위.변조 등 손해에 대해서는 그에 관하여 귀책사유 있는 자가 그에 따른 책임을 부담합니다.<br>
+					⑤	회사가 위치기반서비스를 통해 습득한 위치기반정보는 외부로 제공되지 않습니다. 위치기반정보는 회원의 카매니저 서비스 이용 시 지역기반의 부가서비스제공을 위한 참고자료로만 사용됩니다.<br>
+					⑥	회원은 언제든지 자신에 관한 정보를 열람할 수 있고, 회사에게 잘못된 정보의 정정을 요청할 수 있습니다.<br>
+					⑦	회원 탈퇴 등으로 인해 카매니저 서비스 이용계약이 종료된 경우, 회사는 당해 회원의 정보를 파기하는 것을 원칙으로 합니다. 다만 다음 각 호의 경우에는, 회사는 회원 정보를 보관하되 그 보관이 필요한 범위 내에서만 활용합니다.<br>
+					1.	상법 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우, 회사는 그 기간 동안 그 정보를 보관.활용합니다.<br>
+					2.	회원의 탈퇴신청 등으로 카매니저 서비스 이용계약이 종료된 경우, 회사는 이해관계인의 정당한 이익 보호를 위하여 또는 이 약관이 정한 제한 사항을 회피 내지 우회를 방지하기 위하여 필요한 경우, 카매니저 서비스 이용계약 종료 후 3년간 아이디(ID), 성명 또는 상호, 연락처, 거래내역, 약관 위반 사항 등 정보를 보관.활용합니다.<br>
+					3.	회사가 카매니저 서비스 이용계약을 해지한 경우이거나 혹은 회사로부터 이 약관에 따른 회원자격 정지 조치를 받은 회원에 대해서는 재가입에 관한 승낙 거부 사유 유무 확인을 위해 카매니저 서비스 이용계약 종료 후 3년간 아이디(ID), 성명 또는 상호, 연락처, 카매니저 서비스 이용계약 해지와 회원자격 정지 조치 관련 정보를 보관.활용합니다.<br>
+					4.	회원이 탈퇴 전까지 등록한 매물정보를 활용하여 만들어진 것으로서 이 약관 제15조에 따라 회사에 귀속되는 저작물 혹은 기타 지적재산권에 관련되는 정보의 경우 카매니저 서비스 이용계약 종료 후 5년간 그 저작물 관련 정보를 보관.활용합니다.<br>
+					5.	기타 정보수집에 관한 동의를 받을 때, 보유기간을 명시한 경우에는, 그 보유기간까지 회원 정보를 보관.활용합니다.<br><br>
+					<strong>제10조 (카매니저 서비스 이용대금)</strong><br>
+					①	회원이 카매니저 서비스를 이용하기 위해서는 회사가 공지사항에 게시하거나 해당서비스 이용안내에서 제시하는 이용 절차 및 유의사항을 준수하여야 하며, 해당 서비스의 내용 및 책임한계 또한 공지사항에 게시된 내용 및 해당 서비스 이용 안내에 따릅니다.<br>
+					②	카매니저 서비스 이용대금은 회사가 공지사항에 게시하거나 또는 해당 서비스 이용안내에서 제시하는 바에 따릅니다. 다만, 일괄 가입 절차를 통해 가입한 회원의 경우 카매니저 서비스 이용 대금은 소속된 단체와 별도로 일괄 협의한 바에 따릅니다.<br>
+					③	카매니저 서비스를 유상으로 이용하는 회원이라 하더라도 이 약관 제7조 제2항 또는 제3항에 해당하는 경우에는 환불되지 않습니다.<br><br>
+					<strong>제11조 (회사의 의무)</strong><br>
+					①	회사는 관계법령 혹은 이 약관이 금지하는 행위 혹은 공서양속에 반하는 행위를 하지 않으며 이 약관의 목적 달성을 위해 이 약관이 정한 바에 따라 지속적이고 안정적인 서비스를 제공하기 위해 성실히 노력해야 합니다.<br>
+					②	회사는 회원이 안전하게 인터넷 서비스를 이용할 수 있도록 회원의 개인정보(신용정보 포함) 보호를 위한 보안 시스템을 갖추기 위해 성실히 노력해야 합니다.<br>
+					③	회사는,이 약관의 목적 달성에 필요하다고 판단되는 경우에는,회원이 등록해 놓은 (휴대)전화번호나 이메일을 통하여 회원들에게 정보를 전달할 수 있습니다. 단, 회원이 원하지 않는 영리목적의 광고성 전자 우편은 발송하지 않습니다.<br><br>
+					<strong>제12조 (회원의 의무)</strong><br>
+					①	회원은 이 약관 및 관계법령에서 규정한 사항을 준수하여야 합니다.<br>
+					②	회원은 카매니저 서비스를 이용할 때 다음 각호의 행위를 하지 않아야 합니다.<br>
+					1.	다른 회원의 개인정보 및 비밀번호를 부정하게 사용하는 행위<br>
+					2.	회사 및/또는 제3자의 저작권 등 지적재산권 및 기타 권리를 침해하는 행위<br>
+					3.	카매니저 서비스를 이용하여 얻은 정보를 회원의 개인적인 이용 외에 복사, 가공, 번역, 제2차적 저작 등을 통하여 복제, 송연, 방송, 전시, 배포, 출판 등에 사용하거나 제3자에게 제공하는 행위<br>
+					4.	범죄 행위에 이용 혹은 제공되거나 범죄 행위와 결부된다고 객관적으로 인정되는 행위<br>
+					5.	타인의 명예를 손상시키거나 모욕감 등 부당한 불이익을 주는 행위<br>
+					6.	공공질서 및 미풍양속에 위반되는 내용의 정보, 문장, 도형, 음성 등을 타인에게 유포하는 행위<br>
+					7.	서비스와 관련된 설비의 오작동이나 정보 등의 파괴 및 혼란을 유발시키는 컴퓨터 바이러스 감염 자료를 등록 또는 유포하는 행위<br>
+					8.	서비스의 안정적인 운영을 방해할 수 있는 정보를 전송하거나 수신자의 의사에 반하여 광고성 정보를 전송하는 행위 등 기타 일체의 행위<br>
+					9.	기타 관계 법령에 위반되는 행위<br>
+					③	ID와 비밀번호 등 개인정보의 관리에 관한 일체의 책임은 회원본인에게 있습니다. 따라서 회원본인의 개인정보의 관리소홀, 부정사용에 의하여 발생하는 모든 결과에 대한 책임은 회원본인에게 있습니다.<br>
+					④	회원은 본인의 개인정보 기타 관련 정보가 위.변조 혹은 도용되거나 기타 부정하게 사용되는 경우를 인지한 때에는 즉시 자신의 비밀번호를 변경하고 그 사실을 회사에 통보하여야 합니다.<br>
+					⑤	회원은 회사의 사전승낙 없이 카매니저 서비스를 이용하여 영업활동을 할 수 없고, 그 영업 활동으로 인한 결과에 대하여 회사는 일체의 책임을 지지 않습니다.<br>
+					⑥	회원은 내용 별로 회사가 원활한 서비스 제공을 위해 공지란에 게시하거나 별도로 고지한 이용과 관련된 사항을 준수하여야 합니다.<br>
+					⑦	유료상사회원과 유료딜러회원은 서비스를 이용하고자 하는 상품의 매물정보를 정확히 제공할 의무가 있고, 그 제공한 매물정보의 내용에 대하여 책임을 부담해야 합니다.이와 관련하여, 회사는 회원이 제공한 정보의 오류 및 그 오류 정보로 인해 발생한 어떠한 결과에 대하여도 책임을 지지 않습니다.<br><br>
+					<strong>제13조 (회사 역할의 범위와 면책)</strong><br>
+					①	이 약관에 따른 회사의 역할은, 근본적으로 회원들에게 온라인을 통해 회원들이 서로 중고차 매물정보 공유할 수 있는 서비스를 제공하고 관련 거래의 장을 마련함으로써 회원들 상호 간 거래가 원활하게 진행되도록 관리하는데 그치고, 이를 이용하며 발생하는 회원들 상호 간 정보 제공 및 관련 거래에 따른 권리.의무의 실현.이행 등 사후 처리에 관해서는 그 당사자 각자가 그 책임을 부담해야 합니다.<br>
+					②	다음 각호의 사유로 인하여 회원에게 발생한 손해에 대해서는 책임지지 아니합니다.<br>
+					1.	천재지변 또는 이에 준하는 불가항력, 정보통신설비의 보수점검, 교체 또는 그 고장이나 통신의 두절 등으로 인하여 일시적 혹은 종국적으로 카매니저 서비스를 제공할 수 없는 경우, 또한 통신기기, 회선 및 컴퓨터의 장애나 거래의 폭주나전산기기 관리회사의 귀책으로 인한 경우 등 부득이한 사정으로 카매니저 서비스를 제공하지 못하거나 그 제공이 지연된 경우, 그에 대한 책임이 면책됩니다. 이 경우 회사는 그 내용을 카매니저 홈페이지를 통해 알립니다.<br>
+					2.	회사는, 회원 식별사항(회원 ID 포함), 비밀번호 등 개인정보가 그 정보주체인 회원의 관리 소홀로 인해 제3자에게 누출한 경우 또는 회원의 전산조작이니 업무처리 오류 등을 포함하여, 회원의 귀책 사유로 인하여 카매니저 서비스 이용의 장애가 발생한 경우 그에 대하여 책임을 지지 아니합니다.<br>
+					3.	회사는 회사가 제공하는 카매니저 서비스를 통하지 않고 이루어지는 개별 거래 및 회원이 제공한 등록정보의 오류, 미비 등으로 인하여 회원이 입는 손해에 대해서는 책임을 지지 않습니다.<br>
+					4.	회사는 어느 회원이 다른 회원이 제공한 혹은 그에 의해 게재된 정보, 자료, 사실의 정확성 등을 신뢰함으로써 입은 손해에 대하여 책임을 지지 않습니다.<br><br>
+					<strong>제14조 (약관위반 시 책임)</strong><br>
+					회사와 회원은 이 약관을 위반함으로써 발생하는 모든 책임을 각자 부담하며, 이로 인하여 상대방에게 손해를 입힌 경우에는 지체 없이 배상하여야 합니다.<br><br>
+					<strong>제15조 (저작권 기타 지적재산권의 귀속 및 이용제한)</strong><br>
+					①	카매니저 홈페이지에 게시된 일체의 저작물에 관한 모든 저작권 및 그 저작물 또는 회원등록의 매물정보등을 이용하거나 이를 가공한 저작물에 대한 모든 저작권이나 기타 지적재산권 및 일체의 소유권은전적으로 회사에 귀속하고, 본 항이 정한 회사의 권리는 회원 탈퇴 여부 내지 서비스이용계약 유지 여부 영향을 받지 아니합니다. 회사는 회원 탈퇴 여부 내지 서비스이용계약 유지 여부와 관계 없이 그 고유한 판단에 따라 이를 자유롭게 사용.수익.처분할 수 있습니다.<br>
+					②	회사는, 이 약관 본래의 목적 달성에 벗어나지 않는 범위 내에서, 외부 업체와 제휴하고, 그 제휴에 따른 제휴 업무를 수행할 수 있으며, 이 경우 이 약관 제5조와 제9조를 준수하는 범위 내에서 회사가 보유한 일체의 정보를 제공할 수 있습니다.<br>
+					③	회원은 카매니저 서비스를 이용함으로써 얻은 정보를 회사의 사전 승낙 없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.<br><br>
+					<strong>제16조 (포인트)</strong><br>
+					①	회사는 회원에게 회사가 제공하는 유상서비스 결제 시 결제수단으로 사용할 수 있는 포인트를 지급할 수 있습니다. 다만 그 구체적인 사항은 회사의 정책에 따라 달라질 수 있습니다.<br>
+					②	포인트 단위 1P는 카매니저 홈페이지 내에 한하여 현금 1원의 의미를 가지며, 어떠한 경우에도 현금 기타 다른 것으로 일체 보상되지 않습니다.<br>
+					③	회원은 포인트를 본인의 결제에 사용할 수 있는 권한만을 가지고, 어떠한 경우에도 이를 타인에게 그 형식을 불문하고 실질적으로 매매 또는 양도할 수 없으며, 일체의 부정한 목적이나 용도로 사용할 수 없습니다.<br>
+					④	회사는, 회원이 본조 제3항을 위반한 경우, 사유를 미리(미리 통지할 수 없는 경우에는 사후 지체 없이) 해당 회원에게 통지하고, 해당포인트를 회수하거나 실효시킬 수 있습니다.<br>
+					⑤	회사는, 결제취소나 환불 등 포인트 지급의 원인이 된 사건이 무효화된 경우, 해당포인트를 회수하거나 실효시킬 수 있습니다.<br>
+					⑥	 결제 시 사용한 포인트는 그 결제를 취소하더라도 회원에게 환급되지 않습니다.<br>
+					⑦	포인트의 유효기간은, 1년으로 하되, 그 기간은 연장되거나 단축될 수 있습니다.<br>
+					⑧	포인트는, 그 유효기간이 만료되거나 또는 그 포인트를 소유한 회원의 카매니저 서비스 이용계약이 해지되거나 기타 사유로 종료되는 경우, 자동으로 소멸됩니다.<br>
+					⑨	회사는 포인트의 유효기간, 사용의 조건 및 제한에 관한 사항을 카매니저 홈페이지에 게시하거나 별도로 통지하며, 해당 사항은 회사의 정책에 따라 달라질 수 있습니다.<br>
+					⑩	포인트는 회원에게 지급된 날의 익영업일부터 사용이 가능합니다. 다만, 회사 관리자가 일괄 지급한 포인트는 그 영업일 당일부터 사용이 가능합니다.<br><br>
+					<strong>제17조 (별도 유상 계약에 따른 청약철회)</strong><br>
+					①	회사와 카매니저 서비스 이용에 관한 유상의 계약을 체결한 회원은 계약체결일부터 7일 이내에는 청약의 철회를 할 수 있습니다.<br>
+					②	제1항의 경우 회사는 결제한 금액 전액을 3영업일 이내에 환불에 필요한 조치를 이행합니다. 다만, 다음 각 호의 경우에는 그러하지 아니합니다.<br>
+					1.	회원에게 책임 있는 사유로 재화 등 상품이 멸실 또는 훼손된 경우<br>
+					2.	회원의 사용 또는 일부 소비에 의하여 재화 등 상품의 가치가 현저히 감소한 경우<br>
+					3.	시간의 경과에 의하여 재판매가 곤란할 정도로 재화 등 상품의 가치가 현저히 감소한 경우<br>
+					4.	같은 성능을 지닌 재화 등 상품으로 복제가 가능한 경우로서 그 원본인 재화 등 상품의 포장을 훼손한 경우<br>
+					③	회원이 카매니저 서비스를 일부 이용하고 청약을 철회한 경우, 회사는 결제대금에서 이용일수에 해당하는 금액을 공제한 후 환불합니다. 또한 회사는 이와 별도로 이 경우 총 이용 금액의 10% 이내의 위약금을 공제한 후 환불할 수 있습니다.<br><br>
+					<strong>제18조 (분쟁의 해결)</strong><br>
+					이 약관이 규정하지 않은 사항은 관계법령 및 상관습에 따르기로 합니다. 회사와 회원 간에 분쟁이 발생한 경우분쟁의 해결을 위하여 먼저 쌍방이 성실히 협의하여 해결하도록 노력해야 합니다.<br><br>
+					<strong>제19조 (관할법원)</strong><br>
+					당사자 간 협의로 그 분쟁이 해결되지 않아 소송으로 이행하게 될 경우, 그 소송의 제1심 관할법원은 회사 본점 소재지를 관할하는 법원으로 정합니다.<br>
+                    <br>
+                    부칙<br>
+                    가.  제1조 (시행일) 이 약관은 2018년 03월 01일부터 시행합니다.<br>
+                    나.  2007년 1월 1일부터 시행되던 종전의 약관은 본 약관으로 대체합니다.
+				</p>
+			</div>
+		</div>
+		<div class="tab-con personal-information">
+			<div class="br-t-gray p-20">
+				<p class="scrollbar-lg">
+                1. 개인정보의 수집목적 및 이용목적
+                <br>&nbsp;&nbsp;▷ 성명, 전화번호, 주민등록번호, 비밀번호: 회원제 서비스 이용에 따른 본인 확인절차 및 관할 단체(조합,연합회)소속 확인
+                <br>&nbsp;&nbsp;▷ 성명, 전화번호, 소속상사, 소속상사 연락처: 차량소유자 정보 제공
+                <br>
+                <br>2. 수집하는 개인정보의 항목
+                <br>&nbsp;&nbsp;▷ 성명, 전화번호, 주민등록번호, 소속상사, 소속상사 연락처
+                <br>
+                <br>3. 카매니저가 수집하는 개인정보의 보유 및 이용기간(파기 포함)
+                <br>&nbsp;&nbsp;▷ 이용자가 카매니저의 회원으로서 회사에 제공하는 서비스를 이용하는 동안 회사는 이용자들의 개인정보를 계속적으로 보유하며 서비스 제공 등을 위해 이용합니다.
+                <br>&nbsp;&nbsp;▷ 회원 본인이 직접 가입해지를 요청한 경우에는 즉시 개인정보의 이용을 중지하고, 지체 없이 파기합니다.
+                <br>&nbsp;&nbsp;▷ 다만 상법등 법령의 규정에 의하여 보존할 필요성이 있는 경우 또는 사전에 이용자들의 동의를 받은 경우에는 예외로 합니다.
+                </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="layer-pop personal">
+		<h3 class="p-20 p-t-10">▶  개인정보 취급방침<button type="button" class="esc" onclick="pop_close(this);"></button></h3>
+
+		<div class="p-20 p-t-0">
+			<div class="scrollbar-lg">
+				<p>
+					<b><font class="txt-danger">주식회사 비즈인포그룹(이하 회사)</font></b>은 개인정보보호법 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련된 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보처리방침을 수립하여 공개합니다.
+				</p>
+                <p>
+                    <a href="#01">■ 제1조 개인정보의 처리 목적</a><br>
+                    <a href="#02">■ 제2조 개인정보의 처리 및 보유기간</a><br>
+                    <a href="#03">■ 제3조 개인정보의 제3자 제공</a><br>
+                    <a href="#04">■ 제4조 정보주체와 법정대리인의 권리∙의무 및 행사방법</a><br>
+                    <a href="#05">■ 제5조 처리하는 개인정보 항목</a><br>
+                    <a href="#06">■ 제6조 개인정보의 파기</a><br>
+                    <a href="#07">■ 제7조 개인정보의 안전성 확보조치</a><br>
+                    <a href="#08">■ 제8조 개인정보보호 책임자</a><br>
+                    <a href="#09">■ 제9조 권익침해 구제방법</a><br>
+                    <a href="#10">■ 제10조 개인정보 처리방침 변경</a><br>
+                    <br>
+                    <b>
+                        <font class="txt-primary">
+                            <a name="01"></a><br>
+                            제1조 개인정보의 처리 목적
+                        </font>
+                    </b>
+                </p>
+				<p>
+					회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보보호법 제 18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.<br>
+					&nbsp;1.	카매니저 홈페이지(이하 카매니저) 회원 가입 및 관리<br>
+					&nbsp;회사가 운영하는 카매니저의 회원 가입의사 확인, 회원제 서비스 제공에 따른 본인 식별∙인증, 회원자격 유지∙관리, <br>&nbsp;제한적 본인확인제 시행에 따른 본인 확인, 서비스 부정이용 방지, 만 14세 미만 아동의 개인정보 처리 시 법정대리인의 동의 여부 확인, <br>&nbsp;각종 고지∙통지, 고충처리 등을 목적으로 개인정보를 처리합니다.<br>
+					&nbsp;2.	재화 또는 서비스 제공<br>
+					&nbsp;물품 배송, 서비스 제공, 계약서∙청구서의 발송, 콘텐츠 제공, 맞춤서비스 제공, 본인인증, 연령인증, 요금결제 및 정산, <br>&nbsp;채권추심 등을 목적으로 개인정보를 처리합니다.<br>
+					&nbsp;3.	고충처리<br>
+					&nbsp;민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락∙통지, 처리결과 통보 등의 목적으로 개인정보를 처리합니다.<br>
+					&nbsp;4.	서비스 제공∙개발 및 이를 위한 통계자료의 활용<br>
+					&nbsp;서비스의 개발 및 맞춤 서비스 제공, 통계학적 특성에 따른 서비스 제공 및 광고 게재, 서비스의 유효성 확인, <br>&nbsp;이벤트 및 광고성 정보 제공, 접속빈도 파악, 이용자의 서비스이용에 대한 통계, 오프라인(광고지원센터)에서의 매매업자 회원 및 광고 관리, <br>&nbsp;중고차 시세 산출을 위한 각종 통계자료 작성 등을 위해 개인정보를 처리합니다.<br>
+				</p>
+				<p>
+					<b>
+						<font class="txt-primary">
+							<a name="02"></a><br>
+							제2조 개인정보의 처리 및 보유기간
+						</font>
+					</b>
+				</p>
+				<p>
+					①회사는 법령에 따른 개인정보 보유∙이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의 받은 개인정보 보유∙이용기간 내에서 개인정보를 처리∙보유합니다.<br>
+					②각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.<br>
+					&nbsp;1.	카매니저 회원 가입 및 관리: 카매니저 탈퇴시까지 다만, 다음의 사유에 해당하는 경우에는 해당 사유 종료시까지<br>
+					&nbsp;&nbsp;1)	관계법령 위반에 따른 수사∙조사 등이 진행 중인 경우에는 해당 수사∙조사 종료시까지<br>
+					&nbsp;&nbsp;2)	카매니저 이용에 따른 채권∙채무관계 잔존시에는 해당 채권∙채무관계 정산시까지<br>
+					&nbsp;&nbsp;3)	소비자의 불만 또는 분쟁처리를 위해 필요한 경우에는 3년까지<br>
+					&nbsp;2.	재화 또는 서비스 제공: 재화∙서비스 공급 완료 및 요금결제∙정산 완료시까지 다만, 다음의 사유에 해당하는 경우에는 해당 기간 종료시까지<br>
+					&nbsp;&nbsp;1)	전자상거래 등에서의 소비자 보호에 관한 법률에 따른 표시∙광고, 계약내용 및 이행 등 거래에 관한 기록<br>
+					&nbsp;&nbsp;&nbsp;-	표시∙광고에 관한 기록과 소비자 불만 또는 분쟁처리에 관한 기록: 3년<br>
+					&nbsp;&nbsp;&nbsp;-	계약 또는 청약철회, 대금결제, 재화 등의 공급기록: 5년<br>
+					&nbsp;&nbsp;2)	통신비밀보호법 제41조에 따른 방문기록: 3개월<br>
+					&nbsp;&nbsp;3)	정보통신망 이용촉진 및 정보보호 등에 관한 법률 시행령 제29조에 따른 본인확인정보 보관: 6개월<br>
+
+				</p>
+				<p>
+					<b>
+                        <font class="txt-primary">
+                            <a name="03"></a><br>
+                            제3조 개인정보의 제3자 제공
+                        </font>
+					</b>
+				</p>
+				<p>
+					①회사는 정보주체의 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며 정보주체의 동의, 법률의 특별한 규정 등 개인정보보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.<br>
+					②회사는 다음과 같이 개인정보를 제3자에게 제공하고 있습니다.<br>
+					&nbsp;1.	전국자동차매매사업조합연합회<br>
+					&nbsp;&nbsp;-	개인정보를 제공받는 자: 사단법인 전국자동차매매사업조합연합회<br>
+					&nbsp;&nbsp;-	제공받는 자의 개인정보 이용목적: 종사원 여부 확인<br>
+					&nbsp;&nbsp;-	제공하는 정보: 성명, 종사원증 번호, 휴대전화번호, 소속 회사명, 소속 회사 전화번호<br>
+					&nbsp;&nbsp;-	제공받는 자의 보유∙이용기간: 목적 달성시까지<br>
+					&nbsp;2.	한국자동차매매사업조합연합회<br>
+					&nbsp;&nbsp;-	개인정보를 제공받는 자: 한국자동차매매사업조합연합회<br>
+					&nbsp;&nbsp;-	제공받는 자의 개인정보 이용목적: 종사원 여부 확인<br>
+					&nbsp;&nbsp;-	제공하는 정보: 성명, 종사원증 번호, 휴대전화번호, 소속 회사명, 소속 회사 전화번호<br>
+					&nbsp;&nbsp;-	제공받는 자의 보유∙이용기간: 목적 달성시까지<br>
+					&nbsp;3.	케이지이니시스<br>
+					&nbsp;&nbsp;-	개인정보를 제공받는 자: 주식회사 케이지이니시스<br>
+					&nbsp;&nbsp;-	제공받는 자의 개인정보 이용목적: 온라인 대금 결제(상품 및 포인트)서비스 제공, 결제를 위한 신용카드 정보, 계좌정보 조회<br>
+					&nbsp;&nbsp;-	제공하는 정보: 성명, 신용카드 정보, 결제계좌 정보<br>
+					&nbsp;&nbsp;-	제공받는 자의 보유∙이용기간: 목적 달성시까지<br>
+					&nbsp;4.	NICE평가정보<br>
+					&nbsp;&nbsp;-	개인정보를 제공받는 자: NICE평가정보 주식회사<br>
+					&nbsp;&nbsp;-	제공받는 자의 개인정보 이용목적: 각종 통계자료 등 서비스 제공<br>
+					&nbsp;&nbsp;-	제공하는 정보: 성명, 휴대전화번호, 소속 회사 정보<br>
+					&nbsp;&nbsp;-	제공받는 자의 보유∙이용기간: 목적 달성시까지<br>
+					&nbsp;5.	케이에프씨<br>
+					&nbsp;&nbsp;-	개인정보를 제공받는 자: 주식회사 케이에프씨<br>
+					&nbsp;&nbsp;-	제공받는 자의 개인정보 이용목적: 각종 통계자료 등 서비스 제공<br>
+					&nbsp;&nbsp;-	제공하는 정보: 성명, 휴대전화번호, 이메일 주소, 소속 회사 정보<br>
+					&nbsp;&nbsp;-	제공받는 자의 보유∙이용기간: 목적 달성시까지<br>
+					&nbsp;6.	KB캐피탈㈜<br>
+					&nbsp;&nbsp;-	개인정보를 제공받는 자: KB캐피탈㈜<br>
+					&nbsp;&nbsp;-	제공받는 자의 개인정보 이용목적: 중고차매물정보 서비스 제공<br>
+					&nbsp;&nbsp;-	제공하는 정보: 성명, 휴대전화번호, 중고차매물정보<br>
+					&nbsp;&nbsp;-	제공받는 자의 보유∙이용기간: 목적 달성시까지<br>
+				</p>
+				<p>
+					<b>
+                        <font class="txt-primary">
+                            <a name="04"></a><br>
+                            제4조 정보주체와 법정대리인의 권리∙의무 및 행사방법
+                        </font>
+					</b>
+				</p>
+				<p>
+					①정보주체는 회사에 대해 언제든지 개인정보 열람∙정정∙삭제∙처리정지 요규 등의 권리를 행사할 수 있습니다.<br>
+					②제1항에 따른 권리행사는 회사에 대해 개인정보보호법 시행령 제41조 제1항에 따라 서면, 전자우편, 모사전송(FAX)등을 통해 하실 수 있으며 회사는 이에 대해 지체없이 조치하겠습니다.<br>
+					③제1항에 따른 권리행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.<br>
+					④개인정보 열람 및 처리정지 여구는 개인정보보호법 제35조 제5항, 제37조 제2항에 의하여 정보주체의 권리가 제한될 수 있습니다.<br>
+					⑤개인정보의 정정 및 삭제요구는 다른 법령에서 그 개인정보가 수집대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.<br>
+					⑥회사는 정보주체 권리에 따른 열람의 요구, 정정∙삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.<br>
+
+				</p>
+				<p>
+					<b>
+                        <font class="txt-primary">
+                            <a name="05"></a><br>
+                            제5조 수집한 개인정보의 제공 및 공유
+                        </font>
+					</b>
+				</p>
+				<p>
+					회사는 다음의 개인정보 항목을 처리하고 있습니다.<br>
+					&nbsp;1.	카매니저 회원 가입 및 관리 항목: 성명, 생년월일, 아이디, 패스워드, 전화번호, 이메일 주소, 소속 회사 정보, 종사원번호, 은행 계좌 등 결제 정보<br>
+					&nbsp;2.	재화 또는 서비스의 제공: 성명, 생년월일, 아이디, 패스워드, 전화번호, 이메일 주소, 소속 회사 정보, 종사원번호<br>
+					&nbsp;3.	고충처리: 성명, 생년월일, 아이디, 패스워드, 전화번호, 이메일 주소, 소속 회사 정보, 종사원번호<br>
+					&nbsp;4.	서비스 제공∙개발 및 이를 위한 통계자료의 활용을 위한 정보: 매물정보 외 본인이 판매했거나 판매하고자 하는 상품에 관한 정보<br>
+					&nbsp;5.	인터넷 서비스 과정에서 자동으로 생성되어 수집될 수 있는 다음의 정보: IP주소, 쿠키, MAC주소, 서비스 이용기록, 방문기록, 불량 이용기록 등<br>
+
+				</p>
+				<p>
+					<b>
+                        <font class="txt-primary">
+                            <a name="06"></a><br>
+                            제6조 개인정보의 파기
+                        </font>
+					</b>
+				</p>
+				<p>
+					①회사는 개인정보 보유기간의 경과, 처리목적의 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br>
+					②정보주체로부터 동의받은 개인정보 보유기간이 경과하거나 처리목적이 달성되었음에도 불구하고 다른 법령에 따라 개인정보를 계속 보존해야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스로 옮기거나 보관장소를 달리하여 보존합니다.<br>
+					③개인정보 파기의 절차 및 방법은 다음과 같습니다.<br>
+					&nbsp;1.	파기절차<br>
+					&nbsp;회사는 파기사유가 발생한 개인정보를 선정하고 회사의 개인정보보호책임자의 승인을 받아 개인정보를 파기합니다.<br>
+					&nbsp;2.	회사는 전자적 파일 형태로 기록∙저장된 개인정보는 기록을 재생할 수 없도록 파기하며, <br>&nbsp;종이문서에 기록∙저장된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.<br>
+
+				</p>
+				<p>
+					<b>
+                        <font class="txt-primary">
+                            <a name="07"></a><br>
+                            제7조 개인정보의 안전성 확보조치
+                        </font>
+					</b>
+				</p>
+				<p>
+					회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 위하고 있습니다.<br>
+					&nbsp;1.	관리적 조치: 내부관리계획 수립∙시행, 정기적 직원 교육 등<br>
+					&nbsp;2.	기술적 조치: 개인정보처리시스템 등의 접근권한 관리, 접근통제시스템 설치, 고유식별정보 등의 암호화, 보안프로그램 설치<br>
+					&nbsp;3.	물리적 조치: 전산실, 자료보관실 등의 접근통제<br>
+				</p>
+				<p>
+					<b>
+                        <font class="txt-primary">
+                            <a name="08"></a><br>
+                            제8조 개인정보보호 책임자
+                        </font>
+					</b>
+				</p>
+				<p>
+					①회사는 개인정보처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보보호 책임자를 지정하고 있습니다.<br><br>
+				</p>
+				[개인 정보 관리 책임자]
+				<table class="list-table sm txt-left">
+					<tr class="tit">
+						<th width="20%">이름</th>
+						<td width="80%">함석필</td>
+					</tr>
+					<tr class="tit">
+						<th>소속</th>
+						<td>비즈인포그룹</td>
+					</tr>
+					<tr class="tit">
+						<th>전화</th>
+						<td>02-3474-3060</td>
+					</tr>
+					<tr class="tit">
+						<th>팩스</th>
+						<td>02-3474-3069</td>
+					</tr>
+					<tr class="tit">
+						<th>이메일</th>
+						<td>cs@bizinfogroup.co.kr</td>
+					</tr>
+				</table>
+				<p>
+					<br>②정보주체는 회사의 서비스를 이용하시면서 발생한 모든 개인정보보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보보호 책임자 및 담당부서로 문의하실 수 있습니다. 회사는 정보주체의 문의에 대해 지체없이 답변 및 처리해 드릴 것입니다.<br>
+				</p>
+				<p>
+					<b>
+                        <font class="txt-primary">
+                            <a name="09"></a><br>
+                            제9조 권익침해 구제방법
+                        </font>
+					</b>
+				</p>
+				<p>
+					정보주체는 아래의 기관에 대해 개인정보 침해에 대한 피해구제, 상담 등을 문의하실 수 있습니다.<br>
+					&nbsp;-	개인정보분쟁조정위원회 www.kopico.go.kr / 02-2100-2499<br>
+					&nbsp;-	개인정보 침해신고센터 (한국인터넷진흥원 운영) privacy.kisa.or.kr / (국번없이) 118<br>
+					&nbsp;-	대검찰청 첨단범죄수사센터 cybercid.spo.go.kr / 02-3480-3571<br>
+					&nbsp;-	경찰청 사이버안전국 cyberbureau.police.go.kr / 02-3150-2659<br>
+				</p>
+				<p>
+					<b>
+                        <font color="#1C62CC">
+                            <a name="10"></a><br>
+                            제10조 개인정보 처리방침 변경
+                        </font>
+					</b>
+				</p>
+				<p>
+					① 이 개인정보 처리방침은 2018년 3월 1일부터 적용됩니다<br>
+					②법령 정책 또는 보안기술의 변경에 따라 내용의 추가 삭제 및 수정이 있을 시에는 변경되는 개인정보처리방침을 시행하기 최소 7일전에 카매니저를 통해 변경이유 및 내용 등을 공지하도록 하겠습니다.<br>
+				</p>
+				<!-- 내용 끝 -->
+			</div>
+			<div class="m-t-10 fr m-b-10">
+				<select class="custom-select col-10">
+					<option>개인정보취급 방침(V1.1)</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

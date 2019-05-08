@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <link rel="stylesheet" href="../css/manage.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/basic.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<div class="header-bg">
+				<!-- 상단 알림페이지 -->
+				<div class="alarm-wrap">
+					<button class="esc"></button>
+					<div class="alarm-left">
+						<h3>고객센터</h3>
+						<p>카매니저에서 궁금하신 사항에 대해<br>빠른 답변을 찾을 수 있습니다.</p>
+						<p class="bottom">
+							<img src="../images/icon/customer_icon_1.png" />
+							02-3474-3060
+							<br>
+							<img src="../images/icon/customer_icon_2.png" />
+							평일 : AM 9시 ~ PM 6시
+						</p>
+					</div>
+					<ul class="alarm-list">
+						<li class="top">최근 받은 알림이 최대 10개까지 노출됩니다.</li>
+						<li class="new">
+							<b class="m-r-20">2019.01.10</b>
+							<b class="m-r-5">[1:1 문의]</b>
+							1:1 문의에 대한 답변이 완료되었습니다.
+						</li>
+						<li class="new">
+							<b class="m-r-20">2019.01.10</b>
+							<b class="m-r-5">[서비스 구입]</b>
+							유료딜러 서비스 구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.08</b>
+							<b class="m-r-5">[서비스 구입]</b>
+							핫마크 구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.07</b>
+							<b class="m-r-5">[구매문의]</b>
+							마이샵 구매문의에 대한 답변이 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.06</b>
+							<b class="m-r-5">[광고구입]</b>
+							상사배너 광고구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.05</b>
+							<b class="m-r-5">[광고구입]</b>
+							상사구인 광고구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.04</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스가 종료 되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.03</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">1일</b> 남았습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.02</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">2일</b> 남았습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.01</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">3일</b> 남았습니다.
+						</li>
+					</ul>
+				</div>
+				<!-- //상단 알림페이지 -->
+				<!-- 상단 전체메뉴 -->
+				<div class="all-menu-wrap">
+					<button class="esc"></button>
+					<div class="all-menu-left">
+						<h3>카매니저 2.0<span>이렇게 바뀌었습니다.</span></h3>
+						<p>
+							1. 원하는 페이지까지 빨리 접근<br>
+							2. 사용자별 맞춤 정보 제공<br>
+							3. 광고서비스 개편<br>
+							4. 서비스 정확도 집중
+						</p>
+						<img src="../images/common/monitor.png" />
+					</div>
+					<ul class="menu-list">
+						<li>
+							<h2>국산 · 수입차</h2>
+							<a href="new_search_car.html">매물조회</a>
+							<a href="new_search_car_state.html">매물현황조회</a>
+							<a href="new_search_sale_car.html">팔린매물조회</a>
+						</li>
+						<li>
+							<h2>화물차</h2>
+							<a href="search_cargo.html">매물조회</a>
+							<a href="search_cargo_state.html">매물현황조회</a>
+							<a href="search_cargo_sale.html">팔린매물조회</a>
+						</li>
+						<li>
+							<h2>수출조회</h2>
+							<a href="search_export_car.html">수출차량조회</a>
+							<a href="search_export_dealer.html">수출딜러조회</a>
+						</li>
+						<li>
+							<h2>시세</h2>
+							<a href="search_price.html">승용차 시세조회</a>
+							<a href="search_cargo_price.html">화물차 시세조회</a>
+							<!-- <a href="search_standard_price.html">표준시세표</a> -->
+							<a href="search_newcar_price.html">신차가격표</a>
+						</li>
+						<li>
+							<h2>상사매물관리</h2>
+							<a href="search_board.html">보드판</a>
+							<a href="admin_shop_car.html">상사매물관리</a>
+							<a href="alliance_application.html">제휴신청</a>
+						</li>
+						<li>
+							<h2>고객센터</h2>
+							<a href="customer_FAQ.html">자주하는질문</a>
+							<a href="customer_video_guide.html">동영상가이드</a>
+							<a href="admin_inquiry.html">1:1문의</a>
+							<a href="customer_notice.html">공지사항</a>
+							<a href="customer_event.html">이벤트</a>
+							<!-- <a href="customer_point_info.html">포인트 충전 · 소개</a> -->
+						</li>
+						<li>
+							<h2>마이페이지</h2>
+							<a href="admin_my_car.html">내차관리</a>
+							<a href="admin_myinfo.html">내정보관리</a>
+							<a href="admin_myproduct.html">내상품관리</a>
+							<a href="admin_product_intro.html">상품소개</a>
+							<a href="admin_inquiry.html">1:1문의</a>
+							<a href="search_like_car.html">관심매물</a>
+							<!-- <a href="admin_point.html">포인트 관리</a> -->
+						</li>
+						<li>
+							<h2>카매니저 서비스</h2>
+							<a href="search_shop.html">상사 · 사원확인</a>
+							<a href="search_performance.html">성능기록인쇄</a>
+							<a href="search_car_history.html">사고이력조회</a>
+							<a href="search_car_history2.html">사양조회</a>
+							<a href="search_car_history3.html">원부조회</a>
+							<a href="http://www.367.co.kr/autocafe" target="_blank">원격지원요청</a>
+						</li>
+						<li>
+							<h2>광고 및 서비스 구입</h2>
+							<a href="purchase_ad.html">광고 신청 안내</a>
+							<a href="purchase_service.html">서비스 소개 및 구입</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //상단 전체메뉴 -->
+			</div>
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg" /></a></h1>
+				<!-- 좌측 대메뉴 -->
+				<ul class="gnb-menu left">
+					<li>
+						<a href="new_search_car.html">국산 · 수입차</a>
+						<ul class="depth-2">
+							<li><a href="new_search_car.html">매물조회</a></li>
+							<li><a href="new_search_car_state.html">매물현황조회</a></li>
+							<li><a href="new_search_sale_car.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_cargo.html">화물차</a>
+						<ul class="depth-2">
+							<li><a href="search_cargo.html">매물조회</a></li>
+							<li><a href="search_cargo_state.html">매물현황조회</a></li>
+							<li><a href="search_cargo_sale.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_export_car.html">수출조회</a>
+						<ul class="depth-2">
+							<li><a href="search_export_car.html">수출차량조회</a></li>
+							<li><a href="search_export_dealer.html">수출딜러조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_price.html">시세</a>
+						<ul class="depth-2">
+							<li><a href="search_price.html">시세조회</a></li>
+							<!-- <li><a href="search_standard_price.html">표준시세표</a></li> -->
+							<li><a href="search_newcar_price.html">신차가격표</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- //좌측 대메뉴 -->
+				<!-- 우측 메뉴 -->
+				<ul class="gnb-menu right">
+					<li><a href="search_shop.html">상사 · 사원확인</a></li>
+					<li><a href="search_performance.html">성능기록인쇄</a></li>
+					<li><a href="search_car_history.html">사고이력조회</a></li>
+					<li><a href="search_car_history.html">사양조회</a></li>
+					<li><a href="search_car_history.html">원부조회</a></li>
+					<li><button class="alarm on"><img src="../images/icon/bell.svg" /></button></li>
+					<li><button class="full-menu"><img src="../images/icon/menu.png" /></button></li>
+				</ul>
+				<!-- //우측 메뉴 -->
+				<!-- 우측상단 lnb -->
+				<ul class="lnb-menu">
+					<li><span class="txt-black m-r-10"><b>김로사</b> 님</span><a href="index.html">로그아웃</a></li>
+					<li><a href="admin_my_car.html">마이페이지</a></li>
+					<li><a href="customer_FAQ.html">고객센터</a></li>
+					<li>즐겨찾기 추가</li>
+					<li><a href="http://www.367.co.kr/autocafe" target="_blank">원격지원 요청</a></li>
+					<li>바로가기 추가</li>
+				</ul>
+				<!-- //우측상단 lnb -->
+			</div>
+			<!-- 스크롤시 헤더 -->
+			<div class="scroll-header">
+				<div class="header-wrap">
+					<h1 class="logo"><a href="index.html"><img src="../images/common/logo_white.svg" /></a></h1>
+					<ul class="gnb-menu left">
+						<li><a href="new_search_car.html">국산 · 수입차</a></li>
+						<li><a href="search_cargo.html">화물차</a></li>
+						<li><a href="search_export_car.html">수출조회</a></li>
+						<li><a href="search_price.html">시세</a></li>
+					</ul>
+					<ul class="gnb-menu right">
+						<li><a href="search_performance.html">성능기록인쇄</a></li>
+						<li><a href="search_car_history.html">사양조회</a></li>
+						<li><a href="search_car_history.html">등록원부조회</a></li>
+						<li class="search">
+							<input type="text" placeholder="모델명 입력" />
+							<button><img src="../images/icon/ico_search_white.png" /></button>
+						</li>
+						<li><button class="alarm"><img src="../images/icon/bell_white.svg" /></button></li>
+						<li><button class="full-menu"><img src="../images/icon/menu_white.png" /></button></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //스크롤시 헤더 -->
+		</header>
+
+		<div class="content">
+			<div class="page-top-navi">
+				<img src="../images/icon/icon_home.png" /> <img src="../images/icon/arrow_right.png" /> 상사매물관리 <img src="../images/icon/arrow_right.png" /> 제휴신청
+			</div>
+			<h4 class="contets-tit">제휴서비스 신청<span class="font-xsm txt-gray m-l-20">카매니저와 제휴서비스를 통해 새로운 사업기회를 만나보세요.</span></h4>
+
+			<!-- 제휴제안 내용 -->
+			<span class="m-b-5 fl txt-black font-bold">제휴제안 내용</span>
+			<table class="list-table txt-left">
+				<tr class="tit">
+					<th width="150px"><font class="txt-danger">*</font>제목</th>
+					<td><input type="text" class="col-10" placeholder="제목을 입력해주세요." /></td>
+				</tr>
+				<tr class="tit">
+					<th><font class="txt-danger">*</font>제휴내용</th>
+					<td><textarea class="col-10 h-100" maxlength="200" placeholder="최대 200 Byte까지 작성 가능합니다."></textarea><span class="txt-right">0/200</span></td>
+				</tr>
+				<tr class="tit">
+					<th>제휴목적 및 기대효과</th>
+					<td><textarea class="col-10 h-100" maxlength="200" placeholder="최대 200 Byte까지 작성 가능합니다."></textarea><span class="txt-right">0/200</span></td>
+				</tr>
+				<tr class="tit">
+					<th class="br-b-n"><font class="txt-danger">*</font>제안서 첨부</th>
+					<td>
+						<input type="text" readonly="" />
+						<button class="btn btn-xsm btn-darkgray m-l-10 m-r-10">파일찾기</button>
+						<font class="txt-lightgray">파일형식 : pdf, doc, docx, ppt, pptx, hwp, gul, txt, xlsx, xls</font><br>
+						<span>여행박사 제안서_2019.01.22.hwp <button class="m-l-5 m-t-5">x</button></span>
+					</td>
+				</tr>
+			</table>
+			<!-- //제휴제안 내용 -->
+
+			<!-- 제휴제안 업체정보 -->
+			<span class="m-b-5 fl txt-black font-bold m-t-20">제휴제안 업체정보</span>
+			<table class="list-table txt-left">
+				<tr class="tit">
+					<th width="150px"><font class="txt-danger">*</font>구분</th>
+					<td>
+						<input type="radio" id="division1" name="division" checked="">
+						<label for="division1" class="m-r-20">공공기관(정부의 투자/출자 또는 정부의 재정 지원으로 설립/운영되는 기관)</label>
+						<input type="radio" id="division2" name="division">
+						<label for="division2" class="m-r-20">기업</label>
+						<input type="radio" id="division3" name="division">
+						<label for="division3" class="m-r-20">개인</label>
+						<input type="radio" id="division4" name="division">
+						<label for="division4">기타</label>
+					</td>
+				</tr>
+				<tr class="tit">
+					<th><font class="txt-danger">*</font>회사(기관)명</th>
+					<td><input type="text" class="col-10" placeholder="회사명을 입력해주세요." /></td>
+				</tr>
+				<tr class="tit">
+					<th><font class="txt-danger">*</font>제안자명</th>
+					<td><input type="text" placeholder="제안자명을 입력해주세요." /></td>
+				</tr>
+				<tr class="tit">
+					<th><font class="txt-danger">*</font>전화번호</th>
+					<td>
+						<select class="custom-select sm col-1">
+							<option>선택</option>
+						</select>
+						<select class="custom-select sm col-1">
+							<option>선택</option>
+						</select> - <input type="text" style="width:70px" /> - <input type="text" style="width:70px" />
+					</td>
+				</tr>
+				<tr class="tit">
+					<th><font class="txt-danger">*</font>메일주소</th>
+					<td>
+						<input type="text" style="width:130px" /> @ <input type="text" style="width:130px" />
+						<select class="custom-select sm col-2">
+							<option>직접입력</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tit">
+					<th class="br-b-n">회사소개서</th>
+					<td>
+						<input type="text" readonly="" />
+						<button class="btn btn-xsm btn-darkgray m-l-10 m-r-10">파일찾기</button>
+						<font class="txt-lightgray">파일형식 : pdf, doc, docx, ppt, pptx, hwp, gul, txt, xlsx, xls</font>
+						<br>
+						<span>여행박사 회사소개서_2019.01.22.hwp <button class="m-l-5 m-t-5">x</button></span>
+					</td>
+				</tr>
+				<tr class="tit">
+					<th class="br-b-n">홈페이지 주소</th>
+					<td>
+						<input type="text" class="col-10" placeholder="ex) http://www.carmanager.co.kr" />
+					</td>
+				</tr>
+			</table>
+			<!-- //제휴제안 업체정보 -->
+
+			<!-- 개인정보 수집 및 이용동의 -->
+			<span class="m-b-5 fl txt-black font-bold m-t-20">[필수] 개인정보 수집 및 이용동의</span>
+			<table class="list-table txt-left">
+				<tr class="tit">
+					<th>㈜카매니저는 아래의 목적으로 개인정보를 수집 및 이용하여 회원의 개인정보를 안전하게 취급하는데 최선을 다합니다.</th>
+				</tr>
+				<tr>
+					<td>
+						1. 목적 : 제휴 제안에 따른 연락처 정보 확인<br>
+						2. 항목 : 회사(기관)명, 제안자명, 전화번호, 메일주소<br>
+						3. 보유기간 : 제휴 제안 사항 상담서비스를 위해 검토 완료 후 3개월 간 보관하며, 이후 해당 정보를 지체 없이 파기합니다.
+						<br>
+						위 정보 수집에 대한 동의를 거부할 권리가 있으며, 동의 거부 시에는 제휴 제안 접수가 제한될 수 있습니다.<br>
+						더 자세한 내용에 대해서는 [카매니저 개인정보처리방침]을 참고하시길 바랍니다.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="agree1" />
+						<label for="agree1" class="m-l-5">개인정보 수집 및 이용에 동의합니다.</label>
+					</td>
+				</tr>
+			</table>
+			<!-- //개인정보 수집 및 이용동의 -->
+
+			<!-- 유의사항 -->
+			<span class="m-b-5 fl txt-black font-bold m-t-20">[필수] 유의사항</span>
+			<table class="list-table txt-left">
+				<tr class="tit">
+					<th>㈜카매니저는 제안 사항에 관한 검토 진행 상황이나 결과에 대해 별도의 회신을 드리지 않습니다.<br>제안자가 자신이 제안한 사항의 폐기를 원하는 경우, 제안자는 이를 카매니저에 요청할 수 있으며 카매니저는 요청 접수 후 즉시 폐기합니다.</th>
+				</tr>
+				<tr>
+					<td>
+						카매니저는 제안 사항에 대해 별도의 비밀유지협약(NDA)을 체결하지 않으며, 제안자의 영업 기밀에 대한 보안 의무를 지지 않습니다. 따라서 제안하는 내용에 제안자의 영업 활동과 관련된 기밀 정보가 포함되지 않도록 주의해 주시기 바랍니다. <br>
+						<br>
+						카매니저는 제안 사항을 성실히 검토하여 사업성이 있다고 판단하는 경우, 제안자와 협의를 통해 제휴 계약 체결 등 별도의 사업 절차를 진행하게 됩니다. 다만, 제안자가 제안한 내용은 이미 카매니저가 내부적으로 진행 중인 사업과 동일 또는 유사할 수 있으며, 제 3자로부터 먼저 제안 받은 내용일 수 있습니다. 따라서 카매니저의 제안 사항에 대한 검토 진행이 제안자와의 제휴 사업 진행을 약속 드리는 것은 아니며, 제안 내용의 신규성 혹은 독창성이나 제안 내용에 대한 제안자의 우선권을 인정하는 것은 아님을 말씀 드립니다. <br>
+						<br>
+						카매니저와의 사업 제휴와 무관하거나 담당자와의 면담 또는 사업 진행을 전제로 한 제안일 경우 접수가 반려될 수 있음을 양해 바랍니다.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="agree2" />
+						<label for="agree2" class="m-l-5">상시 유의사항을 확인 하였으며, 이에 동의합니다.</label><br>
+						<input type="checkbox" id="agree3" />
+						<label for="agree3" class="m-l-5">등록하는 제안 내용에 제안자의 영업 기말과 관련된 정보가 포함되지 않았음을 확인합니다.</label>
+					</td>
+				</tr>
+			</table>
+			<!-- //유의사항 -->
+
+			<table class="btn-group m-t-10">
+				<tr>
+					<td class="center">
+						<button type="button" class="btn-round btn-medium btn-gray m-r-10" onclick="location.href='main.html'">취소</button>
+						<button type="button" class="btn-round btn-medium btn-primary">신청</button>
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li>이용약관</li>
+					<li>개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+
+	</div>
+
+</body>
+</html>

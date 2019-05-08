@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/basic.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header compact">
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg"></a></h1>
+				<ul class="lnb-menu">
+					<li onclick="location.href='index.html'">로그인</li>
+					<li onclick="location.href='join_product_intro.html'">상품가입</li>
+					<li onclick="location.href='customer_FAQ.html'">고객센터</li>
+					<li>즐겨찾기 추가</li>
+					<li>원격지원 요청</li>
+					<li>바로가기 추가</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="certify">
+				<h2 class="font-lg">딜러 인증하기</h2>
+				<span class="font-xsm txt-gray">계정생성을 위해 본인인증 및 추가 정보를 입력하신 후 카매니저 서비스를 이용 할 수 있습니다.</span>
+				<ul class="progress-bar step-3 m-t-10">
+		            <li class="active">1. 휴대번호 본인인증</li>
+		            <li>2. 약관동의 및 추가정보 입력</li>
+		            <li>3. 딜러 인증 완료</li>
+				</ul>
+				<div class="clear"></div>
+				<div class="info-wrap br-t-n">
+					<h3 class="txt-primary m-0">휴대번호 본인인증</h3>
+					<span class="font-xsm txt-accent">※ 조합에 등록된 휴대폰 번호를 입력하세요. (유료딜러 혹은 수출업체 딜러일 경우에는 가입 신청한 휴대폰 번호를 입력하세요.)</span>
+					<div class="insert-info">
+						<label>이름</label>
+						<input type="text" placeholder="이름을 입력해주세요." /><br>
+						<label>휴대폰</label>
+						<select class="custom-select m-r-5">
+							<option>선택</option>
+						</select>
+						<select class="custom-select">
+							<option>선택</option>
+						</select>
+						-
+						<input type="text" class="num" />
+						-
+						<input type="text" class="num" />
+						<button type="button" class="btn btn-xsm btn-lightblue m-l-10">인증번호 전송</button><br>
+						<label>인증번호</label>
+						<input type="text" placeholder="인증번호 6자리를 입력해주세요." />
+						<button type="button" class="btn btn-xsm btn-lightblue m-l-10">인증번호 확인</button>
+						<button type="button" class="btn btn-xsm btn-darkgray m-l-10">재발송</button><br>
+						<label></label>
+						<span class="font-xsm">인증번호는 1분 이내에 발송됩니다. 인증번호가 도착하지 않으면 스팸 메시지를 확인하세요.</span>
+					</div>
+				</div>
+				<table class="btn-group">
+					<tr>
+						<td class="left">
+							&nbsp;
+						</td>
+						<td class="center">
+							<button type="button" class="btn-round btn-medium btn-primary m-r-10 m-b-10" onclick="location.href='main_certify_addinfo.html'">인증하기</button><br>
+							<span class="font-sm txt-gray">다른 서비스를 이용하시겠습니까? <a href="index.html" class="underline">메인 페이지 가기</a></span>
+						</td>
+						<td class="right">
+							&nbsp;
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li>이용약관</li>
+					<li>개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>

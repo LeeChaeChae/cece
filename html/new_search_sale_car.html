@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <link rel="stylesheet" href="../css/search.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/basic.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<div class="header-bg">
+				<!-- 상단 알림페이지 -->
+				<div class="alarm-wrap">
+					<button class="esc"></button>
+					<div class="alarm-left">
+						<h3>고객센터</h3>
+						<p>카매니저에서 궁금하신 사항에 대해<br>빠른 답변을 찾을 수 있습니다.</p>
+						<p class="bottom">
+							<img src="../images/icon/customer_icon_1.png" />
+							02-3474-3060
+							<br>
+							<img src="../images/icon/customer_icon_2.png" />
+							평일 : AM 9시 ~ PM 6시
+						</p>
+					</div>
+					<ul class="alarm-list">
+						<li class="top">최근 받은 알림이 최대 10개까지 노출됩니다.</li>
+						<li class="new">
+							<b class="m-r-20">2019.01.10</b>
+							<b class="m-r-5">[1:1 문의]</b>
+							1:1 문의에 대한 답변이 완료되었습니다.
+						</li>
+						<li class="new">
+							<b class="m-r-20">2019.01.10</b>
+							<b class="m-r-5">[서비스 구입]</b>
+							유료딜러 서비스 구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.08</b>
+							<b class="m-r-5">[서비스 구입]</b>
+							핫마크 구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.07</b>
+							<b class="m-r-5">[구매문의]</b>
+							마이샵 구매문의에 대한 답변이 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.06</b>
+							<b class="m-r-5">[광고구입]</b>
+							상사배너 광고구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.05</b>
+							<b class="m-r-5">[광고구입]</b>
+							상사구인 광고구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.04</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스가 종료 되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.03</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">1일</b> 남았습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.02</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">2일</b> 남았습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.01</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">3일</b> 남았습니다.
+						</li>
+					</ul>
+				</div>
+				<!-- //상단 알림페이지 -->
+				<!-- 상단 전체메뉴 -->
+				<div class="all-menu-wrap">
+					<button class="esc"></button>
+					<div class="all-menu-left">
+						<h3>카매니저 2.0<span>이렇게 바뀌었습니다.</span></h3>
+						<p>
+							1. 원하는 페이지까지 빨리 접근<br>
+							2. 사용자별 맞춤 정보 제공<br>
+							3. 광고서비스 개편<br>
+							4. 서비스 정확도 집중
+						</p>
+						<img src="../images/common/monitor.png" />
+					</div>
+					<ul class="menu-list">
+						<li>
+							<h2>국산 · 수입차</h2>
+							<a href="new_search_car.html">매물조회</a>
+							<a href="new_search_car_state.html">매물현황조회</a>
+							<a href="new_search_sale_car.html">팔린매물조회</a>
+						</li>
+						<li>
+							<h2>화물차</h2>
+							<a href="search_cargo.html">매물조회</a>
+							<a href="search_cargo_state.html">매물현황조회</a>
+							<a href="search_cargo_sale.html">팔린매물조회</a>
+						</li>
+						<li>
+							<h2>수출조회</h2>
+							<a href="search_export_car.html">수출차량조회</a>
+							<a href="search_export_dealer.html">수출딜러조회</a>
+						</li>
+						<li>
+							<h2>시세</h2>
+							<a href="search_price.html">승용차 시세조회</a>
+							<a href="search_cargo_price.html">화물차 시세조회</a>
+							<!-- <a href="search_standard_price.html">표준시세표</a> -->
+							<a href="search_newcar_price.html">신차가격표</a>
+						</li>
+						<li>
+							<h2>상사매물관리</h2>
+							<a href="search_board.html">보드판</a>
+							<a href="admin_shop_car.html">상사매물관리</a>
+							<a href="alliance_application.html">제휴신청</a>
+						</li>
+						<li>
+							<h2>고객센터</h2>
+							<a href="customer_FAQ.html">자주하는질문</a>
+							<a href="customer_video_guide.html">동영상가이드</a>
+							<a href="admin_inquiry.html">1:1문의</a>
+							<a href="customer_notice.html">공지사항</a>
+							<a href="customer_event.html">이벤트</a>
+							<!-- <a href="customer_point_info.html">포인트 충전 · 소개</a> -->
+						</li>
+						<li>
+							<h2>마이페이지</h2>
+							<a href="admin_my_car.html">내차관리</a>
+							<a href="admin_myinfo.html">내정보관리</a>
+							<a href="admin_myproduct.html">내상품관리</a>
+							<a href="admin_product_intro.html">상품소개</a>
+							<a href="admin_inquiry.html">1:1문의</a>
+							<a href="search_like_car.html">관심매물</a>
+							<!-- <a href="admin_point.html">포인트 관리</a> -->
+						</li>
+						<li>
+							<h2>카매니저 서비스</h2>
+							<a href="search_shop.html">상사 · 사원확인</a>
+							<a href="search_performance.html">성능기록인쇄</a>
+							<a href="search_car_history.html">사고이력조회</a>
+							<a href="search_car_history2.html">사양조회</a>
+							<a href="search_car_history3.html">원부조회</a>
+							<a href="http://www.367.co.kr/autocafe" target="_blank">원격지원요청</a>
+						</li>
+						<li>
+							<h2>광고 및 서비스 구입</h2>
+							<a href="purchase_ad.html">광고 신청 안내</a>
+							<a href="purchase_service.html">서비스 소개 및 구입</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //상단 전체메뉴 -->
+			</div>
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg" /></a></h1>
+				<!-- 좌측 대메뉴 -->
+				<ul class="gnb-menu left">
+					<li>
+						<a href="new_search_car.html">국산 · 수입차</a>
+						<ul class="depth-2">
+							<li><a href="new_search_car.html">매물조회</a></li>
+							<li><a href="new_search_car_state.html">매물현황조회</a></li>
+							<li><a href="new_search_sale_car.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_cargo.html">화물차</a>
+						<ul class="depth-2">
+							<li><a href="search_cargo.html">매물조회</a></li>
+							<li><a href="search_cargo_state.html">매물현황조회</a></li>
+							<li><a href="search_cargo_sale.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_export_car.html">수출조회</a>
+						<ul class="depth-2">
+							<li><a href="search_export_car.html">수출차량조회</a></li>
+							<li><a href="search_export_dealer.html">수출딜러조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_price.html">시세</a>
+						<ul class="depth-2">
+							<li><a href="search_price.html">시세조회</a></li>
+							<!-- <li><a href="search_standard_price.html">표준시세표</a></li> -->
+							<li><a href="search_newcar_price.html">신차가격표</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- //좌측 대메뉴 -->
+				<!-- 우측 메뉴 -->
+				<ul class="gnb-menu right">
+					<li><a href="search_shop.html">상사 · 사원확인</a></li>
+					<li><a href="search_performance.html">성능기록인쇄</a></li>
+					<li><a href="search_car_history.html">사고이력조회</a></li>
+					<li><a href="search_car_history.html">사양조회</a></li>
+					<li><a href="search_car_history.html">원부조회</a></li>
+					<li><button class="alarm on"><img src="../images/icon/bell.svg" /></button></li>
+					<li><button class="full-menu"><img src="../images/icon/menu.png" /></button></li>
+				</ul>
+				<!-- //우측 메뉴 -->
+				<!-- 우측상단 lnb -->
+				<ul class="lnb-menu">
+					<li><span class="txt-black m-r-10"><b>김로사</b> 님</span><a href="index.html">로그아웃</a></li>
+					<li><a href="admin_my_car.html">마이페이지</a></li>
+					<li><a href="customer_FAQ.html">고객센터</a></li>
+					<li>즐겨찾기 추가</li>
+					<li><a href="http://www.367.co.kr/autocafe" target="_blank">원격지원 요청</a></li>
+					<li>바로가기 추가</li>
+				</ul>
+				<!-- //우측상단 lnb -->
+			</div>
+			<!-- 스크롤시 헤더 -->
+			<div class="scroll-header">
+				<div class="header-wrap">
+					<h1 class="logo"><a href="index.html"><img src="../images/common/logo_white.svg" /></a></h1>
+					<ul class="gnb-menu left">
+						<li><a href="new_search_car.html">국산 · 수입차</a></li>
+						<li><a href="search_cargo.html">화물차</a></li>
+						<li><a href="search_export_car.html">수출조회</a></li>
+						<li><a href="search_price.html">시세</a></li>
+					</ul>
+					<ul class="gnb-menu right">
+						<li><a href="search_performance.html">성능기록인쇄</a></li>
+						<li><a href="search_car_history.html">사양조회</a></li>
+						<li><a href="search_car_history.html">등록원부조회</a></li>
+						<li class="search">
+							<input type="text" placeholder="모델명 입력" />
+							<button><img src="../images/icon/ico_search_white.png" /></button>
+						</li>
+						<li><button class="alarm"><img src="../images/icon/bell_white.svg" /></button></li>
+						<li><button class="full-menu"><img src="../images/icon/menu_white.png" /></button></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //스크롤시 헤더 -->
+		</header>
+		<!-- 미니검색바 -->
+		<div class="search-bar">
+			<div class="search-bar-wrap">
+				<b class="p-l-10">총 <font class="txt-danger">10,161</font>대</b>
+				<ul class="search-bar-list tab-menu">
+					<li name="danji-select">DIY카랜드<img src="../images/icon/mini_arrow_down.png" /></li>
+					<li name="maker-select">제조사/모델/등급<img src="../images/icon/mini_arrow_down.png" /></li>
+					<li name="recent-search">최근 검색한 조건<img src="../images/icon/mini_arrow_down.png" /></li>
+					<li name="sort">정렬 보기<img src="../images/icon/mini_arrow_down.png" /></li>
+					<li class="clear"></li>
+				</ul>
+				<select class="custom-select number">
+					<option>20개씩</option>
+					<option>40개씩</option>
+					<option>60개씩</option>
+					<option>80개씩</option>
+					<option>100개씩</option>
+				</select>
+				<div class="tab-con search-bar-con danji-select">
+					<p class="font-sm br-b-gray p-b-10 m-b-10">현재 <span class="txt-lightblue">경기 > 부천 > DIY카랜드 · 서울 > 강서구 > 등촌단지</span> 의 매물차량이 노출되고 있습니다.</p>
+					<b class="fl m-r-30">다른 지역/단지를 선택 후 검색버튼을 클릭해주세요.</b>
+					<table class="col-6 fl">
+						<tr>
+							<td colspan="2">
+								<input type="checkbox" class="custom-check" id="search1" />
+								<label for="search1"></label>
+								<label for="search1" class="custom-check-label p-l-5 m-r-10">기존 단지 미포함 검색</label>
+								<input type="checkbox" class="custom-check" id="search2" />
+								<label for="search2"></label>
+								<label for="search2" class="custom-check-label p-l-5">기존 단지 포함 검색</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<select class="custom-select">
+									<option>시/도</option>
+								</select>
+								<select class="custom-select">
+									<option>지역</option>
+								</select>
+								<select class="custom-select col-4">
+									<option>단지</option>
+								</select>
+							</td>
+							<td>
+								<button class="btn btn-sm btn-primary m-l-10">검색</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab-con search-bar-con maker-select">
+					<p class="font-sm br-b-gray p-b-10 m-b-15">현재 <span class="txt-lightblue">경기 > 부천 > DIY카랜드 · 서울 > 강서구 > 등촌단지</span> 의 매물차량이 노출되고 있습니다.</p>
+					<table class="col-10">
+						<tr>
+							<td>
+								<select class="custom-select">
+									<option>제조사</option>
+								</select>
+								<select class="custom-select">
+									<option>모델</option>
+								</select>
+								<select class="custom-select">
+									<option>세부모델</option>
+								</select>
+								<select class="custom-select">
+									<option>등급</option>
+								</select>
+								<select class="custom-select col-3">
+									<option>단지</option>
+								</select>
+							</td>
+							<td>
+								<button class="btn btn-sm btn-primary m-l-10">검색</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab-con search-bar-con recent-search">
+					<p class="font-sm br-b-gray p-b-10 m-b-10">최근 검색조건은 모델 기준으로 <font class="txt-danger">최대 10개</font>까지 자동저장 됩니다.</p>
+					<ul>
+						<li>
+							<span class="txt-gray m-r-20">2019.01.10</span>
+							<a href="" class="m-r-5 font-bold">현대 그랜저 그랜저 XG</a>
+							현대그랜저 그랜저 XG / 15,000km ~ 100,000km /검정색 / LPG
+							<span class="fr">
+								<input type="checkbox" class="custom-check lock-check" id="lock1">
+								<label for="lock1"></label>
+							</span>
+						</li>
+						<li>
+							<span class="txt-gray m-r-20">2019.01.10</span>
+							<a href="" class="m-r-5 font-bold">현대 그랜저 그랜저 XG</a>
+							현대그랜저 그랜저 XG / 15,000km ~ 100,000km /검정색 / LPG
+							<span class="fr">
+								<input type="checkbox" class="custom-check lock-check" id="lock2">
+								<label for="lock2"></label>
+							</span>
+						</li>
+						<li>
+							<span class="txt-gray m-r-20">2019.01.10</span>
+							<a href="" class="m-r-5 font-bold">현대 그랜저 그랜저 XG</a>
+							현대그랜저 그랜저 XG / 15,000km ~ 100,000km /검정색 / LPG
+							<span class="fr">
+								<input type="checkbox" class="custom-check lock-check" id="lock3">
+								<label for="lock3"></label>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-con search-bar-con sort">
+					<button>최신 수정된 매물</button>
+					<button>최신 등록된 매물</button>
+					<button>낮은 가격</button>
+					<button>높은 가격</button>
+					<button>짧은 연식</button>
+					<button>짧은 주행거리</button>
+				</div>
+			</div>
+		</div>
+		<!-- //미니검색바 -->
+		<div class="content">
+			<div class="page-top-navi">
+				<img src="../images/icon/icon_home.png" /> <img src="../images/icon/arrow_right.png" /> 국산 · 수입차 <img src="../images/icon/arrow_right.png" /> 매물조회
+			</div>
+			<!-- 수입차,가격탭은 다른 폼과 같은양식이라 소스가 너무 길어지는 것 같아 빼놨습니다. 수입차의 경우 국산차 탭, 가격의경우 주행거리 탭의 내용을 복사해주세요.  -->
+			<!-- 상단 검색 신규 -->
+			<div class="search-option">
+				<ul class="search-option-tab">
+					<li name="area-info" class="active">단지정보</li>
+					<li name="domestic-car">국산차</li>
+					<li name="imported-car">수입차</li>
+					<li name="cargo">화물차</li>
+					<li class="clear"></li>
+				</ul>
+				<!-- 단지정보탭 -->
+				<div class="option-tab-con area-info active">
+					<div class="search">
+						<img src="../images/icon/search_blue.png" />
+						<input type="text" placeholder="단지명 직접 입력">
+						<button class="esc"></button>
+					</div>
+					<ul class="search-option-select list-col-3">
+						<li>
+							<div class="option-tit">시도<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-list">
+								<input type="radio" class="txt-select" id="area1" checked="" name="area" />
+								<label for="area1">수도권 (39,284)</label>
+								<input type="radio" class="txt-select" id="area2"  name="area" />
+								<label for="area2">충청권 (30,759)</label>
+								<input type="radio" class="txt-select" id="area3"  name="area" />
+								<label for="area3">영남권 (30,759)</label>
+							</div>
+						</li>
+						<li>
+							<div class="option-tit">지역<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<p>시도를 선택해 주세요.</p>
+						</li>
+						<li>
+							<div class="option-tit">단지<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<p>지역을 선택해 주세요.</p>
+						</li>
+					</ul>
+					
+				</div>
+				<!-- //단지정보탭 -->
+				<!-- 국산차탭 -->
+				<div class="option-tab-con domestic-car">
+					<!-- 직접검색 -->
+					<div class="search">
+						<img src="../images/icon/search_blue.png" />
+						<input type="text" placeholder="모델명 직접 입력">
+						<button class="esc"></button>
+						<!-- 검색 자동 완성 -->
+						<div class="auto-search-list">
+							<ul>
+								<li>
+									<input type="checkbox" class="custom-check" id="search_list1" >
+									<label for="search_list1"></label>
+									<label for="search_list1" class="custom-check-label">현대 > 그랜저 > 그랜저XG</label>
+								</li>
+								<li>
+									<input type="checkbox" class="custom-check" id="search_list2" checked="" >
+									<label for="search_list2"></label>
+									<label for="search_list2" class="custom-check-label">현대 > 그랜저 > 그랜저XG > UPG 2700cc</label>
+								</li>
+								<li>
+									<input type="checkbox" class="custom-check" id="search_list3" checked="" >
+									<label for="search_list3"></label>
+									<label for="search_list3" class="custom-check-label">현대 > 그랜저 > 그랜저XG > 가솔린 2500cc 이하</label>
+								</li>
+							</ul>
+							<button class="btn-cancel">취소</button>
+							<button class="btn-search">검색</button>
+						</div>
+						<!-- //검색 자동 완성 -->
+					</div>
+					<!-- //직접검색 -->
+					<!-- 차량선택 -->
+					<ul class="search-option-select">
+						<li>
+							<div class="option-tit">제조사<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-list">
+								<input type="radio" class="txt-select" id="car1_1" name="car1" checked="" />
+								<label for="car1_1">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="car1_2" name="car1" />
+								<label for="car1_2">제네시스 (30,759)</label>
+								<input type="radio" class="txt-select" id="car1_3" name="car1" />
+								<label for="car1_3">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="car1_4" name="car1" />
+								<label for="car1_4">제네시스 (30,759)</label>
+								<input type="radio" class="txt-select" id="car1_5" name="car1" />
+								<label for="car1_5">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="car1_6" name="car1" />
+								<label for="car1_6">제네시스 (30,759)</label>
+							</div>
+						</li>
+						<li>
+							<div class="option-tit">모델<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<input type="radio" class="txt-select" id="car2_1" name="car2" />
+							<label for="car2_1">현대 (39,284)</label>
+							<input type="radio" class="txt-select" id="car2_2" name="car2" checked="" />
+							<label for="car2_2">제네시스 (30,759)</label>
+						</li>
+						<li>
+							<div class="option-tit">세부모델<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<input type="checkbox" class="txt-select" id="car3_1" checked="" />
+							<label for="car3_1">현대 (39,284)</label>
+							<input type="checkbox" class="txt-select" id="car3_2" />
+							<label for="car3_2">제네시스 (30,759)</label>
+						</li>
+						<li>
+							<div class="option-tit">등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<input type="checkbox" class="txt-select" id="car4_1" checked="" />
+							<label for="car4_1">현대 (39,284)</label>
+							<input type="checkbox" class="txt-select" id="car4_2" checked="" />
+							<label for="car4_2">제네시스 (30,759)</label>
+						</li>
+						<li>
+							<div class="option-tit">세부등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<p>등급을 선택해주세요.</p>
+						</li>
+					</ul>
+					<!-- //차량선택 -->
+				</div>
+				<!-- //국산차탭 -->
+				<!-- 수입차탭 -->
+				<div class="option-tab-con imported-car">
+					수입차탭 국산차탭과 동일
+				</div>
+				<!-- //수입차탭 -->
+				<!-- 화물차탭 -->
+				<div class="option-tab-con cargo">
+					<input class="custom-check round" type="radio" name="cargo-search-option" id="cargo-search-option1" checked="">
+					<label for="cargo-search-option1" class="m-l-10 m-r-5"></label>
+					<label for="cargo-search-option1" class="custom-check-label">형식 / 적재용량</label>
+					<input class="custom-check round" type="radio" name="cargo-search-option" id="cargo-search-option2">
+					<label for="cargo-search-option2" class="m-l-10 m-r-5"></label>
+					<label for="cargo-search-option2" class="custom-check-label m-r-20">제조사 / 모델 / 등급</label>
+					<!-- 제조사/모델/등급 체크시 하단부분 국산차탭과 같은 형식으로 변경됨.(5칸) -->
+					<div class="search">
+						<img src="../images/icon/search_blue.png" />
+						<input type="text" placeholder="모델명 직접 입력">
+						<button class="esc"></button>
+					</div>
+					<ul class="search-option-select">
+						<li>
+							<div class="option-tit">형식<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-list">
+								<input type="radio" class="txt-select" id="cargo1_1" name="cargo1" />
+								<label for="cargo1_1">웜바디 (3,222)</label>
+								<input type="radio" class="txt-select" id="cargo1_2" name="cargo1" />
+								<label for="cargo1_2">파워게이트 (1,333)</label>
+								<input type="radio" class="txt-select" id="cargo1_3" checked="" name="cargo1" />
+								<label for="cargo1_3">카고(화물)트럭 (5,211)</label>
+							</div>
+						</li>
+						<li>
+							<div class="option-tit">뭐지?<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-list">
+								<input type="radio" class="txt-select" id="cargo2_1" checked="" name="cargo2" />
+								<label for="cargo2_1">웜바디 (3,222)</label>
+								<input type="radio" class="txt-select" id="cargo2_2"  name="cargo2" />
+								<label for="cargo2_2">파워게이트 (1,333)</label>
+							</div>
+						</li>
+						<li>
+							<div class="option-tit">톤<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-list">
+								<input type="radio" class="txt-select" id="cargo3_1" name="cargo3" />
+								<label for="cargo3_1">1톤 (1,211)</label>
+								<input type="radio" class="txt-select" id="cargo3_2" name="cargo3" />
+								<label for="cargo3_2">1.2톤 (1,211)</label>
+								<input type="radio" class="txt-select" id="cargo3_3" name="cargo3" />
+								<label for="cargo3_3">1.4톤 (1,211)</label>
+							</div>
+						</li>
+					</ul>
+					<ul class="search-option-select">
+						<li>
+							<input type="radio" class="txt-select" id="cargo4_1" name="cargo1" />
+							<label for="cargo4_1">전축 (102)</label>
+						</li>
+						<li>
+							<input type="radio" class="txt-select" id="cargo5_1" checked="" name="cargo2" />
+							<label for="cargo5_1">고상 (130)</label>
+						</li>
+						<li>
+							<input type="radio" class="txt-select" id="cargo6_1" name="cargo3" />
+							<label for="cargo6_1">단축(4.6m) (50)</label>
+						</li>
+					</ul>
+					<p class="cargo-guide">
+						<b>화물차 쉽게 검색 방법</b>
+						1. 형식을 선택 합니다. <br>
+						2. 적재 톤수를 선택합니다. <br>
+						3. 축/적재함 높이/적재함 길이를 선택합니다.<br>
+						4. 검색하기 버튼을 클릭 하면, 하단에 검색리스트가 노출됩니다.<br>
+						5. 제조사/모델/등급으로 검색을 원하시면,
+						상단의 라디오 버튼(제조사/모델/등급)을 선택해주세요.
+					</p>
+				</div>
+				<!-- //화물차탭 -->
+				<!-- 빠른검색옵션 -->
+				<div class="option-tab-con search-etc-option br-t-n">
+					<div class="col-10">
+						<label>등록차명</label>
+						<div class="show">?
+							<div class="ms-box">
+								해당 검색 옵션에 관한 설명입니다.
+							</div>
+						</div>
+						<input type="text">
+						<label>딜러명</label>
+						<div class="show">?
+							<div class="ms-box">
+								해당 검색 옵션에 관한 설명입니다.
+							</div>
+						</div>
+						<input type="text">
+						<label>상사명</label>
+						<div class="show">?
+							<div class="ms-box">
+								해당 검색 옵션에 관한 설명입니다.
+							</div>
+						</div>
+						<input type="text">
+						<label>휴대폰</label>
+						<div class="show">?
+							<div class="ms-box">
+								해당 검색 옵션에 관한 설명입니다.
+							</div>
+						</div>
+						<input type="text">
+						<label>차량번호</label>
+						<div class="show">?
+							<div class="ms-box">
+								해당 검색 옵션에 관한 설명입니다.
+							</div>
+						</div>
+						<input type="text">
+						<label>옵션</label>
+						<div class="show">?
+							<div class="ms-box">
+								해당 검색 옵션에 관한 설명입니다.
+							</div>
+						</div>
+						<select class="custom-select col-1">
+							<option>선택1</option>
+							<option>선택2</option>
+							<option>선택3</option>
+						</select>
+					</div>
+					<div class="col-10 txt-left br-t-n p-t-0">
+						<label>판매일자</label>
+						<select class="custom-select col-1">
+							<option>2019</option>
+						</select>
+						<select class="custom-select col-1">
+							<option>2</option>
+						</select>
+						&nbsp;&nbsp;부터&nbsp;&nbsp;
+						<select class="custom-select col-1">
+							<option>2019</option>
+						</select>
+						<select class="custom-select col-1">
+							<option>2</option>
+						</select>
+						&nbsp;&nbsp;까지
+					</div>
+					<div class="col-10 txt-left br-t-n p-t-0">
+						<label>광고기간</label>
+						<select class="custom-select col-2">
+							<option>선택</option>
+						</select>
+						&nbsp;&nbsp;부터&nbsp;&nbsp;
+						<select class="custom-select col-2">
+							<option>선택</option>
+						</select>
+						&nbsp;&nbsp;까지&nbsp;&nbsp;
+						<input type="checkbox" class="custom-check" id="contract2" />
+						<label for="contract2"></label>
+						<label for="contract2" class="custom-check-label contract">계약중</label>
+					</div>
+				</div>
+				<!-- //빠른검색옵션 -->
+				<ul class="search-option-tab row2 br-t-gray">
+					<li name="production-year">연식</li>
+					<li name="mileage">주행거리</li>
+					<li name="etc">미션 / 연료 / 색상</li>
+					<li name="price">가격</li>
+					<li class="clear"></li>
+				</ul>
+				<!-- 연식탭 -->
+				<div class="option-tab-con production-year">
+					<div class="p-20 br-b-gray">
+						<select class="custom-select">
+							<option>년</option>
+						</select>
+						<select class="custom-select">
+							<option>월</option>
+						</select>
+						&nbsp;&nbsp;~&nbsp;&nbsp;
+						<select class="custom-select">
+							<option>년</option>
+						</select>
+						<select class="custom-select">
+							<option>월</option>
+						</select>
+					</div>
+					<div class="p-20">
+						<input type="radio" class="custom-label-btn" name="year" id="year1" checked="" />
+						<label for="year1">1년 이내 (32,111)</label>
+						<input type="radio" class="custom-label-btn" name="year" id="year2" />
+						<label for="year2">3년 이내 (32,111)</label>
+						<input type="radio" class="custom-label-btn" name="year" id="year3" />
+						<label for="year3">5년 이내 (32,111)</label>
+						<input type="radio" class="custom-label-btn" name="year" id="year4" />
+						<label for="year4">10년 이내 (32,111)</label>
+						<input type="radio" class="custom-label-btn" name="year" id="year5" />
+						<label for="year5">15년 이내 (32,111)</label>
+						<input type="radio" class="custom-label-btn" name="year" id="year6" />
+						<label for="year6">15년 이상~ (32,111)</label>
+					</div>
+				</div>
+				<!-- //연식탭 -->
+				<!-- 주행거리탭 -->
+				<div class="option-tab-con mileage">
+					<div class="p-20 br-b-gray">
+						<select class="custom-select" disabled="">
+							<option>선택</option>
+						</select>
+						&nbsp;&nbsp;km 부터 ~&nbsp;&nbsp;
+						<select class="custom-select" disabled="">
+							<option>년</option>
+						</select>
+						&nbsp;&nbsp;km까지
+						<input type="checkbox" class="custom-check" id="directly" checked="" />
+						<label class="m-l-20 m-r-5" for="directly"></label>
+						<label for="directly">직접 입력하기</label>
+						<div class="m-t-5">
+							<select class="custom-select">
+								<option>선택</option>
+							</select>
+							&nbsp;&nbsp;km 부터 ~&nbsp;&nbsp;
+							<select class="custom-select">
+								<option>년</option>
+							</select>
+							&nbsp;&nbsp;km까지
+							<button class="m-l-20 btn btn-sm btn-lightblue">추가</button>
+						</div>
+					</div>
+					<div class="p-20">
+						<input type="radio" class="custom-label-btn" name="km" id="km1" checked="" />
+						<label for="km1">~1만km미만 (22,222)</label>
+						<input type="radio" class="custom-label-btn" name="km" id="km2" />
+						<label for="km2">1만~10만km미만 (8,312)</label>
+						<input type="radio" class="custom-label-btn" name="km" id="km3" />
+						<label for="km3">10만~20만km (8,314)</label>
+						<input type="radio" class="custom-label-btn" name="km" id="km4" />
+						<label for="km4">20만~30만km (6,571)</label>
+						<input type="radio" class="custom-label-btn" name="km" id="km5" />
+						<label for="km5">30만~40만km (6,275)</label>
+						<input type="radio" class="custom-label-btn" name="km" id="km6" />
+						<label for="km6">40만km이상~ (6,222)</label>
+					</div>
+				</div>
+				<!-- //주행거리탭 -->
+				<!-- 미션/연료/색상탭 -->
+				<div class="option-tab-con etc">
+					<ul class="search-option-select list-col-3">
+						<li>
+							<input type="radio" class="txt-select" id="mission1" checked="" name="mission" />
+							<label for="mission1">오토 (39,284)</label>
+							<input type="radio" class="txt-select" id="mission2"  name="mission" />
+							<label for="mission2">수동 (30,759)</label>
+						</li>
+						<li>
+							<input type="radio" class="txt-select" id="fuel1" checked="" name="fuel" />
+							<label for="fuel1">휘발유 (39,284)</label>
+							<input type="radio" class="txt-select" id="fuel2"  name="fuel" />
+							<label for="fuel2">경유 (30,759)</label>
+						</li>
+						<li>
+							<input type="radio" class="txt-select" id="color1" checked="" name="color" />
+							<label for="color1">검정색 (39,284)</label>
+							<input type="radio" class="txt-select" id="color2"  name="color" />
+							<label for="color2">검정투톤 (30,759)</label>
+						</li>
+					</ul>
+				</div>
+				<!-- //미션/연료/색상탭 -->
+				<!-- 가격탭 -->
+				<div class="option-tab-con price">
+					가격탭 주행거리탭과 동일
+				</div>
+				<!-- //가격탭 -->
+				<div class="search-option-list">
+					<span>DIY카랜드<button class="esc"></button></span>
+					<span>DIY카랜드<button class="esc"></button></span>
+					<span>DIY카랜드<button class="esc"></button></span>
+					<button class="btn btn-sm btn-primary fr">검색하기</button>
+					<div class="search-bottom-btn">
+						<button class="btn-close" onclick="search_option_close();"><img src="../images/icon/arrow_up.png" />검색영역 접기</button>
+						<button class="btn-initial"><img src="../images/icon/initial.png" />검색 초기화</button>
+					</div>
+				</div>
+			</div>
+			<!-- //상단 검색 신규 -->
+
+			<!-- 매물현황 검색결과 리스트 -->
+			<div class="search-list-top">
+				<span class=><b>전체(<font class="txt-danger">10,161</font>)</b></span>
+				<button class="fr m-r-10"><img src="../images/icon/print.png" /></button>
+			</div>
+			<div class="search-list">
+				<div class="list-top">
+					<!-- sort-btn에 정렬기준 text삽입시 active class 같이 넣어주세요. -->
+					<button class="sort-btn" onclick="toggle_active(this)">정렬보기<img src="../images/icon/mini_arrow_down.png" /></button>
+					<button class="plus" onclick="toggle_active(this)"></button>
+					<ul class="sort list">
+						<li class="active">최근수정매물<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>최근등록매물<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>높은가격<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>긴연식<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>긴주행거리<img src="../images/icon/mini_arrow_down.png" /></li>
+					</ul>
+					<ul class="sort select">
+						<li class="active">최근수정매물<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>최근등록매물<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>낮은가격<img src="../images/icon/mini_arrow_up.png" /></li>
+						<li>높은가격<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>짧은연식<img src="../images/icon/mini_arrow_up.png" /></li>
+						<li>긴연식<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>짧은주행거리<img src="../images/icon/mini_arrow_up.png" /></li>
+						<li>긴주행거리<img src="../images/icon/mini_arrow_down.png" /></li>
+					</ul>
+					<select class="custom-select sm">
+						<option>20개씩</option>
+						<option>40개씩</option>
+						<option>60개씩</option>
+						<option>80개씩</option>
+						<option>100개씩</option>
+					</select>
+				</div>
+				<table class="list-table sm txt-left">
+					<tr class="tit">
+						<th>판매일</th>
+						<th>차량 / 세부모델( 연식｜주행거리｜연료｜미션｜색상｜사고여부 )</th>
+						<th>가격(만원)</th>
+						<th>지역(단지) / 담당 / 옵션</th>
+					</tr>
+					<tr>
+						<td>2019-02-18</td>
+						<td>
+							<span>[쉐보레] 올란도 플래티넘 패키지</span><br>
+							<span>2015.01[2013]｜3.4만｜경유｜오토｜흰색｜무사고</span>
+						</td>
+						<td>111</td>
+						<td>
+							<span>부턴(DIY카랜드)</span>
+							<span>박도경</span>
+							<button class="btn option-btn">옵션</button>
+						</td>
+					</tr>
+					<tr>
+						<td>2019-02-18</td>
+						<td>
+							<span>[쉐보레] 올란도 플래티넘 패키지</span><br>
+							<span>2015.01[2013]｜3.4만｜경유｜오토｜흰색｜무사고</span>
+						</td>
+						<td>111</td>
+						<td>
+							<span>부턴(DIY카랜드)</span>
+							<span>박도경</span>
+							<button class="btn option-btn">옵션</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="m-t-30"></div>
+			<!-- //매물현황 검색결과 리스트 -->
+
+			<!-- 검색결과 페이지네이션 -->
+			<ul class="list-pagenation">
+                <li class="arrow"><img src="../images/icon/btn_first.gif"></li>
+                <li class="arrow"><img src="../images/icon/btn_prev.gif"></li>
+                <li class="on">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li class="arrow"><img src="../images/icon/btn_next.gif"></li>
+                <li class="arrow"><img src="../images/icon/btn_last.gif"></li>
+        	</ul>
+			<!-- //검색결과 페이지네이션 -->
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li>이용약관</li>
+					<li>개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>

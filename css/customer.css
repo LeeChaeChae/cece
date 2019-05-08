@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.customer_top{border:1px solid #4959ec;width:100%;padding:13px 10px;margin-top:20px;}
+.customer_top .tit{font-family:'NanumBarunGothicLight';font-weight:bold;padding-right:10px;}
+.customer_top .tit img{width:auto;position:relative;top:-1px;margin-right:5px;}
+.customer_top .link a{font-size:13px;text-decoration:underline;margin:0 5px;}
+.customer_top .search input{width:155px;height:31px;position:relative;right:-3px;border-radius:5px 0 0 5px;}
+.customer_top .search .btn-sm{height:31px;padding:0 15px;border-radius:0 5px 5px 0;}
+
+.customer_menu{width:100%;margin:15px 0;}
+.customer_menu li{width:calc(100% / 5);border:1px solid #d7d7d7;border-right:none;height:40px;text-align:center;line-height:30px;background:#fff;color:#999;}
+.customer_menu li:last-child{border-right:1px solid #d7d7d7;}
+.customer_menu li.active{background:#4959ec;color:#fff;border:none;}
+
+.FAQ-list{margin-bottom:15px;}
+.FAQ-list li div.tit{padding:10px 15px 10px 40px;position:relative;}
+.FAQ-list li div.con{padding:15px 15px 15px 40px !important;position:relative;}
+.FAQ-list .q, .FAQ-list .a{position:absolute;left:15px;top:7px;font-size:20px;color:#4959ec;font-family:'NanumBarunGothicLight';font-weight:bold;}
+.FAQ-list .a{top:15px;}
+
+.video-guide{width:100%;margin:15px 0;overflow:hidden;}
+.video-guide li{width:calc(100% / 4 - 8px);margin-right:10px;float:left;margin-bottom:20px;}
+.video-guide li:nth-child(4n){margin-right:0;}
+.video-guide .video-wrap{width:100%;height:130px;background:#eee;}
+.video-guide .tit{padding:10px 5px 0;display:block;}
+.video-guide .date{padding-left:5px;font-size:.85em;}
+
+.video-pop{padding:40px;}
+.video-wrap{width:100%;height:500px;background:#eee;cursor:pointer;}
+
+.service-list{overflow:hidden;}
+.service-list li{float:left;width:calc(25% - 30px / 4);margin-right:10px;min-height:480px;}
+.service-list li:nth-child(4n), .member-type-list li:last-child{margin-right:0;}
+.service-list li span{display:block;}
+.service-list li span.num{font-size:25px;margin:10px 0 20px;}
+.service-list li .btn{background:#e45252;border:none;color:#fff;}
+.service-list li div.tit{background:#fa6e6d;color:#fff;padding:20px;text-align:center;}
+.service-list li div:not(.tit){display:table;width:100%;}
+.service-list li div:not(.tit) span{padding:8px;font-size:13px;height:55px;line-height:16px;border-bottom:1px solid #ccc;text-align:center;display:table-cell;vertical-align:middle;}
+.service-list.service-list.blue li .btn{background:#0b9e94;}
+.service-list.service-list.blue li div.tit{background:#13c3b8;}
+
+/********** IE 10+ css **********/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.customer_top .search input{right:-4px;}
+	.customer_top .search button{position:relative;top:-1px;}
+}

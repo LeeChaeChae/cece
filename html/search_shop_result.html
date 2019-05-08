@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <link rel="stylesheet" href="../css/search.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/basic.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<div class="header-bg">
+				<!-- 상단 알림페이지 -->
+				<div class="alarm-wrap">
+					<button class="esc"></button>
+					<div class="alarm-left">
+						<h3>고객센터</h3>
+						<p>카매니저에서 궁금하신 사항에 대해<br>빠른 답변을 찾을 수 있습니다.</p>
+						<p class="bottom">
+							<img src="../images/icon/customer_icon_1.png" />
+							02-3474-3060
+							<br>
+							<img src="../images/icon/customer_icon_2.png" />
+							평일 : AM 9시 ~ PM 6시
+						</p>
+					</div>
+					<ul class="alarm-list">
+						<li class="top">최근 받은 알림이 최대 10개까지 노출됩니다.</li>
+						<li class="new">
+							<b class="m-r-20">2019.01.10</b>
+							<b class="m-r-5">[1:1 문의]</b>
+							1:1 문의에 대한 답변이 완료되었습니다.
+						</li>
+						<li class="new">
+							<b class="m-r-20">2019.01.10</b>
+							<b class="m-r-5">[서비스 구입]</b>
+							유료딜러 서비스 구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.08</b>
+							<b class="m-r-5">[서비스 구입]</b>
+							핫마크 구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.07</b>
+							<b class="m-r-5">[구매문의]</b>
+							마이샵 구매문의에 대한 답변이 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.06</b>
+							<b class="m-r-5">[광고구입]</b>
+							상사배너 광고구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.05</b>
+							<b class="m-r-5">[광고구입]</b>
+							상사구인 광고구매가 완료되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.04</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스가 종료 되었습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.03</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">1일</b> 남았습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.02</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">2일</b> 남았습니다.
+						</li>
+						<li>
+							<b class="m-r-20">2019.01.01</b>
+							<b class="m-r-5">[유료상사 서비스 종료 안내]</b>
+							서비스 종료가 <b class="txt-danger">3일</b> 남았습니다.
+						</li>
+					</ul>
+				</div>
+				<!-- //상단 알림페이지 -->
+				<!-- 상단 전체메뉴 -->
+				<div class="all-menu-wrap">
+					<button class="esc"></button>
+					<div class="all-menu-left">
+						<h3>카매니저 2.0<span>이렇게 바뀌었습니다.</span></h3>
+						<p>
+							1. 원하는 페이지까지 빨리 접근<br>
+							2. 사용자별 맞춤 정보 제공<br>
+							3. 광고서비스 개편<br>
+							4. 서비스 정확도 집중
+						</p>
+						<img src="../images/common/monitor.png" />
+					</div>
+					<ul class="menu-list">
+						<li>
+							<h2>국산 · 수입차</h2>
+							<a href="new_search_car.html">매물조회</a>
+							<a href="new_search_car_state.html">매물현황조회</a>
+							<a href="new_search_sale_car.html">팔린매물조회</a>
+						</li>
+						<li>
+							<h2>화물차</h2>
+							<a href="search_cargo.html">매물조회</a>
+							<a href="search_cargo_state.html">매물현황조회</a>
+							<a href="search_cargo_sale.html">팔린매물조회</a>
+						</li>
+						<li>
+							<h2>수출조회</h2>
+							<a href="search_export_car.html">수출차량조회</a>
+							<a href="search_export_dealer.html">수출딜러조회</a>
+						</li>
+						<li>
+							<h2>시세</h2>
+							<a href="search_price.html">승용차 시세조회</a>
+							<a href="search_cargo_price.html">화물차 시세조회</a>
+							<!-- <a href="search_standard_price.html">표준시세표</a> -->
+							<a href="search_newcar_price.html">신차가격표</a>
+						</li>
+						<li>
+							<h2>상사매물관리</h2>
+							<a href="search_board.html">보드판</a>
+							<a href="admin_shop_car.html">상사매물관리</a>
+							<a href="alliance_application.html">제휴신청</a>
+						</li>
+						<li>
+							<h2>고객센터</h2>
+							<a href="customer_FAQ.html">자주하는질문</a>
+							<a href="customer_video_guide.html">동영상가이드</a>
+							<a href="admin_inquiry.html">1:1문의</a>
+							<a href="customer_notice.html">공지사항</a>
+							<a href="customer_event.html">이벤트</a>
+							<!-- <a href="customer_point_info.html">포인트 충전 · 소개</a> -->
+						</li>
+						<li>
+							<h2>마이페이지</h2>
+							<a href="admin_my_car.html">내차관리</a>
+							<a href="admin_myinfo.html">내정보관리</a>
+							<a href="admin_myproduct.html">내상품관리</a>
+							<a href="admin_product_intro.html">상품소개</a>
+							<a href="admin_inquiry.html">1:1문의</a>
+							<a href="search_like_car.html">관심매물</a>
+							<!-- <a href="admin_point.html">포인트 관리</a> -->
+						</li>
+						<li>
+							<h2>카매니저 서비스</h2>
+							<a href="search_shop.html">상사 · 사원확인</a>
+							<a href="search_performance.html">성능기록인쇄</a>
+							<a href="search_car_history.html">사고이력조회</a>
+							<a href="search_car_history2.html">사양조회</a>
+							<a href="search_car_history3.html">원부조회</a>
+							<a href="http://www.367.co.kr/autocafe" target="_blank">원격지원요청</a>
+						</li>
+						<li>
+							<h2>광고 및 서비스 구입</h2>
+							<a href="purchase_ad.html">광고 신청 안내</a>
+							<a href="purchase_service.html">서비스 소개 및 구입</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //상단 전체메뉴 -->
+			</div>
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg" /></a></h1>
+				<!-- 좌측 대메뉴 -->
+				<ul class="gnb-menu left">
+					<li>
+						<a href="new_search_car.html">국산 · 수입차</a>
+						<ul class="depth-2">
+							<li><a href="new_search_car.html">매물조회</a></li>
+							<li><a href="new_search_car_state.html">매물현황조회</a></li>
+							<li><a href="new_search_sale_car.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_cargo.html">화물차</a>
+						<ul class="depth-2">
+							<li><a href="search_cargo.html">매물조회</a></li>
+							<li><a href="search_cargo_state.html">매물현황조회</a></li>
+							<li><a href="search_cargo_sale.html">팔린매물조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_export_car.html">수출조회</a>
+						<ul class="depth-2">
+							<li><a href="search_export_car.html">수출차량조회</a></li>
+							<li><a href="search_export_dealer.html">수출딜러조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="search_price.html">시세</a>
+						<ul class="depth-2">
+							<li><a href="search_price.html">시세조회</a></li>
+							<!-- <li><a href="search_standard_price.html">표준시세표</a></li> -->
+							<li><a href="search_newcar_price.html">신차가격표</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- //좌측 대메뉴 -->
+				<!-- 우측 메뉴 -->
+				<ul class="gnb-menu right">
+					<li><a href="search_shop.html">상사 · 사원확인</a></li>
+					<li><a href="search_performance.html">성능기록인쇄</a></li>
+					<li><a href="search_car_history.html">사고이력조회</a></li>
+					<li><a href="search_car_history.html">사양조회</a></li>
+					<li><a href="search_car_history.html">원부조회</a></li>
+					<li><button class="alarm on"><img src="../images/icon/bell.svg" /></button></li>
+					<li><button class="full-menu"><img src="../images/icon/menu.png" /></button></li>
+				</ul>
+				<!-- //우측 메뉴 -->
+				<!-- 우측상단 lnb -->
+				<ul class="lnb-menu">
+					<li><span class="txt-black m-r-10"><b>김로사</b> 님</span><a href="index.html">로그아웃</a></li>
+					<li><a href="admin_my_car.html">마이페이지</a></li>
+					<li><a href="customer_FAQ.html">고객센터</a></li>
+					<li>즐겨찾기 추가</li>
+					<li><a href="http://www.367.co.kr/autocafe" target="_blank">원격지원 요청</a></li>
+					<li>바로가기 추가</li>
+				</ul>
+				<!-- //우측상단 lnb -->
+			</div>
+			<!-- 스크롤시 헤더 -->
+			<div class="scroll-header">
+				<div class="header-wrap">
+					<h1 class="logo"><a href="index.html"><img src="../images/common/logo_white.svg" /></a></h1>
+					<ul class="gnb-menu left">
+						<li><a href="new_search_car.html">국산 · 수입차</a></li>
+						<li><a href="search_cargo.html">화물차</a></li>
+						<li><a href="search_export_car.html">수출조회</a></li>
+						<li><a href="search_price.html">시세</a></li>
+					</ul>
+					<ul class="gnb-menu right">
+						<li><a href="search_performance.html">성능기록인쇄</a></li>
+						<li><a href="search_car_history.html">사양조회</a></li>
+						<li><a href="search_car_history.html">등록원부조회</a></li>
+						<li class="search">
+							<input type="text" placeholder="모델명 입력" />
+							<button><img src="../images/icon/ico_search_white.png" /></button>
+						</li>
+						<li><button class="alarm"><img src="../images/icon/bell_white.svg" /></button></li>
+						<li><button class="full-menu"><img src="../images/icon/menu_white.png" /></button></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //스크롤시 헤더 -->
+		</header>
+
+		<div class="content">
+			<!-- 검색결과 리스트 -->
+			<table class="list-table search-list">
+				<tr class="tit">
+					<th>상사 상세정보 보기</th>
+				</tr>
+				<tr>
+					<td class="txt-left p-10"><b class="txt-lightblue">- 상사정보</b></td>
+				</tr>
+				<tr>
+					<td class="p-b-0 p-t-0">
+						<ul class="list-info">
+							<li>
+								<span class="division">지역</span>
+								<span>서초 / 양재</span>
+							</li>
+							<li>
+								<span class="division">단지명</span>
+								<span>비즈인포그룹</span>
+							</li>
+							<li>
+								<span class="division">상사명</span>
+								<span>비즈인포그룹</span>
+							</li>
+							<li>
+								<span class="division">대표성명</span>
+								<span>김비즈</span>
+							</li>
+							<li class="col-10">
+								<span class="division">주소</span>
+								<span>123-123 ] 서울 서초구 양재 뱅뱅사거리</span>
+							</li>
+							<li>
+								<span class="division">전화번호</span>
+								<span>123-123-1234</span>
+							</li>
+							<li>
+								<span class="division">팩스번호</span>
+								<span>123-123-****</span>
+							</li>
+							<li>
+								<span class="division">허가번호</span>
+								<span>02-124-123556</span>
+							</li>
+							<li>
+								<span class="division">구분</span>
+								<span>개인</span>
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<!-- //검색결과 리스트 -->
+			<table class="btn-group">
+				<tr>
+					<td class="left">
+						<button type="button" class="btn btn-sm btn-primary">상사매물보기</button>
+					</td>
+					<td class="center">
+						&nbsp;
+					</td>
+					<td class="right">
+						<button type="button" class="btn btn-sm btn-gray" onclick="location.href='search_shop.html'">목록보기</button>
+					</td>
+				</tr>
+			</table>
+
+			<!-- 검색결과 리스트 -->
+			<div class="search-list-top">
+				<span class=><b>전체(<font class="txt-danger">161</font>)</b></span>
+				<div class="search-list-view fr">
+					<button class="list-view active"></button>
+					<button class="image-view"></button>
+				</div>
+				<button class="fr m-r-10"><img src="../images/icon/print.png" /></button>
+				<button class="fr m-r-10"><img src="../images/icon/icon_excel.png" /></button>
+			</div>
+			<div class="search-list">
+				<div class="list-top">
+					<button class="btn m-r-5" onclick="pop_open(this)" name="car-compare">선택비교하기</button>
+					<button class="btn m-r-5">선택매물설정</button>
+					<button class="btn m-r-5">선택매물설정</button>
+					<button class="btn">관심매물설정</button>
+					<!-- sort-btn에 정렬기준 text삽입시 active class 같이 넣어주세요. -->
+					<button class="sort-btn" onclick="toggle_active(this)">정렬보기<img src="../images/icon/mini_arrow_down.png" /></button>
+					<button class="plus" onclick="toggle_active(this)"></button>
+					<ul class="sort list">
+						<li class="active">최근수정매물<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>최근등록매물<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>높은가격<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>긴연식<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>긴주행거리<img src="../images/icon/mini_arrow_down.png" /></li>
+					</ul>
+					<ul class="sort select">
+						<li class="active">최근수정매물<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>최근등록매물<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>낮은가격<img src="../images/icon/mini_arrow_up.png" /></li>
+						<li>높은가격<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>짧은연식<img src="../images/icon/mini_arrow_up.png" /></li>
+						<li>긴연식<img src="../images/icon/mini_arrow_down.png" /></li>
+						<li>짧은주행거리<img src="../images/icon/mini_arrow_up.png" /></li>
+						<li>긴주행거리<img src="../images/icon/mini_arrow_down.png" /></li>
+					</ul>
+					<select class="custom-select sm">
+						<option>20개씩</option>
+						<option>40개씩</option>
+						<option>60개씩</option>
+						<option>80개씩</option>
+						<option>100개씩</option>
+					</select>
+				</div>
+			</div>
+			<!-- 검색 차량 텍스트 목록 -->
+			<div class="search-txt-list-tit">
+				<span>차량 / 세부모델</span>
+				<span>연식 ｜ 주행거리 ｜ 연료</span>
+				<span>가격(만원)</span>
+			</div>
+			<ul class="search-txt-list">
+				<li class="on">
+					<span class="car-name" onclick="window.open('detail.html','차량상세','width=1035,height=540,scrollbars=no')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</span>
+					<span class="car-info">2015.01 ｜ 3.4만 ｜ 경유</span>
+					<span class="car-price">
+						<span class="num">1,200</span>
+						<button class="btn btn-darkgray">비교함담기</button>
+					</span>
+					<div class="car-detail">
+						<div class="car-img">
+							<img src="../images/common/car2.jpg" />
+							<span class="car-name">부천 / DIY카랜드 도영모터스</span>
+							<input type="checkbox" class="custom-check" id="car1" />
+							<label for="car1"></label>
+							<input type="checkbox" class="like-check" id="car1_like" />
+						<label for="car1_like"></label>
+						</div>
+						<div class="car-info">
+							<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+							<ul class="car-option">
+								<li>14.09 (2015)</li>
+								<li>5만</li>
+								<li>경유</li>
+								<li>오토</li>
+								<li>검정투톤</li>
+								<li>무사고</li>
+							</ul>
+							<span class="price">
+								<span class="num">2,170</span>
+								만원
+								<button class="btn fr m-t-5 p-l-5 p-r-5">성능기록</button>
+								<button class="btn fr m-t-5 p-l-5 p-r-5 m-r-5" name="car-option" onclick="pop_open(this)">옵션</button>
+							</span>
+						</div>
+						<div class="car-hotmark">
+							<button onclick="window.open('../images/hotmark/hotmark.jpg','hotmark','width=760,height=755')"><img src="../images/hotmark/hot_15.gif" /></button>
+							<button onclick="window.open('../images/hotmark/hotmark.jpg','hotmark','width=760,height=755')"><img src="../images/hotmark/hot_23.gif" /></button>
+							<button onclick="window.open('../images/hotmark/hotmark.jpg','hotmark','width=760,height=755')"><img src="../images/hotmark/hot_21.gif" /></button>
+						</div>
+						<div class="more">
+							<p class="p-10 p-t-0 p-b-20">
+								<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+								<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+								<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+								<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+							</p>
+						</div>
+						<button onclick="share_open(this)" class="share">매물 공유하기</button>
+						<div class="share-con">
+							<h4>공유하기</h4>
+							<span><font class="txt-danger">9</font>회 남음(일 10회)</span>
+							<ul class="share-method">
+								<li class="first-state" onclick="select_method(this)">
+									<div class="img kakao">
+										<img src="../images/common/kakao.png" />	
+									</div>
+									<span class="name">카카오톡</span>
+
+									<div class="kakao-share">
+										<h5>현재가</h5>
+										<button class="price-modi minus"></button>
+										<span class="price">2540만원</span>
+										<button class="price-modi plus"></button><br>
+										<input type="radio" class="btn-radio" name="showhide" value="hide" id="hide" checked="" />
+										<label onclick="show_hide(this)" for="hide">숨기기</label>
+										<input type="radio" class="btn-radio" name="showhide" value="show" id="show" />
+										<label onclick="show_hide(this)" for="show">보여주기</label>
+										<input type="text" class="share-memo" placeholder="내역 관리용 메모 (10자 이내)" maxlength="10" />
+										<div class="share-btn-group">
+											<button onclick="share_close(this)" class="share-close">닫기</button>
+											<button class="share">공유</button>
+										</div>
+									</div> 
+								</li>
+								<li class="first-state" onclick="select_method(this)">
+									<div class="img url">
+										URL	
+									</div>
+									<span class="name">URL복사</span>
+
+									<div class="url-share">
+										<input type="text" value="http://carmanager~" />
+										<p class="guide m-t-15">
+											URL 복사 버튼 클릭시,<br>
+											주소가 복사됩니다.<br>
+											주소 복사 후, 원하는곳에<br>
+											붙여넣기(Ctrl+v)해 주세요.
+										</p>
+										<div class="share-btn-group">
+											<button onclick="share_close(this)" class="share-close">닫기</button>
+											<button class="share">URL 복사</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<p class="guide">공유할 SNS를 선택하시면,<br>공유가격변동이 가능합니다.</p>
+							<button onclick="share_close(this)" class="share-close">닫기</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<span class="car-name" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[BMW]4-SERIES 420D XDRIVE 스포츠 쿠페</span>
+					<span class="car-info">2015.01 ｜ 3.4만 ｜ 경유</span>
+					<span class="car-price">
+						<span class="num">1,200</span>
+						<button class="btn btn-darkgray">비교함담기</button>
+					</span>
+					<div class="car-detail">
+						<div class="car-img">
+							<img src="../images/common/car.jpg" />
+							<span class="car-name">부천 / DIY카랜드 도영모터스</span>
+							<input type="checkbox" class="custom-check" id="car2" />
+							<label for="car2"></label>
+							<input type="checkbox" class="like-check" id="car2_like" />
+						<label for="car2_like"></label>
+						</div>
+						<div class="car-info">
+							<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[BMW]4-SERIES 420D XDRIVE 스포츠 쿠페</button>
+							<ul class="car-option">
+								<li>14.09 (2015)</li>
+								<li>5만</li>
+								<li>경유</li>
+								<li>오토</li>
+								<li>검정투톤</li>
+								<li>무사고</li>
+							</ul>
+							<span class="price">
+								<span class="num">2,170</span>
+								만원
+								<button class="btn fr m-t-5 p-l-5 p-r-5">성능기록</button>
+								<button class="btn fr m-t-5 p-l-5 p-r-5 m-r-5" name="car-option" onclick="pop_open(this)">옵션</button>
+							</span>
+						</div>
+						<div class="car-hotmark">
+							<button><img src="../images/hotmark/hot_15.gif" /></button>
+							<button><img src="../images/hotmark/hot_23.gif" /></button>
+							<button><img src="../images/hotmark/hot_21.gif" /></button>
+						</div>
+						<div class="more">
+							<p class="p-10 p-t-0 p-b-20">
+								<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+								<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+								<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+								<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+							</p>
+						</div>
+						<button class="share" onclick="share_open(this)">매물 공유하기</button>
+						<div class="share-con">
+							<h4>공유하기</h4>
+							<span><font class="txt-danger">9</font>회 남음(일 10회)</span>
+							<ul class="share-method">
+								<li class="first-state" onclick="select_method(this)">
+									<div class="img kakao">
+										<img src="../images/common/kakao.png" />	
+									</div>
+									<span class="name">카카오톡</span>
+
+									<div class="kakao-share">
+										<h5>현재가</h5>
+										<button class="price-modi minus"></button>
+										<span class="price">2540만원</span>
+										<button class="price-modi plus"></button><br>
+										<input type="radio" class="btn-radio" name="showhide2" value="hide" id="hide2" checked="" />
+										<label onclick="show_hide(this)" for="hide2">숨기기</label>
+										<input type="radio" class="btn-radio" name="showhide2" value="show" id="show2" />
+										<label onclick="show_hide(this)" for="show2">보여주기</label>
+										<input type="text" class="share-memo" placeholder="내역 관리용 메모 (10자 이내)" maxlength="10" />
+										<div class="share-btn-group">
+											<button onclick="share_close(this)" class="share-close">닫기</button>
+											<button class="share">공유</button>
+										</div>
+									</div> 
+								</li>
+								<li class="first-state" onclick="select_method(this)">
+									<div class="img url">
+										URL	
+									</div>
+									<span class="name">URL복사</span>
+
+									<div class="url-share">
+										<input type="text" value="http://carmanager~" />
+										<p class="guide m-t-15">
+											URL 복사 버튼 클릭시,<br>
+											주소가 복사됩니다.<br>
+											주소 복사 후, 원하는곳에<br>
+											붙여넣기(Ctrl+v)해 주세요.
+										</p>
+										<div class="share-btn-group">
+											<button onclick="share_close(this)" class="share-close">닫기</button>
+											<button class="share">URL 복사</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<p class="guide">공유할 SNS를 선택하시면,<br>공유가격변동이 가능합니다.</p>
+							<button onclick="share_close(this)" class="share-close">닫기</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<span class="car-name" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</span>
+					<span class="car-info">2015.01 ｜ 3.4만 ｜ 경유</span>
+					<span class="car-price">
+						<span class="num">1,200</span>
+						<button class="btn btn-darkgray">비교함담기</button>
+					</span>
+					<div class="car-detail">
+						<div class="car-img">
+							<img src="../images/common/car2.jpg" />
+							<span class="car-name">부천 / DIY카랜드 도영모터스</span>
+							<input type="checkbox" class="custom-check" id="car3" />
+							<label for="car3"></label>
+							<input type="checkbox" class="like-check" id="car3_like" />
+						<label for="car3_like"></label>
+						</div>
+						<div class="car-info">
+							<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+							<ul class="car-option">
+								<li>14.09 (2015)</li>
+								<li>5만</li>
+								<li>경유</li>
+								<li>오토</li>
+								<li>검정투톤</li>
+								<li>무사고</li>
+							</ul>
+							<span class="price">
+								<span class="num">2,170</span>
+								만원
+								<button class="btn fr m-t-5 p-l-5 p-r-5">성능기록</button>
+								<button class="btn fr m-t-5 p-l-5 p-r-5 m-r-5" name="car-option" onclick="pop_open(this)">옵션</button>
+							</span>
+						</div>
+						<div class="car-hotmark">
+							<button><img src="../images/hotmark/hot_15.gif" /></button>
+							<button><img src="../images/hotmark/hot_23.gif" /></button>
+							<button><img src="../images/hotmark/hot_21.gif" /></button>
+						</div>
+						<div class="more">
+							<p class="p-10 p-t-0 p-b-20">
+								<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+								<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+								<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+								<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+							</p>
+						</div>
+						<button class="share">매물 공유하기</button>
+					</div>
+				</li>
+				<li>
+					<span class="car-name" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[BMW]4-SERIES 420D XDRIVE 스포츠 쿠페</span>
+					<span class="car-info">2015.01 ｜ 3.4만 ｜ 경유</span>
+					<span class="car-price">
+						<span class="num">1,200</span>
+						<button class="btn btn-darkgray">비교함담기</button>
+					</span>
+					<div class="car-detail">
+						<div class="car-img">
+							<img src="../images/common/car.jpg" />
+							<span class="car-name">부천 / DIY카랜드 도영모터스</span>
+							<input type="checkbox" class="custom-check" id="car4" />
+							<label for="car4"></label>
+							<input type="checkbox" class="like-check" id="car4_like" />
+						<label for="car4_like"></label>
+						</div>
+						<div class="car-info">
+							<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[BMW]4-SERIES 420D XDRIVE 스포츠 쿠페</button>
+							<ul class="car-option">
+								<li>14.09 (2015)</li>
+								<li>5만</li>
+								<li>경유</li>
+								<li>오토</li>
+								<li>검정투톤</li>
+								<li>무사고</li>
+							</ul>
+							<span class="price">
+								<span class="num">2,170</span>
+								만원
+								<button class="btn fr m-t-5 p-l-5 p-r-5">성능기록</button>
+								<button class="btn fr m-t-5 p-l-5 p-r-5 m-r-5" name="car-option" onclick="pop_open(this)">옵션</button>
+							</span>
+						</div>
+						<div class="car-hotmark">
+							<button><img src="../images/hotmark/hot_15.gif" /></button>
+							<button><img src="../images/hotmark/hot_23.gif" /></button>
+							<button><img src="../images/hotmark/hot_21.gif" /></button>
+						</div>
+						<div class="more">
+							<p class="p-10 p-t-0 p-b-20">
+								<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+								<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+								<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+								<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+							</p>
+						</div>
+						<button class="share">매물 공유하기</button>
+					</div>
+				</li>
+			</ul>
+			<!-- //검색 차량 텍스트 목록 -->
+			<!-- 검색 차량 이미지 목록 -->
+			<ul class="search-img-list" style="display:none;">
+				<li class="car-detail">
+					<div class="car-img">
+						<input type="checkbox" class="custom-check" id="car1_check" />
+						<label for="car1_check"></label>
+						<input type="checkbox" class="like-check" id="list_car1_like" />
+						<label for="list_car1_like"></label>
+						<img src="../images/common/car.jpg" />
+					</div>
+					<div class="car-info">
+						<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+						<ul class="car-option">
+							<li>14.09 (2015)</li>
+							<li>5만</li>
+							<li>경유</li>
+							<li>오토</li>
+							<li>검정투톤</li>
+							<li>무사고</li>
+						</ul>
+						<span class="price">
+							<span class="num">12,170</span>
+							만원
+							<button class="btn-performance fr"></button>
+							<button class="btn fr btn-option" name="car-option" onclick="pop_open(this)">옵션</button>
+						</span>
+					</div>
+					<div class="car-hotmark">
+						<button><img src="../images/hotmark/hot_15.gif" /></button>
+						<button><img src="../images/hotmark/hot_23.gif" /></button>
+						<button><img src="../images/hotmark/hot_21.gif" /></button>
+					</div>
+					<div class="more">
+						<p class="p-10">
+							<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+							<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+							<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+							<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+						</p>
+						<button class="add-compare">비교함 담기</button>
+						<button class="show-option" onclick="share_open(this)">매물 공유하기</button>
+						<div class="share-con">
+							<h4>공유하기</h4>
+							<span><font class="txt-danger">9</font>회 남음(일 10회)</span>
+							<ul class="share-method">
+								<li class="first-state" onclick="select_method(this)">
+									<div class="img kakao">
+										<img src="../images/common/kakao.png" />	
+									</div>
+									<span class="name">카카오톡</span>
+
+									<div class="kakao-share">
+										<h5>현재가</h5>
+										<button class="price-modi minus"></button>
+										<span class="price">2540만원</span>
+										<button class="price-modi plus"></button><br>
+										<input type="radio" class="btn-radio" name="showhide3" value="hide" id="hide3" checked="" />
+										<label onclick="show_hide(this)" for="hide3">숨기기</label>
+										<input type="radio" value="show" class="btn-radio" name="showhide3" id="show3" />
+										<label onclick="show_hide(this)" for="show3">보여주기</label>
+										<input type="text" class="share-memo" placeholder="내역 관리용 메모 (10자 이내)" maxlength="10" />
+										<div class="share-btn-group">
+											<button onclick="share_close(this)" class="share-close">닫기</button>
+											<button class="share">공유</button>
+										</div>
+									</div> 
+								</li>
+								<li class="first-state" onclick="select_method(this)">
+									<div class="img url">
+										URL	
+									</div>
+									<span class="name">URL복사</span>
+
+									<div class="url-share">
+										<input type="text" value="http://carmanager~" />
+										<p class="guide m-t-15">
+											URL 복사 버튼 클릭시,<br>
+											주소가 복사됩니다.<br>
+											주소 복사 후, 원하는곳에<br>
+											붙여넣기(Ctrl+v)해 주세요.
+										</p>
+										<div class="share-btn-group">
+											<button onclick="share_close(this)" class="share-close">닫기</button>
+											<button class="share">URL 복사</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<p class="guide">공유할 SNS를 선택하시면,<br>공유가격변동이 가능합니다.</p>
+							<button onclick="share_close(this)" class="share-close">닫기</button>
+						</div>
+					</div>
+				</li>
+				<li class="car-detail">
+					<div class="car-img">
+						<input type="checkbox" class="custom-check" id="car2_check" />
+						<label for="car2_check"></label>
+						<input type="checkbox" class="like-check" id="list_car2_like" />
+						<label for="list_car2_like"></label>
+						<img src="../images/common/car.jpg" />
+					</div>
+					<div class="car-info">
+						<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+						<ul class="car-option">
+							<li>14.09 (2015)</li>
+							<li>5만</li>
+							<li>경유</li>
+							<li>오토</li>
+							<li>검정투톤</li>
+							<li>무사고</li>
+						</ul>
+						<span class="price">
+							<span class="num">12,170</span>
+							만원
+							<button class="btn-performance fr"></button>
+							<button class="btn fr btn-option" name="car-option" onclick="pop_open(this)">옵션</button>
+						</span>
+					</div>
+					<div class="car-hotmark">
+						<button><img src="../images/hotmark/hot_15.gif" /></button>
+						<button><img src="../images/hotmark/hot_23.gif" /></button>
+						<button><img src="../images/hotmark/hot_21.gif" /></button>
+					</div>
+					<div class="more">
+						<p class="p-10">
+							<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+							<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+							<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+							<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+						</p>
+						<button class="add-compare">비교함 담기</button>
+						<button class="show-option" name="car-option" onclick="share_open(this)">매물 공유하기</button>
+						<div class="share-con">
+							<h4>공유하기</h4>
+							<span><font class="txt-danger">9</font>회 남음(일 10회)</span>
+							<ul class="share-method">
+								<li class="first-state" onclick="select_method(this)">
+									<div class="img kakao">
+										<img src="../images/common/kakao.png" />	
+									</div>
+									<span class="name">카카오톡</span>
+
+									<div class="kakao-share">
+										<h5>현재가</h5>
+										<button class="price-modi minus"></button>
+										<span class="price">2540만원</span>
+										<button class="price-modi plus"></button><br>
+										<input type="radio" class="btn-radio" name="showhide4" value="hide" id="hide4" checked="" />
+										<label onclick="show_hide(this)" for="hide4">숨기기</label>
+										<input type="radio" class="btn-radio" name="showhide4" value="show" id="show4" />
+										<label onclick="show_hide(this)" for="show4">보여주기</label>
+										<input type="text" class="share-memo" placeholder="내역 관리용 메모 (10자 이내)" maxlength="10" />
+										<div class="share-btn-group">
+											<button onclick="share_close(this)" class="share-close">닫기</button>
+											<button class="share">공유</button>
+										</div>
+									</div> 
+								</li>
+								<li class="first-state" onclick="select_method(this)">
+									<div class="img url">
+										URL	
+									</div>
+									<span class="name">URL복사</span>
+
+									<div class="url-share">
+										<input type="text" value="http://carmanager~" />
+										<p class="guide m-t-15">
+											URL 복사 버튼 클릭시,<br>
+											주소가 복사됩니다.<br>
+											주소 복사 후, 원하는곳에<br>
+											붙여넣기(Ctrl+v)해 주세요.
+										</p>
+										<div class="share-btn-group">
+											<button onclick="share_close(this)" class="share-close">닫기</button>
+											<button class="share">URL 복사</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<p class="guide">공유할 SNS를 선택하시면,<br>공유가격변동이 가능합니다.</p>
+							<button onclick="share_close(this)" class="share-close">닫기</button>
+						</div>
+					</div>
+				</li>
+				<li class="car-detail">
+					<div class="car-img">
+						<input type="checkbox" class="custom-check" id="car3_check" />
+						<label for="car3_check"></label>
+						<input type="checkbox" class="like-check" id="list_car3_like" />
+						<label for="list_car3_like"></label>
+						<img src="../images/common/car.jpg" />
+					</div>
+					<div class="car-info">
+						<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+						<ul class="car-option">
+							<li>14.09 (2015)</li>
+							<li>5만</li>
+							<li>경유</li>
+							<li>오토</li>
+							<li>검정투톤</li>
+							<li>무사고</li>
+						</ul>
+						<span class="price">
+							<span class="num">2,170</span>
+							만원
+							<button class="btn-performance fr"></button>
+						</span>
+					</div>
+					<div class="car-hotmark">
+						<button><img src="../images/hotmark/hot_15.gif" /></button>
+						<button><img src="../images/hotmark/hot_23.gif" /></button>
+						<button><img src="../images/hotmark/hot_21.gif" /></button>
+					</div>
+					<div class="more">
+						<p class="p-10">
+							<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+							<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+							<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+							<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+						</p>
+						<button class="add-compare">비교함 담기</button>
+						<button class="show-option" name="car-option" onclick="pop_open(this)">옵션 보기</button>
+					</div>
+				</li>
+				<li class="car-detail">
+					<div class="car-img">
+						<input type="checkbox" class="custom-check" id="car4_check" />
+						<label for="car4_check"></label>
+						<input type="checkbox" class="like-check" id="list_car4_like" />
+						<label for="list_car4_like"></label>
+						<img src="../images/common/car.jpg" />
+					</div>
+					<div class="car-info">
+						<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+						<ul class="car-option">
+							<li>14.09 (2015)</li>
+							<li>5만</li>
+							<li>경유</li>
+							<li>오토</li>
+							<li>검정투톤</li>
+							<li>무사고</li>
+						</ul>
+						<span class="price">
+							<span class="num">2,170</span>
+							만원
+							<button class="btn-performance fr"></button>
+						</span>
+					</div>
+					<div class="car-hotmark">
+						<button><img src="../images/hotmark/hot_15.gif" /></button>
+						<button><img src="../images/hotmark/hot_23.gif" /></button>
+						<button><img src="../images/hotmark/hot_21.gif" /></button>
+					</div>
+					<div class="more">
+						<p class="p-10">
+							<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+							<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+							<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+							<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+						</p>
+						<button class="add-compare">비교함 담기</button>
+						<button class="show-option" name="car-option" onclick="pop_open(this)">옵션 보기</button>
+					</div>
+				</li>
+				<li class="car-detail">
+					<div class="car-img">
+						<input type="checkbox" class="custom-check" id="car5_check" />
+						<label for="car5_check"></label>
+						<input type="checkbox" class="like-check" id="list_car5_like" />
+						<label for="list_car5_like"></label>
+						<img src="../images/common/car.jpg" />
+					</div>
+					<div class="car-info">
+						<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+						<ul class="car-option">
+							<li>14.09 (2015)</li>
+							<li>5만</li>
+							<li>경유</li>
+							<li>오토</li>
+							<li>검정투톤</li>
+							<li>무사고</li>
+						</ul>
+						<span class="price">
+							<span class="num">2,170</span>
+							만원
+							<button class="btn-performance fr"></button>
+						</span>
+					</div>
+					<div class="car-hotmark">
+						<button><img src="../images/hotmark/hot_15.gif" /></button>
+						<button><img src="../images/hotmark/hot_23.gif" /></button>
+						<button><img src="../images/hotmark/hot_21.gif" /></button>
+					</div>
+					<div class="more">
+						<p class="p-10">
+							<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+							<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+							<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+							<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+						</p>
+						<button class="add-compare">비교함 담기</button>
+						<button class="show-option" name="car-option" onclick="pop_open(this)">옵션 보기</button>
+					</div>
+				</li>
+				<li class="car-detail">
+					<div class="car-img">
+						<input type="checkbox" class="custom-check" id="car6_check" />
+						<label for="car6_check"></label>
+						<input type="checkbox" class="like-check" id="list_car6_like" />
+						<label for="list_car6_like"></label>
+						<img src="../images/common/car.jpg" />
+					</div>
+					<div class="car-info">
+						<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+						<ul class="car-option">
+							<li>14.09 (2015)</li>
+							<li>5만</li>
+							<li>경유</li>
+							<li>오토</li>
+							<li>검정투톤</li>
+							<li>무사고</li>
+						</ul>
+						<span class="price">
+							<span class="num">2,170</span>
+							만원
+							<button class="btn-performance fr"></button>
+						</span>
+					</div>
+					<div class="car-hotmark">
+						<button><img src="../images/hotmark/hot_15.gif" /></button>
+						<button><img src="../images/hotmark/hot_23.gif" /></button>
+						<button><img src="../images/hotmark/hot_21.gif" /></button>
+					</div>
+					<div class="more">
+						<p class="p-10">
+							<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+							<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+							<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+							<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+						</p>
+						<button class="add-compare">비교함 담기</button>
+						<button class="show-option" name="car-option" onclick="pop_open(this)">옵션 보기</button>
+					</div>
+				</li>
+				<li class="car-detail">
+					<div class="car-img">
+						<input type="checkbox" class="custom-check" id="car7_check" />
+						<label for="car7_check"></label>
+						<input type="checkbox" class="like-check" id="list_car7_like" />
+						<label for="list_car7_like"></label>
+						<img src="../images/common/car.jpg" />
+					</div>
+					<div class="car-info">
+						<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+						<ul class="car-option">
+							<li>14.09 (2015)</li>
+							<li>5만</li>
+							<li>경유</li>
+							<li>오토</li>
+							<li>검정투톤</li>
+							<li>무사고</li>
+						</ul>
+						<span class="price">
+							<span class="num">2,170</span>
+							만원
+							<button class="btn-performance fr"></button>
+						</span>
+					</div>
+					<div class="car-hotmark">
+						<button><img src="../images/hotmark/hot_15.gif" /></button>
+						<button><img src="../images/hotmark/hot_23.gif" /></button>
+						<button><img src="../images/hotmark/hot_21.gif" /></button>
+					</div>
+					<div class="more">
+						<p class="p-10">
+							<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+							<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+							<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+							<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+						</p>
+						<button class="add-compare">비교함 담기</button>
+						<button class="show-option" name="car-option" onclick="pop_open(this)">옵션 보기</button>
+					</div>
+				</li>
+				<li class="car-detail">
+					<div class="car-img">
+						<input type="checkbox" class="custom-check" id="car8_check" />
+						<label for="car8_check"></label>
+						<input type="checkbox" class="like-check" id="list_car8_like" />
+						<label for="list_car8_like"></label>
+						<img src="../images/common/car.jpg" />
+					</div>
+					<div class="car-info">
+						<button class="car-name txt-left" onclick="window.open('detail.html','차량상세','width=1035,height=540')">[현대] 소나타뉴라이즈 2.0 스마트 초이스</button>
+						<ul class="car-option">
+							<li>14.09 (2015)</li>
+							<li>5만</li>
+							<li>경유</li>
+							<li>오토</li>
+							<li>검정투톤</li>
+							<li>무사고</li>
+						</ul>
+						<span class="price">
+							<span class="num">2,170</span>
+							만원
+							<button class="btn-performance fr"></button>
+						</span>
+					</div>
+					<div class="car-hotmark">
+						<button><img src="../images/hotmark/hot_15.gif" /></button>
+						<button><img src="../images/hotmark/hot_23.gif" /></button>
+						<button><img src="../images/hotmark/hot_21.gif" /></button>
+					</div>
+					<div class="more">
+						<p class="p-10">
+							<span class="txt-lightblue">부천 / DIY카랜드 ㈜쓰리노</span>
+							<span class="txt-gray m-b-10">박상민 / 010-1111-1111</span>
+							<span>판매완료가격 <font class="txt-lightgray">(60일 기준)</font></span>
+							<span class="txt-lightgray"><img src="../images/icon/graph.png" /><b class="txt-black">2,130</b>만원 ~ <b class="txt-black">2,230</b>만원</span>
+						</p>
+						<button class="add-compare">비교함 담기</button>
+						<button class="show-option" name="car-option" onclick="pop_open(this)">옵션 보기</button>
+					</div>
+				</li>
+				<li class="clear"></li>
+			</ul>
+			<!-- //검색 차량 이미지 목록 -->
+			<!-- //검색결과 리스트 -->
+
+			<!-- 검색결과 페이지네이션 -->
+			<ul class="list-pagenation">
+                <li class="arrow"><img src="../images/icon/btn_first.gif"></li>
+                <li class="arrow"><img src="../images/icon/btn_prev.gif"></li>
+                <li class="on">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li class="arrow"><img src="../images/icon/btn_next.gif"></li>
+                <li class="arrow"><img src="../images/icon/btn_last.gif"></li>
+        	</ul>
+			<!-- //검색결과 페이지네이션 -->
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li>이용약관</li>
+					<li>개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>

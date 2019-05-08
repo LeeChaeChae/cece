@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/basic.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap bg-white">
+		<header class="header compact">
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg"></a></h1>
+				<ul class="lnb-menu">
+					<li onclick="location.href='main.html'">로그인</li>
+					<li onclick="location.href='join_product_intro.html'">회원가입</li>
+					<li>고객센터</li>
+					<li>즐겨찾기 추가</li>
+					<li>원격지원 요청</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="content">
+		    <h4 class="contets-tit">회원가입 및 딜러인증 <span class="font-xsm txt-gray m-l-20">딜러인증 및 회원가입 신청을 위해 자신에게 맞는 회원유형을 선택하세요.</span></h4>
+		    <table class="type-table m-t-20">
+		        <tr>
+		            <th>딜러 인증</th>
+		            <td>
+		                <p>카매니저 사용을 위해서는 계정을 생성해야 합니다.<br>
+		                이름과 휴대전화 번호를 이용한 딜러인증 후, 계정을 생성하세요.
+		                </p>
+		            </td>
+		            <td>&nbsp;</td>
+		            <td>&nbsp;</td>
+		            <td><button type="button" class="btn-circle btn-primary" onclick="location.href='join_dealer_certify.html'">인증하기</button></td>
+		        </tr>
+		        <tr>
+		            <th>유료 상사</th>
+		            <td>
+		                <p>매매상사의 대표가 상품 구입 시, 소속 딜러 모두가<br>
+		                카매니저를 사용할 수 있는 상품입니다.
+		                </p>
+		            </td>
+		            <td><button type="button" class="btn-circle btn-darkgray" name="product-intro" onclick="pop_open(this);">상품안내</button></td>
+		            <td><button type="button" class="btn-circle btn-black" onclick="window.open('guide_charge_shop.html','가입방법','width=1230,height=723')">가입방법</button></td>
+		            <td><button type="button" class="btn-circle btn-lightblue" onclick="location.href='join_charge_shop_apply.html'">가입신청</button></td>
+		        </tr>
+		        <tr>
+		            <th>유료 딜러</th>
+		            <td>
+		                <p>딜러 본인만 카매니저를 사용할 수 있는 상품입니다.</p>
+		            </td>
+		            <td><button type="button" class="btn-circle btn-darkgray" name="product-intro" onclick="pop_open(this);">상품안내</button></td>
+		            <td><button type="button" class="btn-circle btn-black" onclick="window.open('guide_charge_dealer.html','가입방법','width=1230,height=723')">가입방법</button></td>
+		            <td><button type="button" class="btn-circle btn-lightblue" onclick="location.href='join_charge_dealer_apply.html'">가입신청</button></td>
+		        </tr>
+		        <tr>
+		            <th>수출 딜러</th>
+		            <td>
+		                <p>전국 20만대의 실매물과 시세를 조회할 수 있는 수출딜러 전용 상품입니다.</p>
+		            </td>
+		            <td><button type="button" class="btn-circle btn-darkgray" name="product-intro" onclick="pop_open(this);">상품안내</button></td>
+		            <td><button type="button" class="btn-circle btn-black" onclick="window.open('guide_export_dealer.html','가입방법','width=1230,height=723')">가입방법</button></td>
+		            <td><button type="button" class="btn-circle btn-lightblue" onclick="location.href='join_export_dealer_apply.html'">가입신청</button></td>
+		        </tr>
+		        <tr>
+		            <th>신차 딜러</th>
+		            <td>
+		                <p>전국 20만대의 실매물과 시세를 조회할 수 있는 신차딜러 전용 상품입니다.</p>
+		            </td>
+		            <td><button type="button" class="btn-circle btn-darkgray" name="product-intro" onclick="pop_open(this);">상품안내</button></td>
+		            <td><button type="button" class="btn-circle btn-black" onclick="window.open('guide_newcar_dealer.html','가입방법','width=1230,height=723')">가입방법</button></td>
+		            <td><button type="button" class="btn-circle btn-lightblue" onclick="location.href='join_newcar_dealer_apply.html'">가입신청</button></td>
+		        </tr>
+		    </table>
+			
+			<table class="btn-group m-t-30">
+				<tr>
+					<td class="center">
+						<button type="button" class="btn-round btn-medium btn-gray m-r-10" onclick="location.href='index.html'">홈으로</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li>이용약관</li>
+					<li>개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+
+	</div>
+
+	<div class="dim"></div>
+	<div class="layer-pop product-intro">
+		<h3 class="pop-tit"><button type="button" class="esc" onclick="pop_close(this);"></button></h3>
+		<img src="../images/common/carmanager_product_info.png" />
+	</div>
+</body>
+</html>

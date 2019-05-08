@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/basic.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header compact">
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg"></a></h1>
+				<ul class="lnb-menu">
+					<li onclick="location.href='index.html'">로그인</li>
+					<li onclick="location.href='join_product_intro.html'">상품가입</li>
+					<li onclick="location.href='customer_FAQ.html'">고객센터</li>
+					<li>즐겨찾기 추가</li>
+					<li>원격지원 요청</li>
+					<li>바로가기 추가</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="certify">
+				<ul class="tab-menu">
+					<li name="id" class="active">아이디 찾기</li>
+					<li name="pass">비밀번호 찾기</li>
+				</ul>
+				<div class="info-wrap tab-con id active">
+					<ul class="insert-info txt-left col-6">
+						<li>
+							<span class="division">인증방법 선택</span>
+							<input type="radio" id="phone" name="method1" checked="" />
+							<label for="phone" class="p-0 m-r-10 col-3">등록된 휴대폰 번호로 찾기</label>
+							<input type="radio" id="mail" name="method1" />
+							<label for="mail" class="p-0 col-3">등록된 E-mail로 찾기</label>
+						</li>
+						<li>
+							<span class="division">이름</span>
+							<input type="text" />
+						</li>
+						<li class="phone">
+							<span class="division">휴대폰</span>
+							<select class="custom-select m-r-5">
+								<option>선택</option>
+							</select>
+							<select class="custom-select">
+								<option>선택</option>
+							</select>
+							-
+							<input type="text" />
+							-
+							<input type="text" />
+						</li>
+						<li class="email">
+							<span class="division">E-mail</span>
+							<input type="text" />
+							<span class="font-xxsm">@</span>
+							<input type="text" />
+							<select class="custom-select m-l-5">
+								<option>직접입력</option>
+							</select>
+						</li>
+					</ul>
+						
+					<table class="btn-group">
+						<tr>
+							<td class="center">
+								<button type="button" class="btn-round btn-sm btn-primary" onclick="location.href='main_id_result.html'">확인</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="info-wrap tab-con pass">
+					<ul class="insert-info txt-left col-6">
+						<li>
+							<span class="division">인증방법 선택</span>
+							<input type="radio" id="phone2" name="method2" checked="" />
+							<label for="phone2" class="p-0 m-r-10 col-3">등록된 휴대폰 번호로 찾기</label>
+							<input type="radio" id="mail2" name="method2" />
+							<label for="mail2" class="p-0 col-3">등록된 E-mail로 찾기</label>
+						</li>
+						<li>
+							<span class="division">이름</span>
+							<input type="text" />
+						</li>
+						<li>
+							<span class="division">아이디</span>
+							<input type="text" />
+						</li>
+						<li class="phone2">
+							<span class="division">휴대폰</span>
+							<select class="custom-select m-r-5">
+								<option>선택</option>
+							</select>
+							<select class="custom-select">
+								<option>선택</option>
+							</select>
+							-
+							<input type="text" />
+							-
+							<input type="text" />
+						</li>
+						<li class="email2">
+							<span class="division">E-mail</span>
+							<input type="text" />
+							<span class="font-xxsm">@</span>
+							<input type="text" />
+							<select class="custom-select m-l-5">
+								<option>직접입력</option>
+							</select>
+						</li>
+					</ul>
+						
+					<table class="btn-group">
+						<tr>
+							<td class="center">
+								<button type="button" class="btn-round btn-sm btn-primary" onclick="location.href='main_pass_result.html'">확인</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<table class="btn-group">
+					<tr>
+						<td class="center">
+							<button type="button" class="btn-round btn-medium btn-gray" onclick="location.href='index.html'">홈으로</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li>이용약관</li>
+					<li>개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>

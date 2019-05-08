@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>pc carmanager</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="중고차 B to B 사이트 1위인 카매니저의 웹버젼, 3만 5천명 딜러의 20만대 실시간 실매물, 딜러전용 전국매물공유프로그램">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/common.css">    
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/basic.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header compact">
+			<div class="header-wrap">
+				<h1 class="logo"><a href="index.html"><img src="../images/common/logo.svg"></a></h1>
+				<ul class="lnb-menu">
+					<li onclick="location.href='index.html'">로그인</li>
+					<li onclick="location.href='join_product_intro.html'">상품가입</li>
+					<li onclick="location.href='customer_FAQ.html'">고객센터</li>
+					<li>즐겨찾기 추가</li>
+					<li>원격지원 요청</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="content">
+			<h4 class="contets-tit l-h-1">유료상사 가입 <span class="font-xsm txt-gray m-l-20">카매니저 서비스 이용을 위해 회원가입을 원하시는 상사는 가입신청서를 작성하세요.</span><br><span class="txt-danger font-xsm">(※ 허위매물 3회 등록 시 영구정지 되어 카매니저 이용이 불가합니다.)</span></h4>
+			<p class="font-sm txt-danger txt-right"><span class="m-b-5 fl txt-black font-bold font-md">가입신청서</span>* 표시는 필수 입력사항입니다.</p>
+			<table class="list-table txt-left">
+				<tr class="tit">
+					<th width="15%"><font class="txt-danger">*</font>시/도</th>
+					<td width="35%">
+						<select class="custom-select sm col-10">
+							<option>선택</option>
+						</select>
+					</td>
+					<th width="15%"><font class="txt-danger">*</font>지역</th>
+					<td width="35%">
+						<select class="custom-select sm col-10">
+							<option>선택</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="tit">
+					<th><font class="txt-danger">*</font>조합</th>
+					<td colspan="3">
+						<input type="text" class="col-4" />
+						<font class="p-l-10 font-sm txt-gray">※ 소속 조합의 정보를 정확히 입력하세요.</font>
+					</td>
+				</tr>
+				<tr class="tit">
+					<th>단지</th>
+					<td colspan="3">
+						<select class="custom-select sm col-4">
+							<option>선택</option>
+						</select>
+						<font class="p-l-10 font-sm txt-gray">※ 매매상사가 위치한 단지를 선택하세요.</font>
+					</td>
+				</tr>
+				<tr class="tit">
+					<th><font class="txt-danger">*</font>사업자번호</th>
+					<td>
+						<input type="text" class="col-3" />
+						- <input type="text" class="col-2" />
+						- <input type="text" class="col-4" />
+					</td>
+					<th><font class="txt-danger">*</font>대표자명</th>
+					<td>
+						<input type="text" class="col-10" />
+					</td>
+				</tr>
+				<tr class="tit">
+					<th><font class="txt-danger">*</font>대표자 휴대전화번호</th>
+					<td colspan="3">
+						<input type="text" class="col-4" />
+						<font class="p-l-10 font-sm txt-gray">※ 대표자 휴대전화번호는 해당상사 관리자 인증 시 사용됩니다.</font>
+					</td>
+				</tr>
+				<tr class="tit">
+					<th><font class="txt-danger">*</font>상사명</th>
+					<td colspan="3">
+						<input type="text" class="col-4" />
+						<font class="p-l-10 font-sm txt-gray">※ 사업자등록증의 법인명(단체명)을 입력하세요.</font>
+					</td>
+				</tr>
+				<tr class="tit">
+					<th>화면에 표시할 상사명</th>
+					<td colspan="3">
+						<input type="text" class="col-4" />
+						<font class="p-l-10 font-sm txt-gray">※ 사업자등록증의 법인명과 다른 상사명으로 표시할 경우에만 입력하세요.</font>
+					</td>
+				</tr>
+				<tr class="tit">
+					<th class="br-b-n">전화번호</th>
+					<td>
+						<input type="text" class="col-10" />
+					</td>
+					<th class="br-b-n">팩스번호</th>
+					<td>
+						<input type="text" class="col-10" />
+					</td>
+				</tr>
+			</table>
+
+			<table class="list-table txt-left m-t-30">
+				<tr class="tit">
+					<th>사업자 등록증 및 종사원증 첨부</th>
+					<td>
+						<input type="text" readonly="" />
+						<button type="button" class="btn-round btn-xsm btn-gray m-l-10">찾기</button>
+						<button type="button" class="btn-round btn-xsm btn-lightblue m-l-10">등록</button>
+					</td>
+				</tr>
+			</table>
+			<p class="font-xsm txt-danger l-h-2 m-t-5">
+				※ 파일 크기는 최대 10MB까지 첨부 가능합니다.<br>
+				※ 첨부 시 파일명에 상사명, 딜러명을 포함해 주시기 바랍니다.
+			</p>
+			<span class="font-xsm">파일목록: 비즈모터스_사업자등록증.jpg <button class="txt-danger m-r-10">x</button>홍길동_종사원증.jpg <button class="txt-danger m-r-10">x</button></span>
+
+			<table class="btn-group m-t-20">
+				<tr>
+					<td class="center">
+						<button type="button" class="btn-round btn-medium btn-gray m-r-10" onclick="location.href='index.html'">취소</button>
+						<button type="button" class="btn-round btn-medium btn-primary" onclick="location.href='join_apply_success.html'">신청하기</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-wrap">
+				<ul class="footer-menu">
+					<li>제휴제안</li>
+					<li>광고문의</li>
+					<li>이용약관</li>
+					<li>개인정보 취급방침</li>
+				</ul>
+				<ul class="info">
+					<li>회사명 : 주식회사 비즈인포그룹</li>
+					<li>고객센터 : 02-3474-3060</li>
+					<li>문의메일 : cs@bizinfogroup.co.kr</li>
+					<li>주소 : 서울특별시 강남구 봉은사로 449 밤부타워 F8, 9, 10</li>
+					<li>대표이사 : 김종우, 함석필</li>
+					<li>사업자등록번호 : 140-81-22581</li>
+					<li>통신판매업신고번호:제2011-서울서초-1080호</li>
+				</ul>
+				<span class="copyright">Copyright &copy; Business Info Group Co., LTD Alright Reserved</span>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>

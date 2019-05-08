@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'pc-carmanager-icon';
+  src:  url('../fonts/pc-carmanager-icon.eot?lnkxvd');
+  src:  url('../fonts/pc-carmanager-icon.eot?lnkxvd#iefix') format('embedded-opentype'),
+    url('../fonts/pc-carmanager-icon.ttf?lnkxvd') format('truetype'),
+    url('../fonts/pc-carmanager-icon.woff?lnkxvd') format('woff'),
+    url('../fonts/pc-carmanager-icon.svg?lnkxvd#pc-carmanager-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pc-carmanager-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-car:before {
+  content: "\e900";
+}
+.ico-id-card:before {
+  content: "\e901";
+}
+.ico-list:before {
+  content: "\e902";
+}
+.ico-search:before {
+  content: "\e903";
+}
+.ico-printer:before {
+  content: "\e904";
+}
+.ico-user:before {
+  content: "\e905";
+}
+.ico-share:before {
+  content: "\e906";
+}
+.ico-like:before {
+  content: "\e907";
+}
+.ico-box:before {
+  content: "\e908";
+}
+.ico-star:before {
+  content: "\e909";
+}
+.ico-time:before {
+  content: "\e90a";
+}
