@@ -497,18 +497,86 @@
 				<!-- //국산차탭 -->
 				<!-- 수입차탭 -->
 				<div class="option-tab-con imported-car">
-					수입차탭 국산차탭과 동일
+					<!-- 직접검색 -->
+					<div class="search">
+						<img src="../images/icon/search_blue.png" />
+						<input type="text" placeholder="모델명 직접 입력">
+						<button class="esc"></button>
+						<!-- 검색 자동 완성 -->
+						<div class="auto-search-list">
+							<ul>
+								<li>
+									<input type="checkbox" class="custom-check" id="search_list1" >
+									<label for="search_list1"></label>
+									<label for="search_list1" class="custom-check-label">현대 > 그랜저 > 그랜저XG</label>
+								</li>
+								<li>
+									<input type="checkbox" class="custom-check" id="search_list2" checked="" >
+									<label for="search_list2"></label>
+									<label for="search_list2" class="custom-check-label">현대 > 그랜저 > 그랜저XG > UPG 2700cc</label>
+								</li>
+								<li>
+									<input type="checkbox" class="custom-check" id="search_list3" checked="" >
+									<label for="search_list3"></label>
+									<label for="search_list3" class="custom-check-label">현대 > 그랜저 > 그랜저XG > 가솔린 2500cc 이하</label>
+								</li>
+							</ul>
+							<button class="btn-cancel">취소</button>
+							<button class="btn-search">검색</button>
+						</div>
+						<!-- //검색 자동 완성 -->
+					</div>
+					<!-- //직접검색 -->
+					<!-- 차량선택 -->
+					<ul class="search-option-select">
+						<li>
+							<div class="option-tit">제조사<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-list">
+								<input type="radio" class="txt-select" id="car5_1" name="car5" checked="" />
+								<label for="car5_1">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="car5_2" name="car5" />
+								<label for="car5_2">제네시스 (30,759)</label>
+								<input type="radio" class="txt-select" id="car5_3" name="car5" />
+								<label for="car5_3">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="car5_4" name="car5" />
+								<label for="car5_4">제네시스 (30,759)</label>
+								<input type="radio" class="txt-select" id="car5_5" name="car5" />
+								<label for="car5_5">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="car5_6" name="car5" />
+								<label for="car5_6">제네시스 (30,759)</label>
+							</div>
+						</li>
+						<li>
+							<div class="option-tit">모델<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<input type="radio" class="txt-select" id="car6_1" name="car6" />
+							<label for="car6_1">현대 (39,284)</label>
+							<input type="radio" class="txt-select" id="car6_2" name="car6" checked="" />
+							<label for="car6_2">제네시스 (30,759)</label>
+						</li>
+						<li>
+							<div class="option-tit">세부모델<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<input type="checkbox" class="txt-select" id="car7_1" checked="" />
+							<label for="car7_1">현대 (39,284)</label>
+							<input type="checkbox" class="txt-select" id="car7_2" />
+							<label for="car7_2">제네시스 (30,759)</label>
+						</li>
+						<li>
+							<div class="option-tit">등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<input type="checkbox" class="txt-select" id="car8_1" checked="" />
+							<label for="car8_1">현대 (39,284)</label>
+							<input type="checkbox" class="txt-select" id="car8_2" checked="" />
+							<label for="car8_2">제네시스 (30,759)</label>
+						</li>
+						<li>
+							<div class="option-tit">세부등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<p>등급을 선택해주세요.</p>
+						</li>
+					</ul>
+					<!-- //차량선택 -->
 				</div>
 				<!-- //수입차탭 -->
 				<!-- 화물차탭 -->
 				<div class="option-tab-con cargo active">
-					<input class="custom-check round" type="radio" name="cargo-search-option" id="cargo-search-option1" checked="">
-					<label for="cargo-search-option1" class="m-l-10 m-r-5"></label>
-					<label for="cargo-search-option1" class="custom-check-label">형식 / 적재용량</label>
-					<input class="custom-check round" type="radio" name="cargo-search-option" id="cargo-search-option2">
-					<label for="cargo-search-option2" class="m-l-10 m-r-5"></label>
-					<label for="cargo-search-option2" class="custom-check-label m-r-20">제조사 / 모델 / 등급</label>
-					<!-- 제조사/모델/등급 체크시 하단부분 국산차탭과 같은 형식으로 변경됨.(5칸) -->
 					<div class="search">
 						<img src="../images/icon/search_blue.png" />
 						<input type="text" placeholder="모델명 직접 입력">
@@ -516,60 +584,185 @@
 					</div>
 					<ul class="search-option-select">
 						<li>
-							<div class="option-tit">형식<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-tit">차종<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
 							<div class="option-list">
-								<input type="radio" class="txt-select" id="cargo1_1" name="cargo1" />
-								<label for="cargo1_1">웜바디 (3,222)</label>
-								<input type="radio" class="txt-select" id="cargo1_2" name="cargo1" />
-								<label for="cargo1_2">파워게이트 (1,333)</label>
-								<input type="radio" class="txt-select" id="cargo1_3" checked="" name="cargo1" />
-								<label for="cargo1_3">카고(화물)트럭 (5,211)</label>
+								<input type="radio" class="txt-select" id="cargo-model1" name="cargo-model" checked="" />
+								<label for="cargo-model1">활어차(1,111)</label>
+								<input type="radio" class="txt-select" id="cargo-model2" name="cargo-model" />
+								<label for="cargo-model2">음식물처리차량(2,433)</label>
+								<input type="radio" class="txt-select" id="cargo-model3" name="cargo-model" />
+								<label for="cargo-model3">카캐리어(123)</label>
+								<input type="radio" class="txt-select" id="cargo-model4" name="cargo-model" />
+								<label for="cargo-model4">곡물수송차(235)</label>
+								<input type="radio" class="txt-select" id="cargo-model5" name="cargo-model" />
+								<label for="cargo-model5">가축운반차(213)</label>
+								<input type="radio" class="txt-select" id="cargo-model6" name="cargo-model" />
+								<label for="cargo-model6">노면청소차(23)</label>
+								<input type="radio" class="txt-select" id="cargo-model7" name="cargo-model" />
+								<label for="cargo-model7">캠핑카(3,123)</label>
+								<input type="radio" class="txt-select" id="cargo-model8" name="cargo-model" />
+								<label for="cargo-model8">이동판매차(232)</label>
+								<input type="radio" class="txt-select" id="cargo-model9" name="cargo-model" />
+								<label for="cargo-model9">이동무대차(452)</label>
+								<input type="radio" class="txt-select" id="cargo-model10" name="cargo-model" />
+								<label for="cargo-model10">이동방제차(532)</label>
+								<input type="radio" class="txt-select" id="cargo-model11" name="cargo-model" />
+								<label for="cargo-model11">이동목욕차(32)</label>
+								<input type="radio" class="txt-select" id="cargo-model12" name="cargo-model" />
+								<label for="cargo-model12">하수부준설차(664)</label>
+								<input type="radio" class="txt-select" id="cargo-model13" name="cargo-model" />
+								<label for="cargo-model13">왕겨및톱밥운송(1,321)</label>
+								<input type="radio" class="txt-select" id="cargo-model14" name="cargo-model" />
+								<label for="cargo-model14">이동세탁차(2,422)</label>
+								<input type="radio" class="txt-select" id="cargo-model15" name="cargo-model" />
+								<label for="cargo-model15">문서파쇄압축차량(11,132)</label>
+								<input type="radio" class="txt-select" id="cargo-model16" name="cargo-model" />
+								<label for="cargo-model16">엠블런스(911)</label>
 							</div>
 						</li>
 						<li>
-							<div class="option-tit">뭐지?<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<!-- 차명리스트 통합정리 엑셀문서 내 MakerName 항목 -->
+							<div class="option-tit">제조사<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
 							<div class="option-list">
-								<input type="radio" class="txt-select" id="cargo2_1" checked="" name="cargo2" />
-								<label for="cargo2_1">웜바디 (3,222)</label>
-								<input type="radio" class="txt-select" id="cargo2_2"  name="cargo2" />
-								<label for="cargo2_2">파워게이트 (1,333)</label>
+								<input type="radio" class="txt-select" id="MakerName1" name="MakerName" />
+								<label for="MakerName1">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="MakerName2" name="MakerName" checked="" />
+								<label for="MakerName2">기아 (30,759)</label>
+								<input type="radio" class="txt-select" id="MakerName3" name="MakerName" />
+								<label for="MakerName3">타타대우 (30,759)</label>
+								<input type="radio" class="txt-select" id="MakerName4" name="MakerName" />
+								<label for="MakerName4">삼성 (9,999)</label>
+								<input type="radio" class="txt-select" id="MakerName5" name="MakerName" />
+								<label for="MakerName5">히노 (999)</label>
+								<input type="radio" class="txt-select" id="MakerName6" name="MakerName" />
+								<label for="MakerName6">벤츠 (1,533)</label>
+								<input type="radio" class="txt-select" id="MakerName7" name="MakerName" />
+								<label for="MakerName7">이베코 (352)</label>
+								<input type="radio" class="txt-select" id="MakerName8" name="MakerName" />
+								<label for="MakerName8">만트럭 (123)</label>
+								<input type="radio" class="txt-select" id="MakerName9" name="MakerName" />
+								<label for="MakerName9">스카니아 (313)</label>
+								<input type="radio" class="txt-select" id="MakerName10" name="MakerName" />
+								<label for="MakerName10">이스즈 (532)</label>
+								<input type="radio" class="txt-select" id="MakerName11" name="MakerName" />
+								<label for="MakerName11">볼보 (251)</label>
+								<input type="radio" class="txt-select" id="MakerName12" name="MakerName" />
+								<label for="MakerName12">기타 (1,759)</label>
 							</div>
 						</li>
 						<li>
-							<div class="option-tit">톤<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<!-- 차명리스트 통합정리 엑셀문서 내 ItemsName 항목 -->
+							<div class="option-tit">모델<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
 							<div class="option-list">
-								<input type="radio" class="txt-select" id="cargo3_1" name="cargo3" />
-								<label for="cargo3_1">1톤 (1,211)</label>
-								<input type="radio" class="txt-select" id="cargo3_2" name="cargo3" />
-								<label for="cargo3_2">1.2톤 (1,211)</label>
-								<input type="radio" class="txt-select" id="cargo3_3" name="cargo3" />
-								<label for="cargo3_3">1.4톤 (1,211)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName1" checked="" />
+								<label for="ItemsName1">마이티 (1,284)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName2" checked="" />
+								<label for="ItemsName2">마이티2 (759)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName3" />
+								<label for="ItemsName3">e-마이티 (325)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName4" />
+								<label for="ItemsName4">마이티-큐티 (123)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName5" />
+								<label for="ItemsName5">올뉴마이티 (532)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName6" />
+								<label for="ItemsName6">메가트럭 (2,151)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName7" />
+								<label for="ItemsName7">파워트럭 (133)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName8" />
+								<label for="ItemsName8">뉴파워트럭 (532)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName9" />
+								<label for="ItemsName9">트라고 (632)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName10" />
+								<label for="ItemsName10">엑시언트 (622)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName11" />
+								<label for="ItemsName11">점보타이탄 (12,623)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName12" />
+								<label for="ItemsName12">복사 (12)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName13" />
+								<label for="ItemsName13">와이드복사 (533)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName14" />
+								<label for="ItemsName14">XT G500 (11,241)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName15" />
+								<label for="ItemsName15">R490 (513)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName16" />
+								<label for="ItemsName16">R500 (745)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName17" />
+								<label for="ItemsName17">R520 (346)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName18" />
+								<label for="ItemsName18">R580 (324)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName19" />
+								<label for="ItemsName19">FE (12)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName20" />
+								<label for="ItemsName20">FH (53)</label>
+								<input type="checkbox" class="txt-select" id="ItemsName21" />
+								<label for="ItemsName21">FL (23)</label>
+							</div>
+						</li>
+						<li>
+							<!-- 차명리스트 통합정리 엑셀문서 내 ModelsName 항목 -->
+							<div class="option-tit">등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-list">
+								<input type="checkbox" class="txt-select" id="ModelsName1" name="ModelsName" />
+								<label for="ModelsName1">일반캡 (6,284)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName2" name="ModelsName" checked="" />
+								<label for="ModelsName2">슈퍼캡 (532)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName3" name="ModelsName" />
+								<label for="ModelsName3">더블캡 (1,242)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName4" name="ModelsName" checked="" />
+								<label for="ModelsName4">일반캡 (9,999)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName5" name="ModelsName" />
+								<label for="ModelsName5">샤시캡 (999)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName6" name="ModelsName" />
+								<label for="ModelsName6">와이드6.6 (1,533)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName7" name="ModelsName" />
+								<label for="ModelsName7">와이드6.6 샤시 (1,352)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName8" name="ModelsName" />
+								<label for="ModelsName8">내로우캡 (123)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName9" name="ModelsName" />
+								<label for="ModelsName9">고하중카고 (313)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName10" name="ModelsName" />
+								<label for="ModelsName10">10X4 (532)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName11" name="ModelsName" />
+								<label for="ModelsName11">4X2 (251)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName12" name="ModelsName" />
+								<label for="ModelsName12">6X4 (12)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName13" name="ModelsName" />
+								<label for="ModelsName13">6X4 저상 (14)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName14" name="ModelsName" />
+								<label for="ModelsName14">표준캡 (42)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName15" name="ModelsName" />
+								<label for="ModelsName15">킹캡 (124)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName16" name="ModelsName" />
+								<label for="ModelsName16">4X4 (51)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName17" name="ModelsName" />
+								<label for="ModelsName17">6X2 (44)</label>
+								<input type="checkbox" class="txt-select" id="ModelsName18" name="ModelsName" />
+								<label for="ModelsName18">풀카고 (153)</label>
+							</div>
+						</li>
+						<li>
+							<!-- 차명리스트 통합정리 엑셀문서 내 ModelName 항목 -->
+							<div class="option-tit">세부등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-list">
+								<input type="checkbox" class="txt-select" id="ModelName1" name="ModelName" checked="" />
+								<label for="ModelName1">스탠다드 (532)</label>
+								<input type="checkbox" class="txt-select" id="ModelName2" name="ModelName" />
+								<label for="ModelName2">디럭스 (125)</label>
+								<input type="checkbox" class="txt-select" id="ModelName3" name="ModelName" />
+								<label for="ModelName3">슈퍼 (531)</label>
+								<input type="checkbox" class="txt-select" id="ModelName4" name="ModelName" />
+								<label for="ModelName4">골드 (42)</label>
+								<input type="checkbox" class="txt-select" id="ModelName5" name="ModelName" checked="" />
+								<label for="ModelName5">하이슈퍼 (124)</label>
+								<input type="checkbox" class="txt-select" id="ModelName6" name="ModelName" />
+								<label for="ModelName6">프리미엄 (52)</label>
+								<input type="checkbox" class="txt-select" id="ModelName7" name="ModelName" />
+								<label for="ModelName7">슬리퍼캡 (62)</label>
+								<input type="checkbox" class="txt-select" id="ModelName8" name="ModelName" />
+								<label for="ModelName8">데이캡 (9)</label>
 							</div>
 						</li>
 					</ul>
-					<ul class="search-option-select">
-						<li>
-							<input type="radio" class="txt-select" id="cargo4_1" name="cargo1" />
-							<label for="cargo4_1">전축 (102)</label>
-						</li>
-						<li>
-							<input type="radio" class="txt-select" id="cargo5_1" checked="" name="cargo2" />
-							<label for="cargo5_1">고상 (130)</label>
-						</li>
-						<li>
-							<input type="radio" class="txt-select" id="cargo6_1" name="cargo3" />
-							<label for="cargo6_1">단축(4.6m) (50)</label>
-						</li>
-					</ul>
-					<p class="cargo-guide">
-						<b>화물차 쉽게 검색 방법</b>
-						1. 형식을 선택 합니다. <br>
-						2. 적재 톤수를 선택합니다. <br>
-						3. 축/적재함 높이/적재함 길이를 선택합니다.<br>
-						4. 검색하기 버튼을 클릭 하면, 하단에 검색리스트가 노출됩니다.<br>
-						5. 제조사/모델/등급으로 검색을 원하시면,
-						상단의 라디오 버튼(제조사/모델/등급)을 선택해주세요.
-					</p>
 				</div>
 				<!-- //화물차탭 -->
 				<!-- 빠른검색옵션 -->
@@ -635,22 +828,52 @@
 						</select>
 					</div>
 					<div class="col-10 txt-left br-t-n p-t-0">
-						<label class="m-r-20">추가검색</label>
+						<label class="m-r-10">톤수</label>
+						<select class="custom-select col-1">
+							<option>1톤</option>
+							<option>2톤</option>
+							<option>3톤</option>
+						</select>
+						~
+						<select class="custom-select col-1">
+							<option>1톤</option>
+							<option>2톤</option>
+							<option>3톤</option>
+						</select>
+						<label class="m-r-10 m-l-10">축</label>
+						<select class="custom-select col-1">
+							<option>앞축</option>
+							<option>중축</option>
+							<option>뒷축</option>
+						</select>
+						<label class="m-r-10 m-l-10">적재함 높이</label>
+						<select class="custom-select col-1">
+							<option>고상</option>
+							<option>저상</option>
+						</select>
+						<label class="m-r-10 m-l-10">적재함 길이</label>
+						<select class="custom-select col-1">
+							<option>단축(4.6M)</option>
+							<option>중축(5.3M)</option>
+							<option>초장축(6.25M)</option>
+							<option>극초장축(7M)</option>
+							<option>극초장축플러스(7.4M이상)</option>
+							<option>8M이상</option>
+							<option>장축(소형)</option>
+							<option>초장축(소형)</option>
+						</select>
+						<label class="m-r-10 m-l-10">추가검색</label>
 						<input type="checkbox" class="custom-check" id="option1" />
 						<label for="option1"></label>
-						<label class="custom-check-label m-r-20" for="option1">LPG일반</label>
-						<input type="checkbox" class="custom-check" id="option2" />
-						<label for="option2"></label>
-						<label class="custom-check-label m-r-20" for="option2">무사고</label>
-						<input type="checkbox" class="custom-check" id="option3" />
-						<label for="option3"></label>
-						<label class="custom-check-label m-r-20" for="option3">사진</label>
-						<input type="checkbox" class="custom-check" id="option4" />
-						<label for="option4"></label>
-						<label class="custom-check-label m-r-20" for="option4">가격</label>
-						<input type="checkbox" class="custom-check" id="option5" />
-						<label for="option5"></label>
-						<label class="custom-check-label m-r-20" for="option5">성능</label>
+						<label class="custom-check-label m-r-10" for="option1">무사고</label>
+						<select class="custom-select col-1">
+							<option>4WD</option>
+							<option>TCI</option>
+							<option>CRDI</option>
+							<option>터보</option>
+							<option>개별용달</option>
+							<option>개인화물</option>
+						</select>
 					</div>
 				</div>
 				<!-- //빠른검색옵션 -->
@@ -795,7 +1018,7 @@
 					<button class="btn m-r-5">선택매물설정</button>
 					<button class="btn">관심매물설정</button>
 					<!-- sort-btn에 정렬기준 text삽입시 active class 같이 넣어주세요. -->
-					<button class="sort-btn" onclick="toggle_active(this)">정렬보기<img src="../images/icon/mini_arrow_down.png" /></button>
+					<button class="sort-btn" onclick="toggle_active(this)">정렬보기</button>
 					<button class="plus" onclick="toggle_active(this)"></button>
 					<ul class="sort list">
 						<li class="active">최근수정매물<img src="../images/icon/mini_arrow_down.png" /></li>

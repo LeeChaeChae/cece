@@ -277,8 +277,8 @@ function drop_down(target){
 //option list fold
 function option_fold(target){
     if($(target).hasClass('on')){
-        $(target).parents('.search-option-select').find('li').css('height','225px');
-        $(target).parents('.search-option-select').find('.option-list').css('height','188px');
+        $(target).parents('.search-option-select').find('li').css('height','200px');
+        $(target).parents('.search-option-select').find('.option-list').css('height','165px');
         $(target).parents('.search-option-select').find('button').removeClass('on');
     }else{
         $(target).parents('.search-option-select').find('li').css('height','420px');

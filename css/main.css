@@ -209,7 +209,7 @@
 .content .certify .info-wrap{padding:30px;margin-bottom:20px;border-top:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf;background:#fafafa;}
 .content .certify .info-wrap .insert-info{padding:20px 0;font-size:13px;margin:0 auto;}
 .content .certify .info-wrap .insert-info label{width:100px;display:inline-block;margin:10px 0;}
-.content .certify .info-wrap .insert-info input[type="text"]{width:190px;padding:4px 5px;}
+.content .certify .info-wrap .insert-info input[type="text"]{width:180px;}
 .content .certify .info-wrap .insert-info input.num{width:70px;}
 .content .certify .info-wrap .insert-info .phone input[type="text"], .content .certify .info-wrap .insert-info .phone2 input[type="text"]{width:70px;}
 .content .certify .info-wrap .insert-info li{padding:5px 0;}
@@ -253,7 +253,7 @@ span.bold { font-family:'NanumBarunGothicLight';font-weight:bold; }
 @media not all and (min-resolution:.001dpcm) { @media {
 	.after-login-top .state-count{padding:8px 5px 10px;}
 	.after-login-top .state-count li{font-size:12px;}
-	
+
 	.main-con .banner-ad .slide li .banner-txt .tit{font-size:14px;}
 }}
 

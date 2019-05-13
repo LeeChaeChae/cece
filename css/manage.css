@@ -29,7 +29,7 @@
 .car-state-search-option img{width:auto;cursor:pointer;}
 .car-state-search-option select + .ui-selectmenu-button{width:193px;margin-right:5px;}
 .car-state-search-option label{width:80px;display:inline-block;}
-.car-state-search-option input{width:122px;margin-right:5px;padding:4px 10px;}
+.car-state-search-option input{width:121px;margin-right:5px;}
 
 .search-list-top.manage{height:30px;font-size:13px;}
 .search-list-top.manage li{display:block;float:left;position:relative;}
@@ -161,8 +161,9 @@
 .manage .search-list .sort li img{width:auto;display:none;position:relative;top:-2px;margin-left:5px;}
 .manage .search-list .sort li.active{color:#4f87e6 !important;}
 
-.manage .search-list .sort-btn.active img{transform:rotate(180deg);}
-.manage .search-list .sort-btn.active ~ .sort.select{display:block;z-index:10;}
+/* .manage .search-list .sort-btn.active img{transform:rotate(180deg);}
+.manage .search-list .sort-btn.active ~ .sort.select{display:block;z-index:10;} */
+.manage .search-list .sort-btn{cursor:default;}
 .manage .search-list .plus{width:15px;height:15px;background:url('../images/icon/plus.gif');position:relative;top:3px;margin-left:5px;margin-right:10px;}
 .manage .search-list .plus.active{background:url('../images/icon/plus_active.gif');}
 .manage .search-list .plus.active + .sort{display:block;top:-5px;background:#fff;border:none;right:165px;width:400px;padding:5px 10px;}

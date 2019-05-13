@@ -376,7 +376,6 @@
 			<div class="page-top-navi">
 				<img src="../images/icon/icon_home.png" /> <img src="../images/icon/arrow_right.png" /> 국산 · 수입차 <img src="../images/icon/arrow_right.png" /> 매물조회
 			</div>
-			<!-- 수입차,가격탭은 다른 폼과 같은양식이라 소스가 너무 길어지는 것 같아 빼놨습니다. 수입차의 경우 국산차 탭, 가격의경우 주행거리 탭의 내용을 복사해주세요.  -->
 			<!-- 상단 검색 신규 -->
 			<div class="search-option">
 				<ul class="search-option-tab">
@@ -452,46 +451,234 @@
 					<!-- 차량선택 -->
 					<ul class="search-option-select">
 						<li>
+							<!-- 차명리스트 통합정리 엑셀문서 내 MakerName 항목 -->
 							<div class="option-tit">제조사<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
 							<div class="option-list">
-								<input type="radio" class="txt-select" id="car1_1" name="car1" checked="" />
-								<label for="car1_1">현대 (39,284)</label>
-								<input type="radio" class="txt-select" id="car1_2" name="car1" />
-								<label for="car1_2">제네시스 (30,759)</label>
-								<input type="radio" class="txt-select" id="car1_3" name="car1" />
-								<label for="car1_3">현대 (39,284)</label>
-								<input type="radio" class="txt-select" id="car1_4" name="car1" />
-								<label for="car1_4">제네시스 (30,759)</label>
-								<input type="radio" class="txt-select" id="car1_5" name="car1" />
-								<label for="car1_5">현대 (39,284)</label>
-								<input type="radio" class="txt-select" id="car1_6" name="car1" />
-								<label for="car1_6">제네시스 (30,759)</label>
+								<input type="radio" class="txt-select" id="MakerName1" name="MakerName" checked="" />
+								<label for="MakerName1">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="MakerName2" name="MakerName" />
+								<label for="MakerName2">기아 (12,759)</label>
+								<input type="radio" class="txt-select" id="MakerName3" name="MakerName" />
+								<label for="MakerName3">대우 (21,284)</label>
+								<input type="radio" class="txt-select" id="MakerName4" name="MakerName" />
+								<label for="MakerName4">삼성 (23,429)</label>
+								<input type="radio" class="txt-select" id="MakerName5" name="MakerName" />
+								<label for="MakerName5">쌍용 (9,454)</label>
+								<input type="radio" class="txt-select" id="MakerName6" name="MakerName" />
+								<label for="MakerName6">중대형버스 (2,412)</label>
+								<input type="radio" class="txt-select" id="MakerName7" name="MakerName" />
+								<label for="MakerName7">중대형화물 (5,234)</label>
+								<input type="radio" class="txt-select" id="MakerName8" name="MakerName" />
+								<label for="MakerName8">쉐보레 (1,323)</label>
+								<input type="radio" class="txt-select" id="MakerName9" name="MakerName" />
+								<label for="MakerName9">벤츠 (967)</label>
+								<input type="radio" class="txt-select" id="MakerName10" name="MakerName" />
+								<label for="MakerName10">BMW (658)</label>
+								<input type="radio" class="txt-select" id="MakerName11" name="MakerName" />
+								<label for="MakerName11">아우디 (1,242)</label>
+								<input type="radio" class="txt-select" id="MakerName12" name="MakerName" />
+								<label for="MakerName12">폭스바겐 (5,244)</label>
+								<input type="radio" class="txt-select" id="MakerName13" name="MakerName" />
+								<label for="MakerName13">포르쉐 (6,241)</label>
+								<input type="radio" class="txt-select" id="MakerName14" name="MakerName" />
+								<label for="MakerName14">렉서스 (1,432)</label>
+								<input type="radio" class="txt-select" id="MakerName15" name="MakerName" />
+								<label for="MakerName15">혼다 (643)</label>
+								<input type="radio" class="txt-select" id="MakerName16" name="MakerName" />
+								<label for="MakerName16">닛산 (353)</label>
+								<input type="radio" class="txt-select" id="MakerName17" name="MakerName" />
+								<label for="MakerName17">인피니티 (743)</label>
+								<input type="radio" class="txt-select" id="MakerName18" name="MakerName" />
+								<label for="MakerName18">토요타 (4,232)</label>
+								<input type="radio" class="txt-select" id="MakerName19" name="MakerName" />
+								<label for="MakerName19">미쯔비시 (256)</label>
+								<input type="radio" class="txt-select" id="MakerName20" name="MakerName" />
+								<label for="MakerName20">마쯔다 (142)</label>
 							</div>
 						</li>
 						<li>
+							<!-- 차명리스트 통합정리 엑셀문서 내 ModelName 항목 -->
 							<div class="option-tit">모델<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
-							<input type="radio" class="txt-select" id="car2_1" name="car2" />
-							<label for="car2_1">현대 (39,284)</label>
-							<input type="radio" class="txt-select" id="car2_2" name="car2" checked="" />
-							<label for="car2_2">제네시스 (30,759)</label>
+							<div class="option-list">
+								<input type="radio" class="txt-select" id="ModelName1" name="ModelName" checked="" />
+								<label for="ModelName1">그랜저 (7,284)</label>
+								<input type="radio" class="txt-select" id="ModelName2" name="ModelName" />
+								<label for="ModelName2">다이너스티 (4,759)</label>
+								<input type="radio" class="txt-select" id="ModelName3" name="ModelName" />
+								<label for="ModelName3">에쿠스 (1,284)</label>
+								<input type="radio" class="txt-select" id="ModelName4" name="ModelName" />
+								<label for="ModelName4">마르샤 (633)</label>
+								<input type="radio" class="txt-select" id="ModelName5" name="ModelName" />
+								<label for="ModelName5">소나타 (2,454)</label>
+								<input type="radio" class="txt-select" id="ModelName6" name="ModelName" />
+								<label for="ModelName6">아반떼 (8,241)</label>
+								<input type="radio" class="txt-select" id="ModelName7" name="ModelName" />
+								<label for="ModelName7">베르나 (242)</label>
+								<input type="radio" class="txt-select" id="ModelName8" name="ModelName" />
+								<label for="ModelName8">엑센트 (1,323)</label>
+								<input type="radio" class="txt-select" id="ModelName9" name="ModelName" />
+								<label for="ModelName9">베라쿠르즈 (967)</label>
+								<input type="radio" class="txt-select" id="ModelName10" name="ModelName" />
+								<label for="ModelName10">i40 (658)</label>
+								<input type="radio" class="txt-select" id="ModelName11" name="ModelName" />
+								<label for="ModelName11">엔터프라이즈 (635)</label>
+								<input type="radio" class="txt-select" id="ModelName12" name="ModelName" />
+								<label for="ModelName12">봉고3미니버스 (124)</label>
+								<input type="radio" class="txt-select" id="ModelName13" name="ModelName" />
+								<label for="ModelName13">무쏘 (6,241)</label>
+								<input type="radio" class="txt-select" id="ModelName14" name="ModelName" />
+								<label for="ModelName14">소형현대버스 (1,432)</label>
+								<input type="radio" class="txt-select" id="ModelName15" name="ModelName" />
+								<label for="ModelName15">익스플로러 스포츠트랙 (643)</label>
+								<input type="radio" class="txt-select" id="ModelName16" name="ModelName" />
+								<label for="ModelName16">모델S (353)</label>
+								<input type="radio" class="txt-select" id="ModelName17" name="ModelName" />
+								<label for="ModelName17">모델X (743)</label>
+								<input type="radio" class="txt-select" id="ModelName18" name="ModelName" />
+								<label for="ModelName18">툰렌드 (4,232)</label>
+								<input type="radio" class="txt-select" id="ModelName19" name="ModelName" />
+								<label for="ModelName19">C31 (256)</label>
+								<input type="radio" class="txt-select" id="ModelName20" name="ModelName" />
+								<label for="ModelName20">C35 (142)</label>
+							</div>
 						</li>
 						<li>
+							<!-- 차명리스트 통합정리 엑셀문서 내 MDetailName 항목 -->
 							<div class="option-tit">세부모델<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
-							<input type="checkbox" class="txt-select" id="car3_1" checked="" />
-							<label for="car3_1">현대 (39,284)</label>
-							<input type="checkbox" class="txt-select" id="car3_2" />
-							<label for="car3_2">제네시스 (30,759)</label>
+							<div class="option-list">
+								<input type="checkbox" class="txt-select" id="MDetailName1" name="MDetailName" />
+								<label for="MDetailName1">그랜저 (6,284)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName2" name="MDetailName" checked="" />
+								<label for="MDetailName2">뉴그랜저 (532)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName3" name="MDetailName" />
+								<label for="MDetailName3">그랜저XG (1,242)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName4" name="MDetailName" checked="" />
+								<label for="MDetailName4">뉴그랜저XG (9,999)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName5" name="MDetailName" />
+								<label for="MDetailName5">그랜저TG (999)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName6" name="MDetailName" />
+								<label for="MDetailName6">그랜저TG뉴럭셔리 (1,533)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName7" name="MDetailName" />
+								<label for="MDetailName7">그랜저HG (1,352)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName8" name="MDetailName" />
+								<label for="MDetailName8">그랜저하이브리드 (123)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName9" name="MDetailName" />
+								<label for="MDetailName9">그랜저IG (313)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName10" name="MDetailName" />
+								<label for="MDetailName10">그랜저 IG 하이브리드 (532)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName11" name="MDetailName" />
+								<label for="MDetailName11">다이너스티 (251)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName12" name="MDetailName" />
+								<label for="MDetailName12">에쿠스 (12)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName13" name="MDetailName" />
+								<label for="MDetailName13">에쿠스(신형) (14)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName14" name="MDetailName" />
+								<label for="MDetailName14">마르샤 (42)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName15" name="MDetailName" />
+								<label for="MDetailName15">소나타 (124)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName16" name="MDetailName" />
+								<label for="MDetailName16">소나타2 (51)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName17" name="MDetailName" />
+								<label for="MDetailName17">소나타3 (44)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName18" name="MDetailName" />
+								<label for="MDetailName18">EF소나타 (153)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName19" name="MDetailName" />
+								<label for="MDetailName19">뉴EF소나타 (153)</label>
+								<input type="checkbox" class="txt-select" id="MDetailName20" name="MDetailName" />
+								<label for="MDetailName20">NF소나타 (153)</label>
+							</div>
 						</li>
 						<li>
+							<!-- 차명리스트 통합정리 엑셀문서 내 GradeName 항목 -->
 							<div class="option-tit">등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
-							<input type="checkbox" class="txt-select" id="car4_1" checked="" />
-							<label for="car4_1">현대 (39,284)</label>
-							<input type="checkbox" class="txt-select" id="car4_2" checked="" />
-							<label for="car4_2">제네시스 (30,759)</label>
+							<div class="option-list">
+								<input type="checkbox" class="txt-select" id="GradeName1" name="GradeName" checked="" />
+								<label for="GradeName1">2.0 (424)</label>
+								<input type="checkbox" class="txt-select" id="GradeName2" name="GradeName" />
+								<label for="GradeName2">2.4 (132)</label>
+								<input type="checkbox" class="txt-select" id="GradeName3" name="GradeName" checked="" />
+								<label for="GradeName3">3.0 (421)</label>
+								<input type="checkbox" class="txt-select" id="GradeName4" name="GradeName" />
+								<label for="GradeName4">2.4 (42)</label>
+								<input type="checkbox" class="txt-select" id="GradeName5" name="GradeName" />
+								<label for="GradeName5">2.5 (73)</label>
+								<input type="checkbox" class="txt-select" id="GradeName6" name="GradeName" />
+								<label for="GradeName6">3.5 (533)</label>
+								<input type="checkbox" class="txt-select" id="GradeName7" name="GradeName" />
+								<label for="GradeName7">L20 (352)</label>
+								<input type="checkbox" class="txt-select" id="GradeName8" name="GradeName" />
+								<label for="GradeName8">L25 (14)</label>
+								<input type="checkbox" class="txt-select" id="GradeName9" name="GradeName" />
+								<label for="GradeName9">L30 (643)</label>
+								<input type="checkbox" class="txt-select" id="GradeName10" name="GradeName" />
+								<label for="GradeName10">L35 (32)</label>
+								<input type="checkbox" class="txt-select" id="GradeName11" name="GradeName" />
+								<label for="GradeName11">Q20 (251)</label>
+								<input type="checkbox" class="txt-select" id="GradeName12" name="GradeName" />
+								<label for="GradeName12">Q25 (12)</label>
+								<input type="checkbox" class="txt-select" id="GradeName13" name="GradeName" />
+								<label for="GradeName13">Q30(신형) (14)</label>
+								<input type="checkbox" class="txt-select" id="GradeName14" name="GradeName" />
+								<label for="GradeName14">아제라(수출형) (42)</label>
+								<input type="checkbox" class="txt-select" id="GradeName15" name="GradeName" />
+								<label for="GradeName15">3.5 수출형 (124)</label>
+								<input type="checkbox" class="txt-select" id="GradeName16" name="GradeName" />
+								<label for="GradeName16">3.0 수출형 (51)</label>
+								<input type="checkbox" class="txt-select" id="GradeName17" name="GradeName" />
+								<label for="GradeName17">1.6 터보 JBL 익스트림 사운드 에디션 (44)</label>
+								<input type="checkbox" class="txt-select" id="GradeName18" name="GradeName" />
+								<label for="GradeName18">3.3 V6 GDI 4WD 익스클루시브 스페셜 (153)</label>
+								<input type="checkbox" class="txt-select" id="GradeName19" name="GradeName" />
+								<label for="GradeName19">4DR 1.6 CVVT GOLD (153)</label>
+								<input type="checkbox" class="txt-select" id="GradeName20" name="GradeName" />
+								<label for="GradeName20">5DR 1.6 CVVT GOLD (153)</label>
+							</div>
 						</li>
 						<li>
+							<!-- 차명리스트 통합정리 엑셀문서 내 GDetailName 항목 -->
 							<div class="option-tit">세부등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
-							<p>등급을 선택해주세요.</p>
+							<div class="option-list">
+								<input type="checkbox" class="txt-select" id="GDetailName1" name="GDetailName" checked="" />
+								<label for="GDetailName1">DOHC (6,284)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName2" name="GDetailName" checked="" />
+								<label for="GDetailName2">디럭스 (532)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName3" name="GDetailName" />
+								<label for="GDetailName3">익스큐티브 (1,242)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName4" name="GDetailName" />
+								<label for="GDetailName4">엑시모 (9,999)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName5" name="GDetailName" />
+								<label for="GDetailName5">EXE (999)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName6" name="GDetailName" />
+								<label for="GDetailName6">V6 (1,533)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName7" name="GDetailName" />
+								<label for="GDetailName7">SOCIAL (1,352)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName8" name="GDetailName" />
+								<label for="GDetailName8">골드 (123)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName9" name="GDetailName" />
+								<label for="GDetailName9">기본형 (313)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName10" name="GDetailName" />
+								<label for="GDetailName10">고급형 (532)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName11" name="GDetailName" />
+								<label for="GDetailName11">슈퍼형 (251)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName12" name="GDetailName" />
+								<label for="GDetailName12">SE (12)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName13" name="GDetailName" />
+								<label for="GDetailName13">T 2.7 고급형 (14)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName14" name="GDetailName" />
+								<label for="GDetailName14">X 2.7 의전 (42)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName15" name="GDetailName" />
+								<label for="GDetailName15">T 2.7 럭셔리 고급형 (124)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName16" name="GDetailName" />
+								<label for="GDetailName16">X 2.7 럭셔리 의전 (51)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName17" name="GDetailName" />
+								<label for="GDetailName17">고급형 모젠팩 (44)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName18" name="GDetailName" />
+								<label for="GDetailName18">슈퍼형 모젠팩 (153)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName19" name="GDetailName" />
+								<label for="GDetailName19">럭셔리 (153)</label>
+								<input type="checkbox" class="txt-select" id="GDetailName20" name="GDetailName" />
+								<label for="GDetailName20">플러스팩 (153)</label>
+							</div>
 						</li>
 					</ul>
 					<!-- //차량선택 -->
@@ -499,7 +686,82 @@
 				<!-- //국산차탭 -->
 				<!-- 수입차탭 -->
 				<div class="option-tab-con imported-car">
-					수입차탭 국산차탭과 동일
+					<!-- 직접검색 -->
+					<div class="search">
+						<img src="../images/icon/search_blue.png" />
+						<input type="text" placeholder="모델명 직접 입력">
+						<button class="esc"></button>
+						<!-- 검색 자동 완성 -->
+						<div class="auto-search-list">
+							<ul>
+								<li>
+									<input type="checkbox" class="custom-check" id="search_list1" >
+									<label for="search_list1"></label>
+									<label for="search_list1" class="custom-check-label">현대 > 그랜저 > 그랜저XG</label>
+								</li>
+								<li>
+									<input type="checkbox" class="custom-check" id="search_list2" checked="" >
+									<label for="search_list2"></label>
+									<label for="search_list2" class="custom-check-label">현대 > 그랜저 > 그랜저XG > UPG 2700cc</label>
+								</li>
+								<li>
+									<input type="checkbox" class="custom-check" id="search_list3" checked="" >
+									<label for="search_list3"></label>
+									<label for="search_list3" class="custom-check-label">현대 > 그랜저 > 그랜저XG > 가솔린 2500cc 이하</label>
+								</li>
+							</ul>
+							<button class="btn-cancel">취소</button>
+							<button class="btn-search">검색</button>
+						</div>
+						<!-- //검색 자동 완성 -->
+					</div>
+					<!-- //직접검색 -->
+					<!-- 차량선택 -->
+					<ul class="search-option-select">
+						<li>
+							<div class="option-tit">제조사<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-list">
+								<input type="radio" class="txt-select" id="car5_1" name="car5" checked="" />
+								<label for="car5_1">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="car5_2" name="car5" />
+								<label for="car5_2">제네시스 (30,759)</label>
+								<input type="radio" class="txt-select" id="car5_3" name="car5" />
+								<label for="car5_3">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="car5_4" name="car5" />
+								<label for="car5_4">제네시스 (30,759)</label>
+								<input type="radio" class="txt-select" id="car5_5" name="car5" />
+								<label for="car5_5">현대 (39,284)</label>
+								<input type="radio" class="txt-select" id="car5_6" name="car5" />
+								<label for="car5_6">제네시스 (30,759)</label>
+							</div>
+						</li>
+						<li>
+							<div class="option-tit">모델<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<input type="radio" class="txt-select" id="car6_1" name="car6" />
+							<label for="car6_1">현대 (39,284)</label>
+							<input type="radio" class="txt-select" id="car6_2" name="car6" checked="" />
+							<label for="car6_2">제네시스 (30,759)</label>
+						</li>
+						<li>
+							<div class="option-tit">세부모델<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<input type="checkbox" class="txt-select" id="car7_1" checked="" />
+							<label for="car7_1">현대 (39,284)</label>
+							<input type="checkbox" class="txt-select" id="car7_2" />
+							<label for="car7_2">제네시스 (30,759)</label>
+						</li>
+						<li>
+							<div class="option-tit">등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<input type="checkbox" class="txt-select" id="car8_1" checked="" />
+							<label for="car8_1">현대 (39,284)</label>
+							<input type="checkbox" class="txt-select" id="car8_2" checked="" />
+							<label for="car8_2">제네시스 (30,759)</label>
+						</li>
+						<li>
+							<div class="option-tit">세부등급<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<p>등급을 선택해주세요.</p>
+						</li>
+					</ul>
+					<!-- //차량선택 -->
 				</div>
 				<!-- //수입차탭 -->
 				<!-- 화물차탭 -->
@@ -529,7 +791,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="option-tit">뭐지?<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
+							<div class="option-tit">옵션<button class="btn more" onclick="option_fold(this)">&nbsp;</button></div>
 							<div class="option-list">
 								<input type="radio" class="txt-select" id="cargo2_1" checked="" name="cargo2" />
 								<label for="cargo2_1">웜바디 (3,222)</label>
@@ -806,7 +1068,7 @@
 					<button class="btn m-r-5">선택매물설정</button>
 					<button class="btn">관심매물설정</button>
 					<!-- sort-btn에 정렬기준 text삽입시 active class 같이 넣어주세요. -->
-					<button class="sort-btn" onclick="toggle_active(this)">정렬보기<img src="../images/icon/mini_arrow_down.png" /></button>
+					<button class="sort-btn" onclick="toggle_active(this)">정렬보기</button>
 					<button class="plus" onclick="toggle_active(this)"></button>
 					<ul class="sort list">
 						<li class="active">최근수정매물<img src="../images/icon/mini_arrow_down.png" /></li>
